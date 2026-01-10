@@ -1,0 +1,319 @@
+<!-- ULTRA MODERN HERO - PROPOZYCJA 3 (LIGHTWEIGHT) - Wklej w Elementor Custom HTML -->
+<!-- OPTIMIZED FOR PAGESPEED - GREEN SCORES -->
+
+<style>
+/* MINIMALIST HERO - ZERO BLOAT */
+.fast-hero {
+    position: relative;
+    min-height: 100vh;
+    background: #000;
+    display: flex;
+    align-items: center;
+    padding: 100px 0 60px;
+    margin: 0 calc(-50vw + 50%);
+    width: 100vw;
+    overflow: hidden;
+}
+
+/* Simple Gradient BG - No blur, no animations */
+.fast-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(191, 255, 0, 0.08) 0%, transparent 60%);
+    z-index: 0;
+}
+
+/* Grid Lines - Static, no animation for performance */
+.fast-hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        linear-gradient(rgba(191, 255, 0, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(191, 255, 0, 0.02) 1px, transparent 1px);
+    background-size: 60px 60px;
+    opacity: 0.5;
+}
+
+.fast-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.fast-grid {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 100px;
+    align-items: center;
+}
+
+/* LEFT SIDE */
+.fast-left {
+    max-width: 700px;
+}
+
+/* Badge - Minimal */
+.fast-badge {
+    display: inline-block;
+    padding: 10px 24px;
+    background: rgba(191, 255, 0, 0.1);
+    border: 1px solid rgba(191, 255, 0, 0.3);
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 800;
+    color: #BFFF00;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 32px;
+}
+
+/* MEGA Title - No animations for instant paint */
+.fast-title {
+    font-size: 90px;
+    font-weight: 900;
+    line-height: 0.9;
+    letter-spacing: -4px;
+    margin-bottom: 32px;
+    color: #fff;
+}
+
+.fast-highlight {
+    display: block;
+    background: linear-gradient(135deg, #BFFF00 0%, #00FF87 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Description */
+.fast-desc {
+    font-size: 20px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 48px;
+}
+
+/* Buttons - Simple, performant */
+.fast-cta {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.fast-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 20px 40px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 800;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.fast-btn-primary {
+    background: #BFFF00;
+    color: #000;
+    box-shadow: 0 10px 40px rgba(191, 255, 0, 0.3);
+}
+
+.fast-btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 50px rgba(191, 255, 0, 0.5);
+}
+
+.fast-btn-secondary {
+    background: transparent;
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.fast-btn-secondary:hover {
+    border-color: #BFFF00;
+    color: #BFFF00;
+}
+
+/* RIGHT SIDE - Simple Grid */
+.fast-right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* Stats Cards - Minimal DOM */
+.fast-stat {
+    padding: 40px 32px;
+    background: rgba(10, 10, 10, 0.6);
+    border: 1px solid rgba(191, 255, 0, 0.2);
+    border-radius: 24px;
+    text-align: center;
+    transition: border-color 0.3s, transform 0.2s;
+}
+
+.fast-stat:hover {
+    border-color: #BFFF00;
+    transform: translateY(-5px);
+}
+
+.fast-stat:first-child {
+    grid-column: 1 / -1;
+}
+
+/* Icon - Simple div with emoji or symbol */
+.fast-icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 20px;
+    background: rgba(191, 255, 0, 0.1);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+}
+
+.fast-number {
+    font-size: 56px;
+    font-weight: 900;
+    color: #BFFF00;
+    line-height: 1;
+    margin-bottom: 12px;
+}
+
+.fast-label {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .fast-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+    .fast-title {
+        font-size: 72px;
+    }
+}
+
+@media (max-width: 768px) {
+    .fast-hero {
+        padding: 80px 0 60px;
+        margin: 0;
+        width: 100%;
+    }
+    .fast-title {
+        font-size: 48px;
+        letter-spacing: -2px;
+    }
+    .fast-desc {
+        font-size: 18px;
+    }
+    .fast-right {
+        grid-template-columns: 1fr;
+    }
+    .fast-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+</style>
+
+<div class="fast-hero">
+    <div class="fast-container">
+        <div class="fast-grid">
+            <!-- LEFT -->
+            <div class="fast-left">
+                <span class="fast-badge">● Digital Agency</span>
+
+                <h1 class="fast-title">
+                    Robimy marketing,
+                    <span class="fast-highlight">który sprzedaje</span>
+                </h1>
+
+                <p class="fast-desc">
+                    SEO, Google Ads i social media dla firm, które chcą konkretnych wyników. Bez owijania w bawełnę – działamy merytorycznie i skutecznie.
+                </p>
+
+                <div class="fast-cta">
+                    <a href="#kontakt" class="fast-btn fast-btn-primary">
+                        <span>Umów rozmowę</span>
+                        <span>→</span>
+                    </a>
+                    <a href="#portfolio" class="fast-btn fast-btn-secondary">
+                        <span>Nasze projekty</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- RIGHT -->
+            <div class="fast-right">
+                <div class="fast-stat">
+                    <div class="fast-icon">⚡</div>
+                    <div class="fast-number">10 000+</div>
+                    <div class="fast-label">Fraz w TOP 10 Google</div>
+                </div>
+
+                <div class="fast-stat">
+                    <div class="fast-icon">📈</div>
+                    <div class="fast-number">+320%</div>
+                    <div class="fast-label">Wzrost ruchu</div>
+                </div>
+
+                <div class="fast-stat">
+                    <div class="fast-icon">👥</div>
+                    <div class="fast-number">147</div>
+                    <div class="fast-label">Klientów</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+// Minimal JS - tylko counter animation z Intersection Observer
+(function() {
+    const counters = document.querySelectorAll('.fast-number');
+
+    const animateCounter = (el) => {
+        const text = el.textContent;
+        const num = parseInt(text.replace(/[^0-9]/g, ''));
+        if (isNaN(num)) return;
+
+        let current = 0;
+        const step = num / 50;
+        const timer = setInterval(() => {
+            current += step;
+            if (current >= num) {
+                el.textContent = text;
+                clearInterval(timer);
+            } else {
+                el.textContent = Math.floor(current).toLocaleString('pl-PL');
+            }
+        }, 20);
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !entry.target.dataset.counted) {
+                entry.target.dataset.counted = 'true';
+                animateCounter(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    counters.forEach(counter => observer.observe(counter));
+})();
+</script>
