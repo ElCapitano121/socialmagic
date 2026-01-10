@@ -1,0 +1,562 @@
+<!-- ULTRA MODERN HERO - PROPOZYCJA 2 (LIQUID BLOBS) - Wklej w Elementor Custom HTML -->
+
+<style>
+.liquid-hero {
+    position: relative;
+    min-height: 100vh;
+    background: #000;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 100px 0 60px;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    width: 100vw;
+}
+
+/* Liquid Blob Background */
+.liquid-hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background:
+        radial-gradient(circle at 30% 40%, rgba(191, 255, 0, 0.25) 0%, transparent 40%),
+        radial-gradient(circle at 70% 60%, rgba(0, 255, 135, 0.2) 0%, transparent 40%),
+        radial-gradient(circle at 50% 50%, rgba(0, 229, 255, 0.15) 0%, transparent 40%);
+    animation: liquid-morph 20s ease-in-out infinite;
+    filter: blur(80px);
+}
+
+@keyframes liquid-morph {
+    0%, 100% {
+        transform: translate(0%, 0%) rotate(0deg) scale(1);
+    }
+    33% {
+        transform: translate(-5%, 10%) rotate(120deg) scale(1.1);
+    }
+    66% {
+        transform: translate(10%, -5%) rotate(240deg) scale(0.9);
+    }
+}
+
+/* Floating Neon Rings */
+.neon-ring {
+    position: absolute;
+    border: 2px solid rgba(191, 255, 0, 0.3);
+    border-radius: 50%;
+    animation: float-ring 15s ease-in-out infinite;
+}
+
+.ring-1 {
+    width: 300px;
+    height: 300px;
+    top: 10%;
+    right: 15%;
+    animation-delay: 0s;
+    box-shadow: 0 0 60px rgba(191, 255, 0, 0.3);
+}
+
+.ring-2 {
+    width: 200px;
+    height: 200px;
+    bottom: 20%;
+    left: 10%;
+    animation-delay: 5s;
+    box-shadow: 0 0 40px rgba(0, 255, 135, 0.3);
+}
+
+.ring-3 {
+    width: 150px;
+    height: 150px;
+    top: 40%;
+    left: 5%;
+    animation-delay: 10s;
+    box-shadow: 0 0 30px rgba(0, 229, 255, 0.3);
+}
+
+@keyframes float-ring {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0.3;
+    }
+    50% {
+        transform: translateY(-30px) rotate(180deg);
+        opacity: 0.6;
+    }
+}
+
+/* Container */
+.liquid-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+    padding: 0 20px;
+}
+
+.liquid-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 100px;
+    align-items: center;
+}
+
+/* Text Side */
+.liquid-left {
+    position: relative;
+}
+
+/* Animated Badge */
+.liquid-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 28px;
+    background: linear-gradient(135deg, rgba(191, 255, 0, 0.1), rgba(0, 255, 135, 0.1));
+    border: 1px solid rgba(191, 255, 0, 0.3);
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 800;
+    color: #BFFF00;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.liquid-badge::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(191, 255, 0, 0.3), transparent);
+    animation: badge-shine 3s infinite;
+}
+
+@keyframes badge-shine {
+    0% { left: -100%; }
+    50%, 100% { left: 100%; }
+}
+
+.liquid-badge-dot {
+    width: 10px;
+    height: 10px;
+    background: #BFFF00;
+    border-radius: 50%;
+    box-shadow: 0 0 20px #BFFF00;
+    animation: badge-pulse 2s ease-in-out infinite;
+}
+
+@keyframes badge-pulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.5); opacity: 0.5; }
+}
+
+/* MEGA Title with Split Animation */
+.liquid-title {
+    font-size: 90px;
+    font-weight: 900;
+    line-height: 0.9;
+    margin-bottom: 40px;
+    letter-spacing: -4px;
+}
+
+.liquid-title-word {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    padding: 10px 0;
+}
+
+.liquid-title-word span {
+    display: inline-block;
+    animation: word-reveal 1.2s cubic-bezier(0.77, 0, 0.175, 1) backwards;
+}
+
+.liquid-title-word:nth-child(1) span {
+    animation-delay: 0.2s;
+    color: #fff;
+}
+.liquid-title-word:nth-child(2) span {
+    animation-delay: 0.4s;
+    color: #fff;
+}
+.liquid-title-word:nth-child(3) span {
+    animation-delay: 0.6s;
+    background: linear-gradient(135deg, #BFFF00, #00FF87, #00E5FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+@keyframes word-reveal {
+    0% {
+        transform: translateY(100%) rotateX(-90deg);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0) rotateX(0deg);
+        opacity: 1;
+    }
+}
+
+/* Holographic Effect on Gradient Text */
+.liquid-title-word:nth-child(3)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    animation: holo-sweep 3s infinite;
+}
+
+@keyframes holo-sweep {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+/* Description */
+.liquid-desc {
+    font-size: 22px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 50px;
+    max-width: 650px;
+}
+
+/* Futuristic Buttons */
+.liquid-cta {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.liquid-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    padding: 22px 44px;
+    border-radius: 100px;
+    font-size: 17px;
+    font-weight: 800;
+    text-decoration: none;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.liquid-btn-primary {
+    background: linear-gradient(135deg, #BFFF00, #00FF87);
+    color: #000;
+    box-shadow: 0 20px 60px rgba(191, 255, 0, 0.4), 0 0 0 0 rgba(191, 255, 0, 0.5);
+    animation: btn-glow 2s ease-in-out infinite;
+}
+
+@keyframes btn-glow {
+    0%, 100% { box-shadow: 0 20px 60px rgba(191, 255, 0, 0.4), 0 0 0 0 rgba(191, 255, 0, 0.5); }
+    50% { box-shadow: 0 25px 70px rgba(191, 255, 0, 0.6), 0 0 30px 10px rgba(191, 255, 0, 0.3); }
+}
+
+.liquid-btn-primary:hover {
+    transform: translateY(-6px) scale(1.05);
+    box-shadow: 0 30px 90px rgba(191, 255, 0, 0.6), 0 0 50px 15px rgba(191, 255, 0, 0.4);
+}
+
+.liquid-btn-secondary {
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+}
+
+.liquid-btn-secondary:hover {
+    background: rgba(191, 255, 0, 0.1);
+    border-color: #BFFF00;
+    color: #BFFF00;
+    transform: translateY(-6px);
+}
+
+/* Right Side - Holographic Card */
+.liquid-right {
+    position: relative;
+    height: 750px;
+    perspective: 1000px;
+}
+
+.holographic-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 650px;
+    background: linear-gradient(135deg, rgba(10, 10, 10, 0.9), rgba(26, 26, 26, 0.9));
+    border-radius: 32px;
+    border: 1px solid rgba(191, 255, 0, 0.3);
+    padding: 48px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 50px 100px rgba(0, 0, 0, 0.6);
+    transition: all 0.5s ease;
+}
+
+.holographic-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 32px;
+    background: linear-gradient(135deg, rgba(191, 255, 0, 0.1), rgba(0, 255, 135, 0.1), rgba(0, 229, 255, 0.1));
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.holographic-card:hover::before {
+    opacity: 1;
+}
+
+.holographic-card:hover {
+    transform: translate(-50%, -50%) rotateY(5deg) rotateX(-5deg);
+    border-color: #BFFF00;
+    box-shadow: 0 60px 120px rgba(191, 255, 0, 0.3);
+}
+
+/* Stats Grid inside Card */
+.stats-grid {
+    display: grid;
+    gap: 32px;
+}
+
+.stat-box {
+    text-align: center;
+    padding: 32px 24px;
+    background: rgba(191, 255, 0, 0.05);
+    border-radius: 20px;
+    border: 1px solid rgba(191, 255, 0, 0.2);
+    transition: all 0.3s;
+}
+
+.stat-box:hover {
+    background: rgba(191, 255, 0, 0.1);
+    transform: scale(1.05);
+    border-color: #BFFF00;
+}
+
+.stat-icon {
+    width: 72px;
+    height: 72px;
+    background: linear-gradient(135deg, rgba(191, 255, 0, 0.2), rgba(0, 255, 135, 0.2));
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px;
+}
+
+.stat-icon svg {
+    width: 36px;
+    height: 36px;
+    stroke: #BFFF00;
+    fill: none;
+    stroke-width: 2.5;
+}
+
+.stat-number {
+    font-size: 56px;
+    font-weight: 900;
+    background: linear-gradient(135deg, #BFFF00, #00FF87);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1;
+    margin-bottom: 12px;
+}
+
+.stat-label {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .liquid-title { font-size: 72px; }
+}
+
+@media (max-width: 1024px) {
+    .liquid-content {
+        grid-template-columns: 1fr;
+        gap: 80px;
+    }
+    .liquid-title { font-size: 64px; }
+    .liquid-right { height: 650px; }
+    .holographic-card { width: 450px; height: 600px; }
+}
+
+@media (max-width: 768px) {
+    .liquid-hero {
+        padding: 80px 0 60px;
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+    .liquid-title { font-size: 48px; letter-spacing: -2px; }
+    .liquid-desc { font-size: 19px; }
+    .liquid-right { height: auto; padding: 20px; }
+    .holographic-card {
+        position: static;
+        transform: none;
+        width: 100%;
+        height: auto;
+        padding: 32px;
+    }
+    .holographic-card:hover {
+        transform: none;
+    }
+    .liquid-btn { width: 100%; justify-content: center; }
+}
+</style>
+
+<div class="liquid-hero">
+    <!-- Floating Neon Rings -->
+    <div class="neon-ring ring-1"></div>
+    <div class="neon-ring ring-2"></div>
+    <div class="neon-ring ring-3"></div>
+
+    <div class="liquid-container">
+        <div class="liquid-content">
+            <!-- Left Side -->
+            <div class="liquid-left">
+                <div class="liquid-badge">
+                    <div class="liquid-badge-dot"></div>
+                    <span>Digital Excellence</span>
+                </div>
+
+                <h1 class="liquid-title">
+                    <div class="liquid-title-word"><span>Rozwijamy</span></div>
+                    <div class="liquid-title-word"><span>Twój biznes</span></div>
+                    <div class="liquid-title-word"><span>online</span></div>
+                </h1>
+
+                <p class="liquid-desc">
+                    Łączymy SEO, Google Ads i social media w jedną strategię, która przyciąga klientów i buduje rozpoznawalność. Bez ściemy, z konkretnymi wynikami.
+                </p>
+
+                <div class="liquid-cta">
+                    <a href="#kontakt" class="liquid-btn liquid-btn-primary">
+                        <span>Porozmawiajmy o Twoim projekcie</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 10h12m0 0l-6-6m6 6l-6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                        </svg>
+                    </a>
+                    <a href="#oferta" class="liquid-btn liquid-btn-secondary">
+                        <span>Zobacz realizacje</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Side - Holographic Card -->
+            <div class="liquid-right">
+                <div class="holographic-card">
+                    <div class="stats-grid">
+                        <div class="stat-box">
+                            <div class="stat-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="stat-number">10K+</div>
+                            <div class="stat-label">Wypozycjonowanych<br>fraz w TOP 10</div>
+                        </div>
+
+                        <div class="stat-box">
+                            <div class="stat-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <div class="stat-number">+320%</div>
+                            <div class="stat-label">Wzrost ruchu<br>organicznego</div>
+                        </div>
+
+                        <div class="stat-box">
+                            <div class="stat-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="stat-number">147</div>
+                            <div class="stat-label">Zadowolonych<br>klientów</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Counter animation
+    const counters = document.querySelectorAll('.stat-number');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !entry.target.classList.contains('counted')) {
+                entry.target.classList.add('counted');
+                const text = entry.target.textContent;
+                const hasK = text.includes('K');
+                const hasPlus = text.includes('+');
+                const hasPercent = text.includes('%');
+                const number = parseInt(text.replace(/[^0-9]/g, ''));
+
+                if (!isNaN(number)) {
+                    let current = 0;
+                    const increment = number / 60;
+                    const timer = setInterval(() => {
+                        current += increment;
+                        if (current >= number) {
+                            entry.target.textContent = (hasPlus ? '+' : '') + number + (hasK ? 'K' : '') + (hasPlus && hasPercent ? '%' : '');
+                            clearInterval(timer);
+                        } else {
+                            entry.target.textContent = Math.floor(current) + (hasK ? 'K' : '');
+                        }
+                    }, 20);
+                }
+            }
+        });
+    }, { threshold: 0.5 });
+
+    counters.forEach(counter => observer.observe(counter));
+
+    // 3D card tilt effect
+    const card = document.querySelector('.holographic-card');
+    if (card) {
+        card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            const rotateX = (y - centerY) / 20;
+            const rotateY = (centerX - x) / 20;
+
+            card.style.transform = `translate(-50%, -50%) perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+        });
+
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = 'translate(-50%, -50%) perspective(1000px) rotateX(0) rotateY(0)';
+        });
+    }
+});
+</script>
