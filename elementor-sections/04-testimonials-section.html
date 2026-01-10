@@ -1,0 +1,232 @@
+<!-- TESTIMONIALS SECTION - Wklej ten kod w Elementor Custom HTML Widget -->
+
+<style>
+.sm-testimonials-section {
+    padding: 120px 20px;
+    background: #000000;
+    position: relative;
+}
+
+.sm-testimonials-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.sm-testimonials-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.sm-testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.sm-testimonial-card {
+    padding: 40px 32px;
+    background: rgba(10, 10, 10, 0.8);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(191, 255, 0, 0.1);
+    border-radius: 24px;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: relative;
+    overflow: hidden;
+}
+
+.sm-testimonial-card::before {
+    content: '"';
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 120px;
+    font-weight: 900;
+    color: rgba(191, 255, 0, 0.05);
+    line-height: 1;
+}
+
+.sm-testimonial-card:hover {
+    transform: translateY(-10px);
+    border-color: #BFFF00;
+    box-shadow: 0 30px 80px rgba(191, 255, 0, 0.15);
+}
+
+.sm-testimonial-content {
+    position: relative;
+    z-index: 1;
+}
+
+.sm-testimonial-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #cccccc;
+    font-style: italic;
+}
+
+.sm-testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    z-index: 1;
+}
+
+.sm-author-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+    border: 2px solid #BFFF00;
+    flex-shrink: 0;
+}
+
+.sm-author-info {
+    flex: 1;
+}
+
+.sm-author-name {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 4px;
+}
+
+.sm-author-role {
+    font-size: 13px;
+    color: #888888;
+    line-height: 1.4;
+}
+
+.sm-testimonial-stat {
+    padding-top: 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+.sm-stat-value {
+    font-size: 32px;
+    font-weight: 900;
+    color: #BFFF00;
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.sm-stat-label {
+    font-size: 13px;
+    color: #888888;
+    line-height: 1.4;
+}
+
+@media (max-width: 1024px) {
+    .sm-testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .sm-testimonials-section {
+        padding: 80px 20px;
+    }
+
+    .sm-testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sm-testimonial-card {
+        padding: 32px 24px;
+    }
+}
+</style>
+
+<div class="sm-testimonials-section">
+    <div class="sm-testimonials-container">
+        <div class="sm-testimonials-header">
+            <span class="sm-section-label">Co mówią nasi klienci</span>
+            <h2 class="sm-section-title">
+                Co mówią <span class="sm-gradient-text">Nasi</span> Klienci?
+            </h2>
+        </div>
+
+        <div class="sm-testimonials-grid">
+            <!-- Testimonial 1 -->
+            <div class="sm-testimonial-card">
+                <div class="sm-testimonial-content">
+                    <p>Mega fajna współpraca! Wszystko jasno, konkretnie, bez zbędnego gadania. Dzięki nim ogarnialiśmy temat widoczności w sieci i social – działał 📈</p>
+                </div>
+                <div class="sm-testimonial-author">
+                    <div class="sm-author-avatar"></div>
+                    <div class="sm-author-info">
+                        <div class="sm-author-name">Anna K.</div>
+                        <div class="sm-author-role">marketing w branży beauty</div>
+                    </div>
+                </div>
+                <div class="sm-testimonial-stat">
+                    <div class="sm-stat-value">+320%</div>
+                    <div class="sm-stat-label">więcej wizyt z Google w 3 miesiące</div>
+                </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="sm-testimonial-card">
+                <div class="sm-testimonial-content">
+                    <p>Kontakt szybki, wszystko ogarniall zanim zdażyłem zapytać. Wieczór zdecyś się na werędzie.</p>
+                </div>
+                <div class="sm-testimonial-author">
+                    <div class="sm-author-avatar"></div>
+                    <div class="sm-author-info">
+                        <div class="sm-author-name">Tomasz N.</div>
+                        <div class="sm-author-role">sprzedaż B2B</div>
+                    </div>
+                </div>
+                <div class="sm-testimonial-stat">
+                    <div class="sm-stat-value">76 k+</div>
+                    <div class="sm-stat-label">Obserwujących na Instagrame</div>
+                </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="sm-testimonial-card">
+                <div class="sm-testimonial-content">
+                    <p>Fajni ludzie. Serio. Od początku miałem wrażenie, że im zależy – i było to widać w efektach. Nasza marka w końcu odeżyła.</p>
+                </div>
+                <div class="sm-testimonial-author">
+                    <div class="sm-author-avatar"></div>
+                    <div class="sm-author-info">
+                        <div class="sm-author-name">Magdalena W.</div>
+                        <div class="sm-author-role">prowadzi własną markę odzieżową</div>
+                    </div>
+                </div>
+                <div class="sm-testimonial-stat">
+                    <div class="sm-stat-value">45 k+</div>
+                    <div class="sm-stat-label">Polubień na Facebooku</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const testimonialCards = document.querySelectorAll('.sm-testimonial-card');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, { threshold: 0.1 });
+
+    testimonialCards.forEach((card, index) => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(50px)';
+        card.style.transition = `all 0.8s ease ${index * 0.15}s`;
+        observer.observe(card);
+    });
+});
+</script>

@@ -1,0 +1,280 @@
+<!-- PRICING SECTION - Wklej ten kod w Elementor Custom HTML Widget -->
+
+<style>
+.sm-pricing-section {
+    padding: 120px 20px;
+    background: linear-gradient(180deg, #000000 0%, #0a0a0a 100%);
+    position: relative;
+}
+
+.sm-pricing-container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.sm-pricing-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.sm-pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.sm-pricing-card {
+    padding: 48px 40px;
+    background: rgba(10, 10, 10, 0.8);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(191, 255, 0, 0.15);
+    border-radius: 24px;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.sm-pricing-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #BFFF00, #00FF87);
+    transform: scaleX(0);
+    transition: transform 0.6s;
+}
+
+.sm-pricing-card:hover::before {
+    transform: scaleX(1);
+}
+
+.sm-pricing-card.featured {
+    border-color: #BFFF00;
+    box-shadow: 0 30px 80px rgba(191, 255, 0, 0.2);
+}
+
+.sm-pricing-card:hover {
+    transform: translateY(-10px);
+    border-color: #BFFF00;
+    box-shadow: 0 40px 100px rgba(191, 255, 0, 0.25);
+}
+
+.sm-featured-badge {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    padding: 8px 20px;
+    background: #BFFF00;
+    color: #000000;
+    font-size: 11px;
+    font-weight: 900;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.sm-pricing-card h3 {
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+.sm-pricing-desc {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #888888;
+    margin-bottom: 32px;
+}
+
+.sm-price {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sm-price-label {
+    font-size: 16px;
+    color: #888888;
+}
+
+.sm-price-value {
+    font-size: 56px;
+    font-weight: 900;
+    color: #BFFF00;
+    line-height: 1;
+}
+
+.sm-price-period {
+    font-size: 18px;
+    color: #888888;
+}
+
+.sm-pricing-features {
+    list-style: none;
+    margin-bottom: 32px;
+}
+
+.sm-pricing-features li {
+    padding: 14px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 14px;
+    color: #cccccc;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    line-height: 1.6;
+}
+
+.sm-pricing-features li::before {
+    content: '✓';
+    color: #BFFF00;
+    font-weight: bold;
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+.sm-pricing-btn {
+    width: 100%;
+    padding: 18px 32px;
+    background: transparent;
+    border: 2px solid rgba(191, 255, 0, 0.3);
+    border-radius: 50px;
+    color: #BFFF00;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    transition: all 0.4s;
+}
+
+.sm-pricing-btn:hover {
+    background: #BFFF00;
+    color: #000000;
+    border-color: #BFFF00;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 40px rgba(191, 255, 0, 0.3);
+}
+
+.sm-pricing-card.featured .sm-pricing-btn {
+    background: #BFFF00;
+    color: #000000;
+    border-color: #BFFF00;
+}
+
+.sm-pricing-card.featured .sm-pricing-btn:hover {
+    background: transparent;
+    color: #BFFF00;
+    box-shadow: none;
+}
+
+@media (max-width: 1024px) {
+    .sm-pricing-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .sm-pricing-section {
+        padding: 80px 20px;
+    }
+
+    .sm-pricing-card {
+        padding: 32px 24px;
+    }
+
+    .sm-price-value {
+        font-size: 42px;
+    }
+}
+</style>
+
+<div class="sm-pricing-section">
+    <div class="sm-pricing-container">
+        <div class="sm-pricing-header">
+            <span class="sm-section-label">Przystępne Plany</span>
+            <h2 class="sm-section-title">
+                Przystępne plany <span class="sm-gradient-text">dla rozwoju</span> Twojej firmy
+            </h2>
+        </div>
+
+        <div class="sm-pricing-grid">
+            <!-- Pricing Card 1 -->
+            <div class="sm-pricing-card">
+                <h3>Social Media</h3>
+                <p class="sm-pricing-desc">
+                    Dla firm, które chcą aktywnie budować relacje w social mediach dzięki regularnej treści, reelsei i optymalizacji profilu.
+                </p>
+                <div class="sm-price">
+                    <span class="sm-price-label">PLN</span>
+                    <span class="sm-price-value">650</span>
+                    <span class="sm-price-period">/msc</span>
+                </div>
+                <ul class="sm-pricing-features">
+                    <li>Szczegóły pakietu w zakładce Cennik</li>
+                    <li>Obsługa Klienta 24/7</li>
+                    <li>Optymalizacja profili i treści</li>
+                    <li>5 postów miesięcznie (grafika + text)</li>
+                    <li>4 relacje miesięcznie</li>
+                    <li>Responsywność relacji (24-48h zależnie)</li>
+                    <li>Profesjonalne zdjęcia w treści (zewis)</li>
+                    <li>Publikacja treści (wewnęz na Instagram)</li>
+                </ul>
+                <a href="#kontakt" class="sm-pricing-btn">Formularz Kontaktowy</a>
+            </div>
+
+            <!-- Pricing Card 2 - Featured -->
+            <div class="sm-pricing-card featured">
+                <div class="sm-featured-badge">Polecane</div>
+                <h3>Pozycjonowanie Lokalne SEO / AIO</h3>
+                <p class="sm-pricing-desc">
+                    Dla firm lokalnych, które chcą być widoczne w Google na frazy regionalne i w mapach Google Business.
+                </p>
+                <div class="sm-price">
+                    <span class="sm-price-label">od</span>
+                    <span class="sm-price-value">890zł</span>
+                    <span class="sm-price-period">/msc</span>
+                </div>
+                <ul class="sm-pricing-features">
+                    <li>Szczegóły pakietu w zakładce Cennik</li>
+                    <li>2 zoptymalizowane wpisy blogowe (miesięcznie thematy lokalne lub branżowe)</li>
+                    <li>Audyt techniczny strony (pod przyszłek struktury, lokalizacyją)</li>
+                    <li>Pozycjonowanie wizytówki Google (Google Business Profile)</li>
+                    <li>Publikacja jakościowych artykułów sponsorowanych (1 linkas)</li>
+                    <li>Skala analityki fraz kluczowych i konkurencji (bez limitu stiku)</li>
+                    <li>Pełna konfiguracja Google Search Console, Analytics, GA4, Tag Manager</li>
+                </ul>
+                <a href="#kontakt" class="sm-pricing-btn">Formularz Kontaktowy</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const pricingCards = document.querySelectorAll('.sm-pricing-card');
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, { threshold: 0.1 });
+
+    pricingCards.forEach((card, index) => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(50px)';
+        card.style.transition = `all 0.8s ease ${index * 0.2}s`;
+        observer.observe(card);
+    });
+});
+</script>
