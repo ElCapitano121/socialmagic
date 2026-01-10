@@ -3,14 +3,14 @@
 <style>
 .premium-services {
     position: relative;
-    min-height: 110vh;
+    min-height: 100vh;
     background: #0a0a0a;
     display: flex;
     align-items: center;
-    padding: 140px 20px 180px 20px;
+    padding: 140px 20px 200px 20px;
     margin: 0 calc(-50vw + 50%);
     width: 100vw;
-    overflow: hidden;
+    overflow: visible;
 }
 
 /* HERO BACKGROUND - Diagonal Split */
@@ -240,7 +240,8 @@
 /* CONTENT PANELS */
 .premium-panels {
     position: relative;
-    min-height: 650px;
+    min-height: 700px;
+    padding-bottom: 40px;
 }
 
 .premium-panel {
@@ -464,7 +465,7 @@
 /* Responsive */
 @media (max-width: 1024px) {
     .premium-services {
-        padding: 120px 20px 160px 20px;
+        padding: 120px 20px 200px 20px;
     }
 
     .premium-services-title {
@@ -479,11 +480,15 @@
     .premium-panel-right {
         height: 550px;
     }
+
+    .premium-panels {
+        min-height: 1200px;
+    }
 }
 
 @media (max-width: 768px) {
     .premium-services {
-        padding: 100px 20px 140px 20px;
+        padding: 100px 20px 180px 20px;
         margin: 0;
         width: 100%;
     }
@@ -502,6 +507,10 @@
     .premium-tab {
         width: 100%;
         text-align: center;
+    }
+
+    .premium-panels {
+        min-height: 1400px;
     }
 
     .premium-panel-number {
@@ -544,7 +553,7 @@
         <div class="premium-services-header">
             <div class="premium-services-badge">● NASZE USŁUGI</div>
             <h2 class="premium-services-title">
-                Trzy filary, które <span class="premium-services-highlight">budują Twoją pozycję w sieci</span>
+                Co robimy, żeby <span class="premium-services-highlight">Twoja firma dominowała online</span>
             </h2>
         </div>
 
