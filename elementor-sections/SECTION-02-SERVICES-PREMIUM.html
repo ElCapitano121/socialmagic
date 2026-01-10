@@ -3,11 +3,11 @@
 <style>
 .premium-services {
     position: relative;
-    min-height: 100vh;
+    min-height: 110vh;
     background: #0a0a0a;
     display: flex;
     align-items: center;
-    padding: 140px 20px;
+    padding: 140px 20px 180px 20px;
     margin: 0 calc(-50vw + 50%);
     width: 100vw;
     overflow: hidden;
@@ -137,26 +137,29 @@
 
 .premium-services-badge {
     display: inline-block;
-    padding: 10px 24px;
-    background: rgba(191, 255, 0, 0.1);
-    border: 1px solid #BFFF00;
-    border-radius: 6px;
-    font-size: 12px;
+    padding: 12px 32px;
+    background: rgba(191, 255, 0, 0.12);
+    border: 2px solid #BFFF00;
+    border-radius: 8px;
+    font-size: 14px;
     font-weight: 900;
     color: #BFFF00;
     text-transform: uppercase;
-    letter-spacing: 3px;
-    margin-bottom: 32px;
-    box-shadow: 0 0 20px rgba(191, 255, 0, 0.3);
+    letter-spacing: 4px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 30px rgba(191, 255, 0, 0.4);
 }
 
 .premium-services-title {
-    font-size: 96px;
+    font-size: 72px;
     font-weight: 900;
-    line-height: 0.9;
-    letter-spacing: -4px;
+    line-height: 1.1;
+    letter-spacing: -3px;
     color: #fff;
-    margin-bottom: 24px;
+    margin-bottom: 28px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .premium-services-highlight {
@@ -460,8 +463,12 @@
 
 /* Responsive */
 @media (max-width: 1024px) {
+    .premium-services {
+        padding: 120px 20px 160px 20px;
+    }
+
     .premium-services-title {
-        font-size: 64px;
+        font-size: 56px;
     }
 
     .premium-panel-content {
@@ -476,14 +483,15 @@
 
 @media (max-width: 768px) {
     .premium-services {
-        padding: 100px 20px;
+        padding: 100px 20px 140px 20px;
         margin: 0;
         width: 100%;
     }
 
     .premium-services-title {
-        font-size: 48px;
+        font-size: 42px;
         letter-spacing: -2px;
+        line-height: 1.15;
     }
 
     .premium-services-tabs {
@@ -536,8 +544,7 @@
         <div class="premium-services-header">
             <div class="premium-services-badge">● NASZE USŁUGI</div>
             <h2 class="premium-services-title">
-                Jak budujemy Twoją<br>
-                <span class="premium-services-highlight">obecność online?</span>
+                Trzy filary, które <span class="premium-services-highlight">budują Twoją pozycję w sieci</span>
             </h2>
         </div>
 
