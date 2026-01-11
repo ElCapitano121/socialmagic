@@ -1,0 +1,402 @@
+<!-- SERVICES SECTION FINAL - Wklej w Elementor Custom HTML -->
+
+<style>
+.services-final {
+    position: relative;
+    background: #0a0a0a;
+    padding: 100px 20px;
+    margin: 0 calc(-50vw + 50%);
+    width: 100vw;
+    overflow: hidden;
+}
+
+/* Subtle lines background - NOT like Hero */
+.services-final::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(191, 255, 0, 0.02) 1px, transparent 1px);
+    background-size: 100% 100px;
+    z-index: 0;
+}
+
+.services-final-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+}
+
+/* Header - Left aligned */
+.services-final-header {
+    margin-bottom: 80px;
+    max-width: 600px;
+}
+
+.services-final-badge {
+    display: inline-block;
+    padding: 6px 16px;
+    background: transparent;
+    border: 1px solid rgba(191, 255, 0, 0.4);
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: 800;
+    color: #BFFF00;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.services-final-title {
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -2.5px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.services-final-desc {
+    font-size: 19px;
+    line-height: 1.6;
+    color: #fff;
+    opacity: 0.75;
+}
+
+/* Services Grid - Asymmetric */
+.services-grid-final {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+    margin-top: 60px;
+}
+
+/* Service Card - Different spans for asymmetric layout */
+.service-card-final {
+    background: rgba(15, 15, 15, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 0;
+    padding: 48px 36px;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card-final::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #BFFF00, #00FF87);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease;
+}
+
+.service-card-final:hover::before {
+    transform: scaleX(1);
+}
+
+.service-card-final:hover {
+    background: rgba(20, 20, 20, 0.8);
+    border-color: rgba(191, 255, 0, 0.2);
+    transform: translateY(-4px);
+}
+
+/* Card 1 - SEO - spans 7 columns */
+.service-card-final:nth-child(1) {
+    grid-column: span 7;
+}
+
+/* Card 2 - Google Ads - spans 5 columns */
+.service-card-final:nth-child(2) {
+    grid-column: span 5;
+}
+
+/* Card 3 - Social - spans 5 columns */
+.service-card-final:nth-child(3) {
+    grid-column: span 5;
+}
+
+/* Card 4 - WordPress - spans 7 columns */
+.service-card-final:nth-child(4) {
+    grid-column: span 7;
+}
+
+.service-number-final {
+    font-size: 18px;
+    font-weight: 900;
+    color: #BFFF00;
+    display: block;
+    margin-bottom: 24px;
+    letter-spacing: 1px;
+}
+
+.service-icon-final {
+    font-size: 48px;
+    display: block;
+    margin-bottom: 24px;
+    transition: all 0.4s;
+}
+
+.service-card-final:hover .service-icon-final {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+.service-title-final {
+    font-size: 28px;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 16px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
+
+.service-desc-final {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #fff;
+    opacity: 0.8;
+    margin-bottom: 28px;
+}
+
+.service-stat-final {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 24px;
+    padding: 16px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.service-stat-number {
+    font-size: 40px;
+    font-weight: 900;
+    color: #BFFF00;
+    line-height: 1;
+}
+
+.service-stat-label {
+    font-size: 13px;
+    color: #fff;
+    opacity: 0.65;
+    line-height: 1.4;
+}
+
+.service-features-final {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 28px 0;
+}
+
+.service-features-final li {
+    font-size: 15px;
+    color: #fff;
+    opacity: 0.75;
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.3s;
+}
+
+.service-features-final li:hover {
+    opacity: 1;
+    padding-left: 8px;
+}
+
+.service-features-final li::before {
+    content: '—';
+    color: #BFFF00;
+    font-weight: 900;
+}
+
+.service-link-final {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #BFFF00;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s;
+    position: relative;
+}
+
+.service-link-final::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #BFFF00;
+    transition: width 0.3s;
+}
+
+.service-link-final:hover {
+    gap: 12px;
+}
+
+.service-link-final:hover::after {
+    width: calc(100% - 20px);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .services-grid-final {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card-final:nth-child(1),
+    .service-card-final:nth-child(2),
+    .service-card-final:nth-child(3),
+    .service-card-final:nth-child(4) {
+        grid-column: span 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-final {
+        padding: 80px 20px;
+        margin: 0;
+        width: 100%;
+    }
+
+    .services-final-title {
+        font-size: 42px;
+        letter-spacing: -1.5px;
+    }
+
+    .service-card-final {
+        padding: 36px 24px;
+    }
+
+    .service-title-final {
+        font-size: 24px;
+    }
+
+    .service-stat-number {
+        font-size: 32px;
+    }
+}
+</style>
+
+<div class="services-final">
+    <div class="services-final-container">
+        <!-- Header - Left aligned -->
+        <div class="services-final-header">
+            <div class="services-final-badge">Nasze usługi</div>
+            <h2 class="services-final-title">SEO, Google Ads, Social Media i WordPress</h2>
+            <p class="services-final-desc">
+                Kompleksowe wsparcie w budowaniu widoczności, ruchu i konwersji online
+            </p>
+        </div>
+
+        <!-- Asymmetric Grid -->
+        <div class="services-grid-final">
+
+            <!-- Card 1 - SEO (7 cols) -->
+            <div class="service-card-final">
+                <span class="service-number-final">01 — SEO</span>
+                <span class="service-icon-final">🔍</span>
+                <h3 class="service-title-final">Pozycjonowanie w Google</h3>
+                <p class="service-desc-final">
+                    Zdobywamy TOP 10 w Google dla najważniejszych fraz. Kompleksowa strategia SEO.
+                </p>
+                <div class="service-stat-final">
+                    <span class="service-stat-number">10 000+</span>
+                    <span class="service-stat-label">fraz w TOP 10</span>
+                </div>
+                <ul class="service-features-final">
+                    <li>Audyt techniczny i konkurencji</li>
+                    <li>Optymalizacja on-page</li>
+                    <li>Content marketing SEO</li>
+                    <li>Link building</li>
+                </ul>
+                <a href="#kontakt" class="service-link-final">
+                    <span>Sprawdź ofertę</span>
+                    <span>→</span>
+                </a>
+            </div>
+
+            <!-- Card 2 - Google Ads (5 cols) -->
+            <div class="service-card-final">
+                <span class="service-number-final">02 — Ads</span>
+                <span class="service-icon-final">💰</span>
+                <h3 class="service-title-final">Google Ads</h3>
+                <p class="service-desc-final">
+                    Kampanie które zwracają więcej niż kosztują.
+                </p>
+                <div class="service-stat-final">
+                    <span class="service-stat-number">480%</span>
+                    <span class="service-stat-label">średni ROAS</span>
+                </div>
+                <ul class="service-features-final">
+                    <li>Search i Performance Max</li>
+                    <li>Google Shopping</li>
+                    <li>Remarketing</li>
+                </ul>
+                <a href="#kontakt" class="service-link-final">
+                    <span>Case studies</span>
+                    <span>→</span>
+                </a>
+            </div>
+
+            <!-- Card 3 - Social Media (5 cols) -->
+            <div class="service-card-final">
+                <span class="service-number-final">03 — Social</span>
+                <span class="service-icon-final">📱</span>
+                <h3 class="service-title-final">Social Media</h3>
+                <p class="service-desc-final">
+                    Budujemy społeczności wokół marki.
+                </p>
+                <div class="service-stat-final">
+                    <span class="service-stat-number">2.4M+</span>
+                    <span class="service-stat-label">zasięgów/msc</span>
+                </div>
+                <ul class="service-features-final">
+                    <li>Strategia contentu</li>
+                    <li>Grafiki i wideo</li>
+                    <li>FB & IG Ads</li>
+                </ul>
+                <a href="#kontakt" class="service-link-final">
+                    <span>Strategia</span>
+                    <span>→</span>
+                </a>
+            </div>
+
+            <!-- Card 4 - WordPress (7 cols) -->
+            <div class="service-card-final">
+                <span class="service-number-final">04 — WordPress</span>
+                <span class="service-icon-final">🚀</span>
+                <h3 class="service-title-final">Strony WordPress</h3>
+                <p class="service-desc-final">
+                    Szybkie, bezpieczne strony WordPress z optymalizacją SEO i PageSpeed.
+                </p>
+                <div class="service-stat-final">
+                    <span class="service-stat-number">95+</span>
+                    <span class="service-stat-label">PageSpeed score</span>
+                </div>
+                <ul class="service-features-final">
+                    <li>Projektowanie UX/UI</li>
+                    <li>WooCommerce sklepy</li>
+                    <li>PageSpeed 90+</li>
+                    <li>Bezpieczeństwo</li>
+                </ul>
+                <a href="#kontakt" class="service-link-final">
+                    <span>Portfolio</span>
+                    <span>→</span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
