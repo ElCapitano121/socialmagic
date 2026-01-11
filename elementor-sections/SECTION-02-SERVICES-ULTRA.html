@@ -1,0 +1,505 @@
+<!-- SERVICES ULTRA MODERN - Wklej w Elementor Custom HTML -->
+
+<style>
+.services-ultra {
+    position: relative;
+    background: #000;
+    padding: 140px 20px 120px 20px;
+    margin: 0 calc(-50vw + 50%);
+    width: 100vw;
+    overflow: hidden;
+}
+
+/* Animated gradient background */
+.services-ultra::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        radial-gradient(circle at 10% 20%, rgba(191, 255, 0, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 90% 80%, rgba(0, 255, 135, 0.04) 0%, transparent 50%);
+    animation: gradient-shift 15s ease infinite;
+    z-index: 0;
+}
+
+@keyframes gradient-shift {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 0.7; }
+}
+
+.services-ultra-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+}
+
+/* Header */
+.services-ultra-header {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.services-ultra-label {
+    font-size: 13px;
+    font-weight: 900;
+    color: #BFFF00;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 32px;
+    display: block;
+}
+
+.services-ultra-title {
+    font-size: 68px;
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -3px;
+    color: #fff;
+    margin-bottom: 24px;
+    background: linear-gradient(135deg, #fff 0%, rgba(255,255,255,0.7) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.services-ultra-subtitle {
+    font-size: 20px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.6);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Service Item - Full Width, No Side Boxes */
+.service-ultra-item {
+    padding: 80px 0;
+    border-top: 1px solid rgba(191, 255, 0, 0.1);
+    position: relative;
+}
+
+.service-ultra-item:last-child {
+    border-bottom: 1px solid rgba(191, 255, 0, 0.1);
+}
+
+/* Animated glowing line on hover */
+.service-ultra-item::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #BFFF00, #00FF87);
+    transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 0 20px rgba(191, 255, 0, 0.6);
+}
+
+.service-ultra-item:hover::before {
+    width: 100%;
+}
+
+.service-ultra-content {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+/* Left: Number */
+.service-ultra-number {
+    font-size: 120px;
+    font-weight: 900;
+    line-height: 1;
+    background: linear-gradient(180deg, rgba(191, 255, 0, 0.3) 0%, rgba(191, 255, 0, 0.05) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+}
+
+.service-ultra-number::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #BFFF00, transparent);
+}
+
+/* Right: Content */
+.service-ultra-main {
+    max-width: 900px;
+}
+
+.service-ultra-category {
+    font-size: 14px;
+    font-weight: 900;
+    color: #BFFF00;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    display: inline-block;
+    padding-bottom: 8px;
+    border-bottom: 2px solid rgba(191, 255, 0, 0.3);
+}
+
+.service-ultra-heading {
+    font-size: 48px;
+    font-weight: 900;
+    color: #fff;
+    line-height: 1.15;
+    letter-spacing: -1.5px;
+    margin-bottom: 24px;
+}
+
+.service-ultra-desc {
+    font-size: 19px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: 40px;
+}
+
+/* Data Point - Stats inline in text flow */
+.data-point {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 12px;
+    padding: 12px 24px;
+    background: rgba(191, 255, 0, 0.05);
+    border-left: 3px solid #BFFF00;
+    margin: 24px 0;
+    border-radius: 0 6px 6px 0;
+}
+
+.data-point-value {
+    font-size: 36px;
+    font-weight: 900;
+    color: #BFFF00;
+    line-height: 1;
+}
+
+.data-point-label {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Key Points - AI Optimized Structure */
+.service-ultra-points {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.service-point {
+    padding: 20px 24px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.service-point:hover {
+    background: rgba(191, 255, 0, 0.03);
+    border-color: rgba(191, 255, 0, 0.2);
+    transform: translateX(8px);
+}
+
+.service-point-title {
+    font-size: 16px;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 6px;
+}
+
+.service-point-desc {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.6;
+}
+
+/* CTA Link */
+.service-ultra-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 17px;
+    font-weight: 800;
+    color: #fff;
+    text-decoration: none;
+    padding: 18px 40px;
+    background: linear-gradient(135deg, rgba(191, 255, 0, 0.1), rgba(0, 255, 135, 0.1));
+    border: 2px solid rgba(191, 255, 0, 0.3);
+    border-radius: 4px;
+    transition: all 0.4s;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-ultra-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(191, 255, 0, 0.2), transparent);
+    transition: left 0.6s;
+}
+
+.service-ultra-link:hover::before {
+    left: 100%;
+}
+
+.service-ultra-link:hover {
+    background: rgba(191, 255, 0, 0.15);
+    border-color: #BFFF00;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 40px rgba(191, 255, 0, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .service-ultra-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .service-ultra-number {
+        font-size: 80px;
+    }
+
+    .service-ultra-points {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-ultra {
+        padding: 100px 20px 80px 20px;
+        margin: 0;
+        width: 100%;
+    }
+
+    .services-ultra-title {
+        font-size: 42px;
+        letter-spacing: -2px;
+    }
+
+    .service-ultra-item {
+        padding: 60px 0;
+    }
+
+    .service-ultra-heading {
+        font-size: 32px;
+    }
+
+    .service-ultra-desc {
+        font-size: 17px;
+    }
+
+    .data-point-value {
+        font-size: 28px;
+    }
+
+    .service-ultra-points {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+<div class="services-ultra">
+    <div class="services-ultra-container">
+
+        <!-- Header -->
+        <div class="services-ultra-header">
+            <span class="services-ultra-label">Nasze usługi</span>
+            <h2 class="services-ultra-title">
+                SEO, Google Ads, Social Media<br>i WordPress Development
+            </h2>
+            <p class="services-ultra-subtitle">
+                Kompleksowe wsparcie w budowaniu widoczności, ruchu i konwersji dla biznesów online
+            </p>
+        </div>
+
+        <!-- Service 1: SEO -->
+        <div class="service-ultra-item">
+            <div class="service-ultra-content">
+                <div class="service-ultra-number">01</div>
+                <div class="service-ultra-main">
+                    <span class="service-ultra-category">Search Engine Optimization</span>
+                    <h3 class="service-ultra-heading">Pozycjonowanie w Google</h3>
+                    <p class="service-ultra-desc">
+                        Zdobywamy TOP 10 w Google dla najważniejszych fraz handlowych. Kompleksowa strategia SEO obejmująca audyt techniczny, optymalizację on-page, content marketing i link building.
+                    </p>
+
+                    <div class="data-point">
+                        <span class="data-point-value">10 000+</span>
+                        <span class="data-point-label">fraz w TOP 10 Google dla klientów</span>
+                    </div>
+
+                    <div class="service-ultra-points">
+                        <div class="service-point">
+                            <div class="service-point-title">Audyt techniczny SEO</div>
+                            <div class="service-point-desc">Analiza Core Web Vitals, struktura URL, sitemap, robots.txt</div>
+                        </div>
+                        <div class="service-point">
+                            <div class="service-point-title">Optymalizacja on-page</div>
+                            <div class="service-point-desc">Title tags, meta descriptions, headings, schema markup</div>
+                        </div>
+                        <div class="service-point">
+                            <div class="service-point-title">Content marketing SEO</div>
+                            <div class="service-point-desc">Artykuły eksperckie, E-E-A-T, content clusters</div>
+                        </div>
+                        <div class="service-point">
+                            <div class="service-point-title">Link building</div>
+                            <div class="service-point-desc">Jakościowe linki z autorytatywnych źródeł</div>
+                        </div>
+                    </div>
+
+                    <a href="#kontakt" class="service-ultra-link">
+                        <span>Sprawdź ofertę SEO</span>
+                        <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 2: Google Ads -->
+        <div class="service-ultra-item">
+            <div class="service-ultra-content">
+                <div class="service-ultra-number">02</div>
+                <div class="service-ultra-main">
+                    <span class="service-ultra-category">Pay-Per-Click Advertising</span>
+                    <h3 class="service-ultra-heading">Google Ads & PPC</h3>
+                    <p class="service-ultra-desc">
+                        Kampanie reklamowe Google Ads które generują mierzalny ROI. Precyzyjne targetowanie, optymalizacja budżetu, A/B testing i ciągły monitoring konwersji.
+                    </p>
+
+                    <div class="data-point">
+                        <span class="data-point-value">480%</span>
+                        <span class="data-point-label">średni ROAS w kampaniach klientów</span>
+                    </div>
+
+                    <div class="service-ultra-points">
+                        <div class="service-point">
+                            <div class="service-point-title">Kampanie Search</div>
+                            <div class="service-point-desc">Reklamy tekstowe na frazy handlowe high-intent</div>
+                        </div>
+                        <div class="service-point">
+                            <div class="service-point-title">Performance Max</div>
+                            <div class="service-point-desc">Kampanie AI-driven across Google network</div>
+                        </div>
+                        <div class="service-point">
+                            <div class="service-point-title">Google Shopping</div>
+                            <div class="service-point-desc">Product feeds, merchant center, shopping campaigns</div>
+                        </div>
+                        <div class="service-point">
+                            <div class="service-point-title">Remarketing</div>
+                            <div class="service-point-desc">Retargeting użytkowników po wizycie na stronie</div>
+                        </div>
+                    </div>
+
+                    <a href="#kontakt" class="service-ultra-link">
+                        <span>Zobacz case studies</span>
+                        <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 3: Social Media -->
+        <div class="service-ultra-item">
+            <div class="service-ultra-content">
+                <div class="service-ultra-number">03</div>
+                <div class="service-ultra-main">
+                    <span class="service-ultra-category">Social Media Marketing</span>
+                    <h3 class="service-ultra-heading">Marketing w mediach społecznościowych</h3>
+                    <p class="service-ultra-desc">
+                        Budujemy społeczności i angażujemy odbiorców na Facebook, Instagram, TikTok i LinkedIn. Strategia contentu, community management i paid social campaigns.
+                    </p>
+
+                    <div class="data-point">
+                        <span class="data-point-value">2.4M+</span>
+                        <span class="data-point-label">organicznych zasięgów miesięcznie</span>
+                    </div>
+
+                    <div class="service-ultra-points">
+                        <div class="service-point">
+                            <div class="service-point-title">Strategia contentu</div>
+                            <div class="service-point-desc">Content pillars, tone of voice, editorial calendar</div>
+                        </div>
+                        <div class="service-point">
+                            <div class="service-point-title">Kreacje graficzne i wideo</div>
+                            <div class="service-point-desc">Static posts, Stories, Reels, carousel, infografiki</div>
+                        </div>
+                        <div class="service-point">
+                            <div class="service-point-title">Community management</div>
+                            <div class="service-point-desc">Moderacja komentarzy, customer care, engagement</div>
+                        </div>
+                        <div class="service-point">
+                            <div class="service-point-title">Facebook & Instagram Ads</div>
+                            <div class="service-point-desc">Paid campaigns, lookalike audiences, pixel tracking</div>
+                        </div>
+                    </div>
+
+                    <a href="#kontakt" class="service-ultra-link">
+                        <span>Poznaj strategię social</span>
+                        <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 4: WordPress -->
+        <div class="service-ultra-item">
+            <div class="service-ultra-content">
+                <div class="service-ultra-number">04</div>
+                <div class="service-ultra-main">
+                    <span class="service-ultra-category">Web Development</span>
+                    <h3 class="service-ultra-heading">Strony internetowe WordPress</h3>
+                    <p class="service-ultra-desc">
+                        Projektujemy i tworzymy szybkie, bezpieczne strony WordPress. Od landing pages po sklepy WooCommerce – z optymalizacją Core Web Vitals i SEO.
+                    </p>
+
+                    <div class="data-point">
+                        <span class="data-point-value">95+</span>
+                        <span class="data-point-label">średni PageSpeed Insights score</span>
+                    </div>
+
+                    <div class="service-ultra-points">
+                        <div class="service-point">
+                            <div class="service-point-title">UX/UI Design</div>
+                            <div class="service-point-desc">User research, wireframes, high-fidelity prototypes</div>
+                        </div>
+                        <div class="service-point">
+                            <div class="service-point-title">WordPress development</div>
+                            <div class="service-point-desc">Custom themes, Elementor, ACF, Gutenberg blocks</div>
+                        </div>
+                        <div class="service-point">
+                            <div class="service-point-title">WooCommerce e-commerce</div>
+                            <div class="service-point-desc">Sklepy online, payment gateways, shipping integration</div>
+                        </div>
+                        <div class="service-point">
+                            <div class="service-point-title">Performance & Security</div>
+                            <div class="service-point-desc">Caching, CDN, SSL, backups, hardening</div>
+                        </div>
+                    </div>
+
+                    <a href="#kontakt" class="service-ultra-link">
+                        <span>Zobacz portfolio</span>
+                        <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
