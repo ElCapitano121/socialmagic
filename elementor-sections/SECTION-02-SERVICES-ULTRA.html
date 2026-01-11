@@ -3,31 +3,119 @@
 <style>
 .services-ultra {
     position: relative;
-    background: #000;
+    background: #0a0a0a;
     padding: 140px 20px 120px 20px;
     margin: 0 calc(-50vw + 50%);
     width: 100vw;
     overflow: hidden;
 }
 
-/* Animated gradient background */
+/* HERO BACKGROUND - Diagonal Split */
 .services-ultra::before {
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    right: 0;
+    width: 50%;
     height: 100%;
-    background:
-        radial-gradient(circle at 10% 20%, rgba(191, 255, 0, 0.05) 0%, transparent 50%),
-        radial-gradient(circle at 90% 80%, rgba(0, 255, 135, 0.04) 0%, transparent 50%);
-    animation: gradient-shift 15s ease infinite;
+    background: linear-gradient(165deg, #000 0%, #0f0f0f 100%);
+    clip-path: polygon(20% 0, 100% 0, 100% 100%, 0 100%);
     z-index: 0;
 }
 
-@keyframes gradient-shift {
-    0%, 100% { opacity: 0.4; }
-    50% { opacity: 0.7; }
+/* Neon Scanning Lines */
+.services-ultra .scan-lines {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.services-ultra .scan-line {
+    position: absolute;
+    background: linear-gradient(90deg, transparent, #BFFF00, transparent);
+    height: 1px;
+    width: 100%;
+    opacity: 0.3;
+    animation: scan-move 8s linear infinite;
+}
+
+.services-ultra .scan-line:nth-child(1) {
+    top: 25%;
+    animation-delay: 0s;
+}
+
+.services-ultra .scan-line:nth-child(2) {
+    top: 55%;
+    animation-delay: 2.6s;
+}
+
+.services-ultra .scan-line:nth-child(3) {
+    top: 85%;
+    animation-delay: 5.2s;
+}
+
+@keyframes scan-move {
+    0% {
+        transform: scaleX(0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        transform: scaleX(1);
+        opacity: 0;
+    }
+}
+
+/* Morphing Shapes */
+.services-ultra .morph-shapes {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.services-ultra .morph-shape {
+    position: absolute;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    opacity: 0.08;
+    animation: morph-animation 20s ease-in-out infinite;
+}
+
+.services-ultra .morph-shape-1 {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(135deg, #BFFF00, #00FF87);
+    top: 15%;
+    right: 10%;
+    animation-delay: 0s;
+}
+
+.services-ultra .morph-shape-2 {
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(135deg, #00FF87, #00E5FF);
+    bottom: 20%;
+    left: 8%;
+    animation-delay: 6s;
+}
+
+@keyframes morph-animation {
+    0%, 100% {
+        border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        transform: rotate(0deg);
+    }
+    50% {
+        border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%;
+        transform: rotate(180deg);
+    }
 }
 
 .services-ultra-container {
@@ -60,10 +148,6 @@
     letter-spacing: -3px;
     color: #fff;
     margin-bottom: 24px;
-    background: linear-gradient(135deg, #fff 0%, rgba(255,255,255,0.7) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
 }
 
 .services-ultra-subtitle {
@@ -316,6 +400,18 @@
 </style>
 
 <div class="services-ultra">
+    <!-- HERO Background elements -->
+    <div class="scan-lines">
+        <div class="scan-line"></div>
+        <div class="scan-line"></div>
+        <div class="scan-line"></div>
+    </div>
+
+    <div class="morph-shapes">
+        <div class="morph-shape morph-shape-1"></div>
+        <div class="morph-shape morph-shape-2"></div>
+    </div>
+
     <div class="services-ultra-container">
 
         <!-- Header -->
