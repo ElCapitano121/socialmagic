@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitaly — Żyj zdrowiej. Bez spiny.</title>
+    <meta name="description" content="AI Companion zdrowia który rozumie prawdziwe życie. Przepisy AI, Tryb Balance, Real Life Mode.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+    <div class="container">
+        <div class="nav-inner">
+            <div class="logo">
+                <div class="logo-icon">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M10 2C10 2 4 6 4 11a6 6 0 0012 0C16 6 10 2 10 2z" fill="url(#lg1)"/>
+                        <path d="M10 7v7M7.5 11l2.5 3 2.5-3" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+                        <defs><linearGradient id="lg1" x1="4" y1="2" x2="16" y2="18" gradientUnits="userSpaceOnUse"><stop stop-color="#22C55E"/><stop offset="1" stop-color="#16A34A"/></linearGradient></defs>
+                    </svg>
+                </div>
+                <span>Vitaly</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#features">Funkcje</a></li>
+                <li><a href="#real-life">Real Life</a></li>
+                <li><a href="#coach">AI Coach</a></li>
+                <li><a href="#pricing">Cennik</a></li>
+            </ul>
+            <a href="#download" class="btn btn-nav">Pobierz za darmo</a>
+            <button class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+    <a href="#features">Funkcje</a>
+    <a href="#real-life">Real Life</a>
+    <a href="#coach">AI Coach</a>
+    <a href="#pricing">Cennik</a>
+    <a href="#download" class="btn btn-primary">Pobierz za darmo</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <div class="hero-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="grid-lines"></div>
+    </div>
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Nowa era zdrowego życia
+                </div>
+                <h1 class="hero-title">
+                    Żyj zdrowiej.<br>
+                    <span class="gradient-text">Bez spiny.</span>
+                </h1>
+                <p class="hero-desc">
+                    Pierwszy AI companion który naprawdę rozumie<br>
+                    <strong>Twoje prawdziwe życie</strong> — nie idealny świat dietetyczny.
+                </p>
+                <div class="hero-tags">
+                    <span>AI przepisy z lodówki</span>
+                    <span>Tryb Balance</span>
+                    <span>Real Life Mode</span>
+                    <span>Zero obsesji</span>
+                </div>
+                <div class="hero-ctas">
+                    <a href="#download" class="btn btn-primary btn-lg">
+                        <i class="fab fa-apple"></i> App Store
+                    </a>
+                    <a href="#download" class="btn btn-secondary btn-lg">
+                        <i class="fab fa-google-play"></i> Google Play
+                    </a>
+                </div>
+                <div class="hero-social-proof">
+                    <div class="avatars">
+                        <div class="avatar" style="background:#22C55E">M</div>
+                        <div class="avatar" style="background:#8B5CF6">K</div>
+                        <div class="avatar" style="background:#F97316">A</div>
+                        <div class="avatar" style="background:#06B6D4">P</div>
+                        <div class="avatar" style="background:#EC4899">J</div>
+                    </div>
+                    <div class="proof-text">
+                        <strong>14 382</strong> osób już żyje zdrowiej bez stresu
+                    </div>
+                </div>
+            </div>
+            <div class="hero-phone-wrapper">
+                <div class="phone-glow"></div>
+                <div class="phone">
+                    <div class="phone-notch"></div>
+                    <div class="phone-screen">
+                        <div class="screen active" id="screen-0">
+                            <div class="app-header">
+                                <div>
+                                    <div class="app-greeting">Cześć, Marta 👋</div>
+                                    <div class="app-date">Wtorek, 17 maja</div>
+                                </div>
+                                <div class="app-avatar">M</div>
+                            </div>
+                            <div class="app-score-ring">
+                                <svg viewBox="0 0 80 80" width="80" height="80">
+                                    <circle cx="40" cy="40" r="34" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="8"/>
+                                    <circle cx="40" cy="40" r="34" fill="none" stroke="url(#ringGrad)" stroke-width="8" stroke-linecap="round" stroke-dasharray="213" stroke-dashoffset="60" transform="rotate(-90 40 40)"/>
+                                    <defs><linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="0%"><stop offset="0%" stop-color="#22C55E"/><stop offset="100%" stop-color="#A3E635"/></linearGradient></defs>
+                                    <text x="40" y="37" text-anchor="middle" fill="#fff" font-size="14" font-weight="700">72</text>
+                                    <text x="40" y="49" text-anchor="middle" fill="#64748B" font-size="7">wynik dnia</text>
+                                </svg>
+                            </div>
+                            <div class="app-habits-row">
+                                <div class="habit-chip done"><i class="fa fa-droplet"></i> Woda</div>
+                                <div class="habit-chip done"><i class="fa fa-person-walking"></i> 6k</div>
+                                <div class="habit-chip"><i class="fa fa-moon"></i> Sen</div>
+                                <div class="habit-chip"><i class="fa fa-leaf"></i> Warzywa</div>
+                            </div>
+                            <div class="app-suggestion">
+                                <div class="suggestion-icon">🥗</div>
+                                <div>
+                                    <div class="suggestion-title">Propozycja na dziś</div>
+                                    <div class="suggestion-text">Bowl z komosą i awokado — 12 min</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="screen" id="screen-1">
+                            <div class="screen-title">AI Przepisy</div>
+                            <div class="fridge-label">Co masz w lodówce?</div>
+                            <div class="fridge-chips">
+                                <span class="chip active">jajka</span>
+                                <span class="chip active">szpinak</span>
+                                <span class="chip active">feta</span>
+                                <span class="chip">+ dodaj</span>
+                            </div>
+                            <div class="recipe-card">
+                                <div class="recipe-emoji">🥘</div>
+                                <div class="recipe-name">Omlet szpinakowy z fetą</div>
+                                <div class="recipe-meta">
+                                    <span><i class="fa fa-clock"></i> 8 min</span>
+                                    <span><i class="fa fa-fire"></i> 340 kcal</span>
+                                    <span><i class="fa fa-dumbbell"></i> 24g białka</span>
+                                </div>
+                                <div class="recipe-steps">
+                                    <div class="step">1. Rozbij jajka, dodaj sól</div>
+                                    <div class="step">2. Podsmaż szpinak 2 min</div>
+                                    <div class="step">3. Zalej jajkami, dodaj fetę</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="screen" id="screen-2">
+                            <div class="screen-title">Real Life Mode</div>
+                            <div class="location-label"><i class="fa fa-location-dot"></i> Jesteś w Żabce</div>
+                            <div class="ai-bubble">Masz 400 kcal do końca dnia. Oto co wybieram dla Ciebie:</div>
+                            <div class="product-recs">
+                                <div class="product-rec good">
+                                    <span class="rec-emoji">✅</span>
+                                    <div>
+                                        <div class="rec-name">Skyr 0% tłuszczu</div>
+                                        <div class="rec-cal">130 kcal · 20g białka</div>
+                                    </div>
+                                </div>
+                                <div class="product-rec good">
+                                    <span class="rec-emoji">✅</span>
+                                    <div>
+                                        <div class="rec-name">Jajka na twardo (2szt)</div>
+                                        <div class="rec-cal">140 kcal · 12g białka</div>
+                                    </div>
+                                </div>
+                                <div class="product-rec bad">
+                                    <span class="rec-emoji">⚠️</span>
+                                    <div>
+                                        <div class="rec-name">Baton proteinowy</div>
+                                        <div class="rec-cal">dużo cukrów prostych</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="screen" id="screen-3">
+                            <div class="screen-title">AI Coach</div>
+                            <div class="chat-msgs">
+                                <div class="msg user">Mam ochotę na słodkie 😩</div>
+                                <div class="msg ai">Rozumiem! To może być głód, zmęczenie lub stres. Kiedy ostatnio jadłaś?</div>
+                                <div class="msg user">3 godziny temu</div>
+                                <div class="msg ai">Czas na małe uzupełnienie. Spróbuj banana z łyżką masła orzechowego — słodki, sycący i bez poczucia winy 🍌</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="phone-nav">
+                        <div class="phone-nav-btn active" data-screen="0"><i class="fa fa-house"></i></div>
+                        <div class="phone-nav-btn" data-screen="1"><i class="fa fa-utensils"></i></div>
+                        <div class="phone-nav-btn" data-screen="2"><i class="fa fa-location-dot"></i></div>
+                        <div class="phone-nav-btn" data-screen="3"><i class="fa fa-robot"></i></div>
+                    </div>
+                </div>
+                <div class="phone-reflection"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="problem" id="problem">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-tag">Dlaczego inne appki zawodzą</div>
+            <h2>Znasz to uczucie?</h2>
+            <p>85% użytkowników porzuca aplikacje dietetyczne po 2 tygodniach. Przyczyny są zawsze te same.</p>
+        </div>
+        <div class="pain-grid">
+            <div class="pain-card reveal">
+                <div class="pain-icon bad">😤</div>
+                <h3>Za dużo wpisywania</h3>
+                <p>Każdy posiłek to 5 minut szukania i ważenia. W efekcie gramy w zgadywanki albo rezygnujemy.</p>
+            </div>
+            <div class="pain-card reveal">
+                <div class="pain-icon bad">🥶</div>
+                <h3>Zimne jak Excel</h3>
+                <p>Liczby, tabele, raporty. Zero empatii, zero motywacji. Jeden gorszy dzień i rzucasz.</p>
+            </div>
+            <div class="pain-card reveal">
+                <div class="pain-icon bad">💪</div>
+                <h3>Cringe fitness</h3>
+                <p>Większość aplikacji zakłada, że chcesz być kulturystą. A Ty chcesz po prostu mieć więcej energii.</p>
+            </div>
+            <div class="pain-card reveal">
+                <div class="pain-icon bad">🌍</div>
+                <h3>Idealny świat, nie Twój</h3>
+                <p>Appka nie rozumie że jesteś na stacji benzynowej, masz budżet 20 zł, albo po prostu masz ciężki dzień.</p>
+            </div>
+        </div>
+        <div class="problem-solution">
+            <div class="solution-arrow">↓</div>
+            <div class="solution-text">Vitaly działa inaczej</div>
+        </div>
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features" id="features">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-tag">Co wyróżnia Vitaly</div>
+            <h2>Zaprojektowane dla<br><span class="gradient-text">prawdziwego życia</span></h2>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card feature-big reveal">
+                <div class="feature-tag">KILLER FEATURE</div>
+                <div class="feature-emoji">🧠</div>
+                <h3>AI Przepisy z tego co masz</h3>
+                <p>Wpisz co masz w lodówce. AI generuje przepis, makro, listę zakupów i instrukcję krok po kroku. Bez gotowych PDF-ów — każdy przepis jest stworzony dla Ciebie teraz.</p>
+                <div class="feature-example">
+                    <div class="example-prompt">"mam jajka, szpinak i 15 minut"</div>
+                    <div class="example-arrow">→</div>
+                    <div class="example-result">3 przepisy · makro · lista zakupów</div>
+                </div>
+                <div class="feature-filters">
+                    <span class="filter-chip">bez glutenu</span>
+                    <span class="filter-chip">high protein</span>
+                    <span class="filter-chip">dla dziecka</span>
+                    <span class="filter-chip">na kaca</span>
+                    <span class="filter-chip">meal prep</span>
+                    <span class="filter-chip">tani tydzień</span>
+                    <span class="filter-chip">IBS</span>
+                    <span class="filter-chip">po treningu</span>
+                </div>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-emoji">📸</div>
+                <h3>Skanuj jedzenie zdjęciem</h3>
+                <p>Zrób zdjęcie posiłku. AI analizuje kcal, makro, jakość, sytość i daje konkretne sugestie.</p>
+                <div class="scan-demo">
+                    <div class="scan-frame">
+                        <span>🍝</span>
+                        <div class="scan-line"></div>
+                    </div>
+                    <div class="scan-result">
+                        <div class="scan-item"><span class="label">Kcal</span><span class="val">~480</span></div>
+                        <div class="scan-item"><span class="label">Białko</span><span class="val">18g</span></div>
+                        <div class="scan-item"><span class="label">Jakość</span><span class="val good">Dobra</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-emoji">🧘</div>
+                <h3>Emocje i jedzenie</h3>
+                <p>Masz ochotę na słodkie? AI pyta: głód czy stres? Jeden gorszy dzień nic nie zmienia. Bez oceniania.</p>
+                <div class="emotion-chips">
+                    <div class="emotion-chip">😩 zmęczenie</div>
+                    <div class="emotion-chip">😤 stres</div>
+                    <div class="emotion-chip">😊 dobry dzień</div>
+                </div>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-emoji">🏆</div>
+                <h3>Nawyki, nie tylko kalorie</h3>
+                <p>Woda, sen, warzywa, kroki, medytacja, suplementy. Poczuj progres bez wagi.</p>
+                <div class="habits-row">
+                    <div class="habit-ring">
+                        <svg viewBox="0 0 44 44" width="44" height="44">
+                            <circle cx="22" cy="22" r="18" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="5"/>
+                            <circle cx="22" cy="22" r="18" fill="none" stroke="#22C55E" stroke-width="5" stroke-linecap="round" stroke-dasharray="113" stroke-dashoffset="28" transform="rotate(-90 22 22)"/>
+                        </svg>
+                        <span>💧</span>
+                    </div>
+                    <div class="habit-ring">
+                        <svg viewBox="0 0 44 44" width="44" height="44">
+                            <circle cx="22" cy="22" r="18" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="5"/>
+                            <circle cx="22" cy="22" r="18" fill="none" stroke="#8B5CF6" stroke-width="5" stroke-linecap="round" stroke-dasharray="113" stroke-dashoffset="56" transform="rotate(-90 22 22)"/>
+                        </svg>
+                        <span>🌙</span>
+                    </div>
+                    <div class="habit-ring">
+                        <svg viewBox="0 0 44 44" width="44" height="44">
+                            <circle cx="22" cy="22" r="18" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="5"/>
+                            <circle cx="22" cy="22" r="18" fill="none" stroke="#F97316" stroke-width="5" stroke-linecap="round" stroke-dasharray="113" stroke-dashoffset="0" transform="rotate(-90 22 22)"/>
+                        </svg>
+                        <span>🥦</span>
+                    </div>
+                    <div class="habit-ring">
+                        <svg viewBox="0 0 44 44" width="44" height="44">
+                            <circle cx="22" cy="22" r="18" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="5"/>
+                            <circle cx="22" cy="22" r="18" fill="none" stroke="#06B6D4" stroke-width="5" stroke-linecap="round" stroke-dasharray="113" stroke-dashoffset="70" transform="rotate(-90 22 22)"/>
+                        </svg>
+                        <span>🦶</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MODES -->
+<section class="modes" id="modes">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-tag">Dwa tryby</div>
+            <h2>Jeden app. Dwa podejścia.</h2>
+            <p>Nie każdy ma te same cele. Wybierz tryb który pasuje do Twojego życia — i zmień go kiedy chcesz.</p>
+        </div>
+        <div class="modes-grid">
+            <div class="mode-card mode-strict reveal">
+                <div class="mode-badge">STRICT</div>
+                <div class="mode-icon">⚡</div>
+                <h3>Tryb Strict</h3>
+                <p class="mode-for">Dla kogo: sportowcy, redukcja, masa, cele precyzyjne</p>
+                <ul class="mode-features">
+                    <li><i class="fa fa-check"></i> Śledzenie makro i kalorii</li>
+                    <li><i class="fa fa-check"></i> Precyzyjne ważenie porcji</li>
+                    <li><i class="fa fa-check"></i> Integracja z Garmin/Apple Health</li>
+                    <li><i class="fa fa-check"></i> Plany dietetyczne co do grama</li>
+                    <li><i class="fa fa-check"></i> Analiza składu ciała</li>
+                </ul>
+            </div>
+            <div class="mode-vs">VS</div>
+            <div class="mode-card mode-balance reveal">
+                <div class="mode-badge mode-badge-balance">BALANCE</div>
+                <div class="mode-icon">🌿</div>
+                <h3>Tryb Balance</h3>
+                <p class="mode-for">Dla kogo: lifestyle, energia, zdrowie bez obsesji</p>
+                <ul class="mode-features">
+                    <li><i class="fa fa-check"></i> Zero wpisywania gramów</li>
+                    <li><i class="fa fa-check"></i> Feedback przez zdjęcia</li>
+                    <li><i class="fa fa-check"></i> Kolorowe oceny posiłków</li>
+                    <li><i class="fa fa-check"></i> Sugestie bez liczb</li>
+                    <li><i class="fa fa-check"></i> Budowanie zdrowych nawyków</li>
+                </ul>
+                <div class="balance-feedback">
+                    <div class="feedback-item">
+                        <span class="fb-dot green"></span> Super balans!
+                    </div>
+                    <div class="feedback-item">
+                        <span class="fb-dot orange"></span> Dodaj więcej białka
+                    </div>
+                    <div class="feedback-item">
+                        <span class="fb-dot red"></span> Mało warzyw dziś
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- REAL LIFE MODE -->
+<section class="real-life" id="real-life">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-tag killer-tag">KILLER FEATURE</div>
+            <h2>Tryb <span class="gradient-text">Real Life</span></h2>
+            <p>Żaden inny app tego nie robi. Vitaly działa tam gdzie naprawdę jesteś — nie w idealnym świecie dietetycznym.</p>
+        </div>
+        <div class="rl-scenarios">
+            <div class="rl-card reveal" data-scenario="zabka">
+                <div class="rl-icon">🏪</div>
+                <h4>Jestem w Żabce</h4>
+                <p>Mam 15 zł i 400 kcal do końca dnia</p>
+            </div>
+            <div class="rl-card reveal" data-scenario="kfc">
+                <div class="rl-icon">🍟</div>
+                <h4>Zamawiam w KFC</h4>
+                <p>Co zamówić żeby było najmniej tragicznie?</p>
+            </div>
+            <div class="rl-card reveal" data-scenario="stacja">
+                <div class="rl-icon">⛽</div>
+                <h4>Jestem na stacji</h4>
+                <p>Długa trasa, tylko stacja benzynowa</p>
+            </div>
+            <div class="rl-card reveal" data-scenario="impreza">
+                <div class="rl-icon">🎉</div>
+                <h4>Byłem na imprezie</h4>
+                <p>Po imprezie — co teraz?</p>
+            </div>
+            <div class="rl-card reveal" data-scenario="dzieci">
+                <div class="rl-icon">👨‍👩‍👧</div>
+                <h4>Mam dzieci</h4>
+                <p>Coś zdrowego co wszyscy zjedzą</p>
+            </div>
+            <div class="rl-card reveal" data-scenario="stres">
+                <div class="rl-icon">😰</div>
+                <h4>Stresujący dzień</h4>
+                <p>Nie mam siły gotować i mam ochotę na wszystko</p>
+            </div>
+        </div>
+        <div class="rl-demo">
+            <div class="rl-demo-phone">
+                <div class="rl-demo-header">
+                    <i class="fa fa-location-dot"></i>
+                    <span id="rl-location">Kliknij scenariusz powyżej</span>
+                </div>
+                <div class="rl-demo-content" id="rl-content">
+                    <div class="rl-placeholder">
+                        <div class="rl-placeholder-icon">👆</div>
+                        <p>Wybierz scenariusz aby zobaczyć jak AI Ci pomoże</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- AI COACH -->
+<section class="coach" id="coach">
+    <div class="container">
+        <div class="coach-layout">
+            <div class="coach-info reveal">
+                <div class="section-tag">AI Coach</div>
+                <h2>Twój osobisty<br><span class="gradient-text">coach zdrowia</span></h2>
+                <p>Zawsze dostępny. Nigdy nie ocenia. Mówi jak do człowieka.</p>
+                <div class="coach-abilities">
+                    <div class="ability">
+                        <i class="fa fa-microphone"></i>
+                        <span>Rozmowy głosowe</span>
+                    </div>
+                    <div class="ability">
+                        <i class="fa fa-brain"></i>
+                        <span>Pamięta Twoje preferencje</span>
+                    </div>
+                    <div class="ability">
+                        <i class="fa fa-heart"></i>
+                        <span>Wsparcie emocjonalne</span>
+                    </div>
+                    <div class="ability">
+                        <i class="fa fa-chart-line"></i>
+                        <span>Analizuje Twój progres</span>
+                    </div>
+                </div>
+            </div>
+            <div class="chat-demo reveal">
+                <div class="chat-header">
+                    <div class="chat-avatar"><i class="fa fa-robot"></i></div>
+                    <div>
+                        <div class="chat-name">Vitaly AI</div>
+                        <div class="chat-status"><span class="online-dot"></span> Online</div>
+                    </div>
+                </div>
+                <div class="chat-messages" id="chatMessages">
+                    <div class="chat-msg ai">
+                        Cześć! W czym mogę Ci dziś pomóc? 😊
+                    </div>
+                </div>
+                <div class="chat-suggestions">
+                    <button class="suggestion-btn" data-msg="Co zjeść po treningu?" data-reply="Super, trening zaliczony! Teraz potrzebujesz białka i węglowodanów. Polecam: shake proteinowy + banan, lub ryż z kurczakiem. Zjedz w ciągu 30-60 min od treningu dla najlepszego efektu 💪">Co zjeść po treningu?</button>
+                    <button class="suggestion-btn" data-msg="Mam ochotę na słodkie" data-reply="Rozumiem! To może być głód, zmęczenie albo stres. Kiedy ostatnio jadłaś? Mam kilka opcji które zaspokoją ochotę bez poczucia winy — daktyle, mrożone winogrona, ciemna czekolada. Co masz w domu?">Mam ochotę na słodkie</button>
+                    <button class="suggestion-btn" data-msg="Ułóż mi tani tydzień zakupów" data-reply="Jasne! Na ile osób i jaki budżet? Mogę ułożyć pełny meal plan na tydzień z listą zakupów, który zmieści się w 100-150 zł. Będzie pełnowartościowy i bez nudnego jedzenia 🛒">Tani tydzień zakupów</button>
+                    <button class="suggestion-btn" data-msg="Co zamówić w McDonald's?" data-reply="Bez panierowania, bez frytek — grill jest Twoim przyjacielem 😄 Najlepszy wybór: Grillowany McWrap z sałatą (ok. 380 kcal, 30g białka). Zamień frytki na sałatkę i pij wodę. To naprawdę nie jest takie złe!">Co zamówić w McDonald's?</button>
+                </div>
+                <div class="chat-input">
+                    <input type="text" placeholder="Napisz do AI Coacha..." id="chatInput" />
+                    <button id="chatSend"><i class="fa fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- INTEGRATIONS -->
+<section class="integrations">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-tag">Integracje</div>
+            <h2>Vitaly łączy wszystko w jedno</h2>
+        </div>
+        <div class="integrations-row">
+            <div class="integration-item reveal"><i class="fab fa-apple"></i><span>Apple Health</span></div>
+            <div class="integration-item reveal"><span class="int-icon">⌚</span><span>Apple Watch</span></div>
+            <div class="integration-item reveal"><span class="int-icon">🏃</span><span>Garmin</span></div>
+            <div class="integration-item reveal"><span class="int-icon">💍</span><span>Oura Ring</span></div>
+            <div class="integration-item reveal"><span class="int-icon">📊</span><span>Google Fit</span></div>
+            <div class="integration-item reveal"><span class="int-icon">🩸</span><span>Badania krwi</span></div>
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-tag">Opinie użytkowników</div>
+            <h2>Co mówią nasi użytkownicy</h2>
+        </div>
+        <div class="testi-grid">
+            <div class="testi-card reveal">
+                <div class="stars">★★★★★</div>
+                <p>"Pierwsze appki do diety której nie rzuciłam po tygodniu. Ten tryb Balance zmienił moje życie — w końcu nie liczeę kalorii jak maniak."</p>
+                <div class="testi-author">
+                    <div class="testi-avatar" style="background:#22C55E">M</div>
+                    <div><strong>Marta K.</strong><br><small>użytkowniczka od 4 miesięcy</small></div>
+                </div>
+            </div>
+            <div class="testi-card reveal">
+                <div class="stars">★★★★★</div>
+                <p>"Real Life Mode to geniusz. W końcu appka która rozumie że żyję w Polsce i nie zawsze jem kurczaka z batatami."</p>
+                <div class="testi-author">
+                    <div class="testi-avatar" style="background:#8B5CF6">P</div>
+                    <div><strong>Piotr W.</strong><br><small>użytkownik od 6 miesięcy</small></div>
+                </div>
+            </div>
+            <div class="testi-card reveal">
+                <div class="stars">★★★★★</div>
+                <p>"AI Coach jest jak rozmowa z przyjacielem-dietetykiem. Zero oceniania, zero stresu. Schudłem 12kg w 5 miesięcy nie licząc ani jednej kalorii."</p>
+                <div class="testi-author">
+                    <div class="testi-avatar" style="background:#F97316">A</div>
+                    <div><strong>Adam R.</strong><br><small>użytkownik od 5 miesięcy</small></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing" id="pricing">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-tag">Cennik</div>
+            <h2>Zacznij za darmo.<br><span class="gradient-text">Upgrade kiedy chcesz.</span></h2>
+        </div>
+        <div class="pricing-grid">
+            <div class="pricing-card reveal">
+                <div class="plan-name">Free</div>
+                <div class="plan-price">0 zł<span>/mies.</span></div>
+                <p class="plan-desc">Wszystkiego posmakuj bez ryzyka</p>
+                <ul class="plan-features">
+                    <li><i class="fa fa-check"></i> AI przepisy (5/miesiąc)</li>
+                    <li><i class="fa fa-check"></i> Tryb Balance</li>
+                    <li><i class="fa fa-check"></i> Tracker nawyków</li>
+                    <li><i class="fa fa-check"></i> AI Coach (10 wiad./dzień)</li>
+                    <li class="disabled"><i class="fa fa-times"></i> Real Life Mode</li>
+                    <li class="disabled"><i class="fa fa-times"></i> Analiza zdjęć AI</li>
+                </ul>
+                <a href="#download" class="btn btn-outline btn-full">Pobierz za darmo</a>
+            </div>
+            <div class="pricing-card pricing-featured reveal">
+                <div class="plan-badge">Najpopularniejszy</div>
+                <div class="plan-name">Premium</div>
+                <div class="plan-price">29 zł<span>/mies.</span></div>
+                <p class="plan-desc">Pełne możliwości AI bez limitów</p>
+                <ul class="plan-features">
+                    <li><i class="fa fa-check"></i> AI przepisy bez limitu</li>
+                    <li><i class="fa fa-check"></i> Oba tryby (Balance + Strict)</li>
+                    <li><i class="fa fa-check"></i> <strong>Real Life Mode</strong></li>
+                    <li><i class="fa fa-check"></i> Analiza zdjęć AI bez limitu</li>
+                    <li><i class="fa fa-check"></i> AI Coach bez limitu</li>
+                    <li><i class="fa fa-check"></i> Integracje (Watch, Garmin)</li>
+                    <li><i class="fa fa-check"></i> Planer zakupów AI</li>
+                    <li><i class="fa fa-check"></i> Meal prep generator</li>
+                </ul>
+                <a href="#download" class="btn btn-primary btn-full">Zacznij 7 dni za darmo</a>
+            </div>
+            <div class="pricing-card reveal">
+                <div class="plan-name">Rodzinny</div>
+                <div class="plan-price">49 zł<span>/mies.</span></div>
+                <p class="plan-desc">Do 5 kont — idealny dla całej rodziny</p>
+                <ul class="plan-features">
+                    <li><i class="fa fa-check"></i> Wszystko z Premium</li>
+                    <li><i class="fa fa-check"></i> Do 5 kont premium</li>
+                    <li><i class="fa fa-check"></i> Jadłospisy rodzinne AI</li>
+                    <li><i class="fa fa-check"></i> Zakupy dla całej rodziny</li>
+                    <li><i class="fa fa-check"></i> Profile dzieci</li>
+                    <li><i class="fa fa-check"></i> Wspólne śledzenie celów</li>
+                </ul>
+                <a href="#download" class="btn btn-outline btn-full">Zacznij 7 dni za darmo</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- DOWNLOAD -->
+<section class="download" id="download">
+    <div class="container">
+        <div class="download-inner">
+            <div class="download-orb"></div>
+            <div class="section-tag">Pobierz teraz</div>
+            <h2>Gotowy żeby żyć zdrowiej<br><span class="gradient-text">bez spiny?</span></h2>
+            <p>Dołącz do 14 000+ osób które już odkryły zdrowsze życie bez obsesji na punkcie kalorii.</p>
+            <div class="download-btns">
+                <a href="#" class="store-btn">
+                    <i class="fab fa-apple"></i>
+                    <div>
+                        <small>Pobierz z</small>
+                        <strong>App Store</strong>
+                    </div>
+                </a>
+                <a href="#" class="store-btn">
+                    <i class="fab fa-google-play"></i>
+                    <div>
+                        <small>Pobierz z</small>
+                        <strong>Google Play</strong>
+                    </div>
+                </a>
+            </div>
+            <div class="download-note">Darmowe · 7 dni Premium gratis · Bez zobowiązań</div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M10 2C10 2 4 6 4 11a6 6 0 0012 0C16 6 10 2 10 2z" fill="url(#lg2)"/>
+                            <path d="M10 7v7M7.5 11l2.5 3 2.5-3" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+                            <defs><linearGradient id="lg2" x1="4" y1="2" x2="16" y2="18" gradientUnits="userSpaceOnUse"><stop stop-color="#22C55E"/><stop offset="1" stop-color="#16A34A"/></linearGradient></defs>
+                        </svg>
+                    </div>
+                    <span>Vitaly</span>
+                </div>
+                <p>AI Companion zdrowego życia.<br>Bez spiny, bez obsesji, bez Excel-a.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-col">
+                    <h5>Produkt</h5>
+                    <a href="#features">Funkcje</a>
+                    <a href="#real-life">Real Life Mode</a>
+                    <a href="#pricing">Cennik</a>
+                    <a href="#">Zmiany</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Firma</h5>
+                    <a href="#">O nas</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Kariera</a>
+                    <a href="#">Kontakt</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Prawne</h5>
+                    <a href="#">Polityka prywatności</a>
+                    <a href="#">Regulamin</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2025 Vitaly. Wszystkie prawa zastrzeżone.</span>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
