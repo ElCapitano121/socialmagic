@@ -1,0 +1,788 @@
+<!--
+  HERO SECTION — profesjonalnaczystosc.pl
+  Platforma: WordPress + Divi → wklej w moduł "Kod"
+  SEO: H1 geo-targeted, JSON-LD LocalBusiness, schema CleaningService,
+       alt image, fetchpriority, semantyczny HTML5, keyword density
+-->
+
+<!-- ═══════════════════════════════════
+     JSON-LD — LocalBusiness + CleaningService schema
+════════════════════════════════════ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "HousekeepingBusiness"],
+  "name": "Profesjonalna Czystość – Czyszczenie Tapicerki i Wykładzin Trójmiasto",
+  "description": "Profesjonalne czyszczenie tapicerki, pranie wykładzin, czyszczenie kanap i foteli oraz sprzątanie biur w Gdańsku, Gdyni i Sopocie. Szybkie terminy, gwarancja skuteczności.",
+  "url": "https://profesjonalnaczystosc.pl",
+  "telephone": "",
+  "areaServed": [
+    { "@type": "City", "name": "Gdańsk" },
+    { "@type": "City", "name": "Gdynia" },
+    { "@type": "City", "name": "Sopot" },
+    { "@type": "AdministrativeArea", "name": "Trójmiasto" }
+  ],
+  "serviceArea": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": 54.372158,
+      "longitude": 18.638306
+    },
+    "geoRadius": "35000"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Usługi czyszczenia Trójmiasto",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Czyszczenie tapicerki Gdańsk" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pranie wykładzin Gdynia" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Czyszczenie kanap i foteli Sopot" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sprzątanie biur Trójmiasto" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pranie dywanów Gdańsk" } }
+    ]
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "214",
+    "bestRating": "5"
+  }
+}
+</script>
+
+<!-- ═══════════════════════════════════
+     STYLES
+════════════════════════════════════ -->
+<style>
+/* ── Reset ── */
+.pc-hero *, .pc-hero *::before, .pc-hero *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── Sekcja główna ── */
+.pc-hero {
+  position: relative;
+  background: #ffffff;
+  padding: 80px 24px 72px;
+  overflow: hidden;
+  font-family: inherit;
+}
+
+/* Delikatne tło — gradient + siatka */
+.pc-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 70% 60% at 80% 40%, rgba(14, 116, 189, 0.07) 0%, transparent 70%),
+    radial-gradient(ellipse 50% 40% at 10% 80%, rgba(14, 116, 189, 0.05) 0%, transparent 65%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Subtelna siatka */
+.pc-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(14,116,189,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(14,116,189,0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ── Container ── */
+.pc-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+}
+
+/* ── Grid: tekst | obraz ── */
+.pc-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  align-items: center;
+}
+
+/* ── LEWA kolumna — tekst ── */
+.pc-text {
+  animation: pc-up 0.8s ease-out both;
+}
+
+@keyframes pc-up {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Geo badge */
+.pc-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  background: #f0f7ff;
+  border: 1px solid rgba(14,116,189,0.25);
+  border-radius: 50px;
+  margin-bottom: 24px;
+}
+
+.pc-badge-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #0e74bd;
+  animation: pc-pulse 2s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+@keyframes pc-pulse {
+  0%,100% { box-shadow: 0 0 0 0 rgba(14,116,189,0.5); }
+  50%      { box-shadow: 0 0 0 6px rgba(14,116,189,0); }
+}
+
+.pc-badge-text {
+  font-size: 12px;
+  font-weight: 800;
+  color: #0e74bd;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+}
+
+/* H1 — kluczowy element SEO */
+.pc-h1 {
+  font-size: clamp(32px, 3.8vw, 54px);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  color: #0f1c2e;
+  margin-bottom: 22px;
+}
+
+.pc-h1-accent {
+  color: #0e74bd;
+  display: inline;
+}
+
+.pc-h1-line {
+  display: block;
+}
+
+/* Opis */
+.pc-lead {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #4a5568;
+  margin-bottom: 16px;
+  max-width: 500px;
+}
+
+.pc-lead strong {
+  color: #0f1c2e;
+  font-weight: 700;
+}
+
+.pc-sub {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #718096;
+  margin-bottom: 32px;
+  max-width: 480px;
+}
+
+/* Usługi — pills */
+.pc-services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 36px;
+}
+
+.pc-service-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 15px;
+  background: #f7faff;
+  border: 1px solid rgba(14,116,189,0.2);
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #2d3748;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+
+.pc-service-pill:hover {
+  background: #e8f2fc;
+  border-color: rgba(14,116,189,0.4);
+  color: #0e74bd;
+}
+
+.pc-pill-icon {
+  font-size: 14px;
+  line-height: 1;
+}
+
+/* CTA */
+.pc-cta {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.pc-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 16px 32px;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 800;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  letter-spacing: 0.2px;
+}
+
+.pc-btn-primary {
+  background: #0e74bd;
+  color: #ffffff;
+  box-shadow: 0 10px 32px rgba(14,116,189,0.35);
+}
+
+.pc-btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 48px rgba(14,116,189,0.45);
+}
+
+.pc-btn-secondary {
+  background: transparent;
+  color: #0e74bd;
+  border: 2px solid rgba(14,116,189,0.4);
+}
+
+.pc-btn-secondary:hover {
+  background: #f0f7ff;
+  border-color: #0e74bd;
+}
+
+.pc-arrow {
+  width: 17px;
+  height: 17px;
+  transition: transform 0.25s;
+  flex-shrink: 0;
+}
+
+.pc-btn:hover .pc-arrow {
+  transform: translateX(4px);
+}
+
+/* Trust row */
+.pc-trust {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.pc-trust-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #718096;
+}
+
+.pc-trust-icon {
+  width: 16px;
+  height: 16px;
+  stroke: #0e74bd;
+  fill: none;
+  flex-shrink: 0;
+}
+
+/* Divider */
+.pc-divider {
+  width: 1px;
+  height: 18px;
+  background: #e2e8f0;
+}
+
+/* ── PRAWA kolumna — obraz ── */
+.pc-visual {
+  position: relative;
+  animation: pc-up 0.8s ease-out 0.2s both;
+}
+
+/* Ozdobny kwadrat w tle */
+.pc-visual-deco {
+  position: absolute;
+  width: 85%;
+  height: 85%;
+  background: #f0f7ff;
+  border-radius: 20px;
+  top: 32px;
+  right: -16px;
+  z-index: 0;
+}
+
+/* Ramka zdjęcia */
+.pc-img-wrap {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow:
+    0 24px 64px rgba(0,0,0,0.12),
+    0 0 0 1px rgba(14,116,189,0.1);
+  z-index: 2;
+}
+
+.pc-img-wrap img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+}
+
+/* Gradient overlay na dole zdjęcia */
+.pc-img-overlay {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 40%;
+  background: linear-gradient(transparent, rgba(255,255,255,0.15));
+  pointer-events: none;
+  z-index: 3;
+  border-radius: 0 0 18px 18px;
+}
+
+/* Niebieski pasek-akcent (góra zdjęcia) */
+.pc-img-bar {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #0e74bd, #38b2f5);
+  z-index: 4;
+}
+
+/* ── Floating cards ── */
+.pc-card {
+  position: absolute;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 14px 18px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.12), 0 0 0 1px rgba(14,116,189,0.1);
+  z-index: 20;
+  animation: pc-float 4s ease-in-out infinite;
+}
+
+@keyframes pc-float {
+  0%,100% { transform: translateY(0); }
+  50%      { transform: translateY(-10px); }
+}
+
+/* Karta 1 — lewa górna: ocena */
+.pc-card-rating {
+  top: -20px;
+  left: -32px;
+  animation-delay: 0s;
+  min-width: 160px;
+}
+
+.pc-stars {
+  display: flex;
+  gap: 2px;
+  margin-bottom: 4px;
+}
+
+.pc-star { color: #f6ad55; font-size: 14px; }
+
+.pc-rating-score {
+  font-size: 22px;
+  font-weight: 900;
+  color: #0f1c2e;
+  line-height: 1;
+  margin-bottom: 2px;
+}
+
+.pc-rating-lbl {
+  font-size: 11px;
+  color: #a0aec0;
+  line-height: 1.3;
+}
+
+/* Karta 2 — prawa dolna: realizacje */
+.pc-card-done {
+  bottom: 32px;
+  right: -28px;
+  animation-delay: 1.5s;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.pc-card-icon-wrap {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #e8f5ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.pc-card-icon-wrap svg {
+  width: 20px;
+  height: 20px;
+  stroke: #0e74bd;
+  fill: none;
+  stroke-width: 2;
+}
+
+.pc-card-num {
+  font-size: 24px;
+  font-weight: 900;
+  color: #0f1c2e;
+  line-height: 1;
+  margin-bottom: 3px;
+}
+
+.pc-card-lbl {
+  font-size: 11px;
+  color: #a0aec0;
+  line-height: 1.3;
+}
+
+/* Karta 3 — dolna lewa: szybki termin */
+.pc-card-time {
+  bottom: -20px;
+  left: 20px;
+  animation-delay: 0.8s;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pc-card-check {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #e6ffed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-size: 16px;
+}
+
+.pc-card-time-txt {
+  font-size: 13px;
+  font-weight: 700;
+  color: #0f1c2e;
+  line-height: 1.3;
+}
+
+.pc-card-time-sub {
+  font-size: 11px;
+  color: #a0aec0;
+}
+
+/* ── Stats row ── */
+.pc-stats {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: #e2e8f0;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-top: 40px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+}
+
+.pc-stat {
+  background: #ffffff;
+  text-align: center;
+  padding: 28px 20px;
+}
+
+.pc-stat:first-child { border-radius: 16px 0 0 16px; }
+.pc-stat:last-child  { border-radius: 0 16px 16px 0; }
+
+.pc-stat-num {
+  font-size: 40px;
+  font-weight: 900;
+  color: #0e74bd;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.pc-stat-lbl {
+  font-size: 12px;
+  color: #a0aec0;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+  .pc-grid { gap: 48px; }
+  .pc-stats { grid-template-columns: repeat(2, 1fr); }
+  .pc-card-done { right: -12px; }
+}
+
+@media (max-width: 860px) {
+  .pc-grid { grid-template-columns: 1fr; gap: 56px; }
+  .pc-hero { padding: 64px 20px 56px; }
+  .pc-lead, .pc-sub { max-width: 100%; }
+  .pc-visual-deco { display: none; }
+  .pc-card-rating { left: -10px; }
+  .pc-card-done { right: -10px; }
+}
+
+@media (max-width: 560px) {
+  .pc-h1 { font-size: 30px; }
+  .pc-stats { grid-template-columns: repeat(2, 1fr); }
+  .pc-stat:first-child { border-radius: 16px 0 0 0; }
+  .pc-stat:last-child  { border-radius: 0 0 16px 0; }
+  .pc-btn { width: 100%; justify-content: center; }
+  .pc-cta { flex-direction: column; }
+  .pc-card-done { display: none; }
+  .pc-divider  { display: none; }
+}
+</style>
+
+<!-- ═══════════════════════════════════
+     HTML — semantyczny markup
+════════════════════════════════════ -->
+<section
+  class="pc-hero"
+  aria-label="Profesjonalne czyszczenie tapicerki i wykładzin w Trójmieście"
+  itemscope
+  itemtype="https://schema.org/LocalBusiness"
+>
+  <div class="pc-container">
+    <div class="pc-grid">
+
+      <!-- ── LEWA: tekst ── -->
+      <div class="pc-text">
+
+        <!-- Geo badge -->
+        <div class="pc-badge" aria-label="Obsługujemy Trójmiasto">
+          <span class="pc-badge-dot" aria-hidden="true"></span>
+          <span class="pc-badge-text">Gdańsk · Gdynia · Sopot</span>
+        </div>
+
+        <!--
+          H1 — główna fraza SEO:
+          "czyszczenie tapicerki Trójmiasto" + "pranie wykładzin"
+        -->
+        <h1 class="pc-h1" itemprop="name">
+          <span class="pc-h1-line">Profesjonalne czyszczenie</span>
+          <span class="pc-h1-line">tapicerki i&nbsp;wykładzin</span>
+          <span class="pc-h1-line">w&nbsp;<span class="pc-h1-accent">Trójmieście</span></span>
+        </h1>
+
+        <p class="pc-lead">
+          Czyścimy <strong>kanapy, fotele, krzesła</strong> i&nbsp;całą tapicerkę meblową.
+          Pierzemy <strong>wykładziny, dywany i&nbsp;zasłony</strong>.
+          Sprzątamy <strong>biura i&nbsp;powierzchnie komercyjne</strong>
+          w&nbsp;Gdańsku, Gdyni i&nbsp;Sopocie.
+        </p>
+
+        <p class="pc-sub">
+          Szybki dojazd na terenie Trójmiasta. Używamy profesjonalnego sprzętu
+          ekstrakcyjnego. Efekty widoczne od razu — zapachy, plamy i&nbsp;roztocza
+          znikają po jednej wizycie.
+        </p>
+
+        <!-- Usługi (keyword pills) -->
+        <nav class="pc-services" aria-label="Nasze usługi">
+          <span class="pc-service-pill"><span class="pc-pill-icon">🛋️</span> Czyszczenie kanap</span>
+          <span class="pc-service-pill"><span class="pc-pill-icon">🪑</span> Pranie foteli</span>
+          <span class="pc-service-pill"><span class="pc-pill-icon">🏢</span> Sprzątanie biur</span>
+          <span class="pc-service-pill"><span class="pc-pill-icon">🧹</span> Pranie wykładzin</span>
+          <span class="pc-service-pill"><span class="pc-pill-icon">🪟</span> Czyszczenie dywanów</span>
+          <span class="pc-service-pill"><span class="pc-pill-icon">🚗</span> Tapicerka samochodowa</span>
+        </nav>
+
+        <!-- CTA -->
+        <div class="pc-cta">
+          <a
+            href="#kontakt"
+            class="pc-btn pc-btn-primary"
+            aria-label="Bezpłatna wycena czyszczenia w Trójmieście"
+          >
+            <span>Bezpłatna wycena</span>
+            <svg class="pc-arrow" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <path d="M4 10h12m0 0l-6-6m6 6l-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </a>
+          <a href="tel:" class="pc-btn pc-btn-secondary" aria-label="Zadzwoń do nas">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.14a16 16 0 006.95 6.95l1.41-1.42a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Zadzwoń teraz</span>
+          </a>
+        </div>
+
+        <!-- Trust signals -->
+        <div class="pc-trust" role="list" aria-label="Gwarancje">
+          <div class="pc-trust-item" role="listitem">
+            <svg class="pc-trust-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Dojazd gratis Trójmiasto
+          </div>
+          <div class="pc-divider" aria-hidden="true"></div>
+          <div class="pc-trust-item" role="listitem">
+            <svg class="pc-trust-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Szybki termin 24–48h
+          </div>
+          <div class="pc-divider" aria-hidden="true"></div>
+          <div class="pc-trust-item" role="listitem">
+            <svg class="pc-trust-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Gwarancja czystości
+          </div>
+        </div>
+
+      </div><!-- /pc-text -->
+
+      <!-- ── PRAWA: obraz ── -->
+      <div class="pc-visual">
+
+        <!-- Ozdobne tło -->
+        <div class="pc-visual-deco" aria-hidden="true"></div>
+
+        <!-- Floating card — ocena -->
+        <div class="pc-card pc-card-rating" role="presentation" aria-hidden="true">
+          <div class="pc-stars">
+            <span class="pc-star">★</span><span class="pc-star">★</span>
+            <span class="pc-star">★</span><span class="pc-star">★</span>
+            <span class="pc-star">★</span>
+          </div>
+          <div class="pc-rating-score">4.9 / 5</div>
+          <div class="pc-rating-lbl">214 opinii klientów<br>z Trójmiasta</div>
+        </div>
+
+        <!-- Zdjęcie główne -->
+        <figure class="pc-img-wrap" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+          <div class="pc-img-bar" aria-hidden="true"></div>
+          <img
+            src="https://profesjonalnaczystosc.pl/wp-content/uploads/2025/11/cyber-security-01-2048x1191.png"
+            alt="Profesjonalne czyszczenie tapicerki i wykładzin w Trójmieście – Gdańsk, Gdynia, Sopot"
+            loading="eager"
+            fetchpriority="high"
+            width="1024"
+            height="596"
+            itemprop="url"
+            decoding="async"
+          />
+          <div class="pc-img-overlay" aria-hidden="true"></div>
+        </figure>
+
+        <!-- Floating card — realizacje -->
+        <div class="pc-card pc-card-done" role="presentation" aria-hidden="true">
+          <div class="pc-card-icon-wrap">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div>
+            <div class="pc-card-num">2 400+</div>
+            <div class="pc-card-lbl">Zrealizowanych<br>zleceń</div>
+          </div>
+        </div>
+
+        <!-- Floating card — termin -->
+        <div class="pc-card pc-card-time" role="presentation" aria-hidden="true">
+          <div class="pc-card-check" aria-hidden="true">✓</div>
+          <div>
+            <div class="pc-card-time-txt">Wolny termin: jutro</div>
+            <div class="pc-card-time-sub">Trójmiasto i okolice</div>
+          </div>
+        </div>
+
+      </div><!-- /pc-visual -->
+
+      <!-- ── STATS ROW ── -->
+      <div class="pc-stats" role="list" aria-label="Nasze osiągnięcia">
+
+        <div class="pc-stat" role="listitem">
+          <div class="pc-stat-num" data-target="2400">2400+</div>
+          <div class="pc-stat-lbl">Zrealizowanych<br>zleceń</div>
+        </div>
+
+        <div class="pc-stat" role="listitem">
+          <div class="pc-stat-num" data-target="214">214</div>
+          <div class="pc-stat-lbl">Opinii<br>5★ w Google</div>
+        </div>
+
+        <div class="pc-stat" role="listitem">
+          <div class="pc-stat-num" data-target="8">8 lat</div>
+          <div class="pc-stat-lbl">Na rynku<br>Trójmiasta</div>
+        </div>
+
+        <div class="pc-stat" role="listitem">
+          <div class="pc-stat-num" data-target="48">48h</div>
+          <div class="pc-stat-lbl">Maksymalny czas<br>oczekiwania</div>
+        </div>
+
+      </div>
+
+    </div><!-- /pc-grid -->
+  </div><!-- /pc-container -->
+</section>
+
+<!-- ═══════════════════════════════════
+     JS — counter animation
+════════════════════════════════════ -->
+<script>
+(function () {
+  'use strict';
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (!entry.isIntersecting || entry.target.dataset.done) return;
+      entry.target.dataset.done = '1';
+      var el      = entry.target;
+      var raw     = el.dataset.target;
+      var target  = parseInt(raw, 10);
+      if (isNaN(target)) return;
+      var frames  = 55;
+      var step    = 0;
+      var orig    = el.textContent;
+      var suffix  = orig.replace(/[\d\s]/g, '');
+      var timer = setInterval(function () {
+        step++;
+        var val = Math.round(target * (step / frames));
+        el.textContent = val.toLocaleString('pl-PL') + suffix;
+        if (step >= frames) {
+          el.textContent = orig;
+          clearInterval(timer);
+        }
+      }, 24);
+    });
+  }, { threshold: 0.4 });
+
+  document.querySelectorAll('.pc-stat-num[data-target]').forEach(function (el) {
+    observer.observe(el);
+  });
+}());
+</script>
