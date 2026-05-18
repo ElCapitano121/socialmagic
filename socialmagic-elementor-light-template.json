@@ -1,0 +1,559 @@
+{
+  "version": "0.4",
+  "title": "SocialMagic – Strona Główna SEO Lokalne (Jasny Styl – 12 sekcji)",
+  "type": "page",
+  "content": [
+    {
+      "id": "c76qpg7",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "gap": "no",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "background_background": "classic",
+        "background_color": "#ffffff"
+      },
+      "elements": [
+        {
+          "id": "38xrt9h",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": true
+            }
+          },
+          "elements": [
+            {
+              "id": "do0evy2",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "\n<style>\n*{box-sizing:border-box}\n.lsn{background:#fff;border-bottom:1px solid #e8ede5;padding:0 20px;position:sticky;top:0;z-index:9999;font-family:'Inter',system-ui,sans-serif}\n.lsn-wrap{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:72px;gap:24px}\n.lsn-logo{display:flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0}\n.lsn-logo-mark{width:36px;height:36px;background:#2d7a3a;border-radius:8px;display:flex;align-items:center;justify-content:center}\n.lsn-logo-mark svg{width:20px;height:20px;fill:none;stroke:#fff;stroke-width:2.5}\n.lsn-logo-name{font-size:20px;font-weight:800;color:#1a2018}\n.lsn-logo-name span{color:#2d7a3a}\n.lsn-menu{display:flex;gap:4px;list-style:none;margin:0;padding:0}\n.lsn-menu a{font-size:14px;font-weight:600;color:#3d4a39;text-decoration:none;padding:8px 14px;border-radius:6px;transition:all .2s}\n.lsn-menu a:hover{background:#f0f5ee;color:#2d7a3a}\n.lsn-right{display:flex;align-items:center;gap:16px;flex-shrink:0}\n.lsn-phone{font-size:14px;font-weight:700;color:#1a2018;text-decoration:none;display:flex;align-items:center;gap:6px}\n.lsn-phone svg{width:16px;height:16px;stroke:#2d7a3a;fill:none;stroke-width:2.5}\n.lsn-cta{padding:10px 22px;background:#2d7a3a;color:#fff;border-radius:6px;font-size:14px;font-weight:700;text-decoration:none;transition:background .2s;white-space:nowrap}\n.lsn-cta:hover{background:#245f2e;text-decoration:none;color:#fff}\n.lsn-burger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}\n.lsn-burger span{width:24px;height:2px;background:#1a2018;border-radius:2px;transition:all .3s}\n.lsn-mobile{display:none;position:absolute;top:72px;left:0;right:0;background:#fff;border-bottom:1px solid #e8ede5;padding:16px 20px;flex-direction:column;gap:4px;z-index:9998}\n.lsn-mobile.open{display:flex}\n.lsn-mobile a{font-size:15px;font-weight:600;color:#3d4a39;text-decoration:none;padding:10px 14px;border-radius:6px}\n.lsn-mobile a:hover{background:#f0f5ee;color:#2d7a3a}\n@media(max-width:900px){.lsn-menu{display:none}.lsn-phone{display:none}.lsn-burger{display:flex}.lsn{position:relative}}\n</style>\n<nav class=\"lsn\">\n  <div class=\"lsn-wrap\">\n    <a href=\"/\" class=\"lsn-logo\">\n      <div class=\"lsn-logo-mark\"><svg viewBox=\"0 0 24 24\"><path d=\"M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5\"/></svg></div>\n      <span class=\"lsn-logo-name\">Social<span>Magic</span></span>\n    </a>\n    <ul class=\"lsn-menu\">\n      <li><a href=\"#home\">Strona Główna</a></li>\n      <li><a href=\"#uslugi\">Usługi</a></li>\n      <li><a href=\"#dlaczego-my\">O Nas</a></li>\n      <li><a href=\"#opinie\">Opinie</a></li>\n      <li><a href=\"#blog\">Blog</a></li>\n      <li><a href=\"#kontakt\">Kontakt</a></li>\n    </ul>\n    <div class=\"lsn-right\">\n      <a href=\"tel:+48516076249\" class=\"lsn-phone\"><svg viewBox=\"0 0 24 24\"><path d=\"M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z\"/></svg>516 076 249</a>\n      <a href=\"#kontakt\" class=\"lsn-cta\">Bezpłatna wycena</a>\n      <button class=\"lsn-burger\" onclick=\"document.querySelector('.lsn-mobile').classList.toggle('open')\"><span></span><span></span><span></span></button>\n    </div>\n  </div>\n  <div class=\"lsn-mobile\">\n    <a href=\"#home\">Strona Główna</a>\n    <a href=\"#uslugi\">Usługi</a>\n    <a href=\"#dlaczego-my\">O Nas</a>\n    <a href=\"#opinie\">Opinie</a>\n    <a href=\"#blog\">Blog</a>\n    <a href=\"#kontakt\">Kontakt</a>\n    <a href=\"tel:+48516076249\" style=\"color:#2d7a3a;font-weight:700\">📞 516 076 249</a>\n  </div>\n</nav>\n"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "khozgsc",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "gap": "no",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "background_background": "classic",
+        "background_color": "#1b2d1e"
+      },
+      "elements": [
+        {
+          "id": "49tpqrg",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": true
+            }
+          },
+          "elements": [
+            {
+              "id": "cpfqztl",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "\n<script type=\"application/ld+json\">\n{\"@context\":\"https://schema.org\",\"@type\":\"LocalBusiness\",\"name\":\"SocialMagic\",\"description\":\"Agencja marketingu internetowego Warszawa. SEO, social media, Google Ads, strony WWW dla lokalnych firm.\",\"url\":\"https://socialmagic.pl\",\"telephone\":\"+48516076249\",\"email\":\"biuro@socialmagic.pl\",\"address\":{\"@type\":\"PostalAddress\",\"addressLocality\":\"Warszawa\",\"addressRegion\":\"Mazowieckie\",\"addressCountry\":\"PL\"},\"areaServed\":[\"Warszawa\",\"Mazowsze\",\"Polska\"],\"priceRange\":\"$$\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.9\",\"bestRating\":\"5\",\"reviewCount\":\"147\"},\"openingHoursSpecification\":{\"@type\":\"OpeningHoursSpecification\",\"dayOfWeek\":[\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\"],\"opens\":\"09:00\",\"closes\":\"18:00\"}}\n</script>\n<style>\n.lsh{position:relative;min-height:88vh;display:flex;flex-direction:column;justify-content:flex-end;font-family:'Inter',system-ui,sans-serif;overflow:hidden}\n.lsh-bg{position:absolute;inset:0;background:linear-gradient(135deg,rgba(27,45,30,.78) 0%,rgba(27,45,30,.55) 60%,rgba(27,45,30,.35) 100%),url('WSTAW_URL_ZDJECIA_HERO') center/cover no-repeat;z-index:0}\n.lsh-content{position:relative;z-index:1;max-width:1280px;margin:0 auto;width:100%;padding:100px 20px 80px}\n.lsh-badge{display:inline-flex;align-items:center;gap:8px;padding:8px 18px;background:rgba(255,255,255,.15);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.25);border-radius:50px;color:#fff;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:24px}\n.lsh-badge svg{width:14px;height:14px;fill:none;stroke:#4ade80;stroke-width:2.5}\n.lsh-h1{font-size:64px;font-weight:900;line-height:1.08;letter-spacing:-2px;color:#fff;margin-bottom:22px;max-width:780px}\n.lsh-h1 em{font-style:normal;color:#7bdf8a}\n.lsh-desc{font-size:18px;line-height:1.75;color:rgba(255,255,255,.85);max-width:580px;margin-bottom:36px}\n.lsh-btns{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:64px}\n.lsh-btn1{display:inline-flex;align-items:center;gap:10px;padding:16px 34px;background:#2d7a3a;color:#fff;border-radius:6px;font-size:15px;font-weight:700;text-decoration:none;transition:all .25s;box-shadow:0 4px 20px rgba(45,122,58,.45)}\n.lsh-btn1:hover{background:#245f2e;transform:translateY(-2px);text-decoration:none;color:#fff}\n.lsh-btn2{display:inline-flex;align-items:center;gap:10px;padding:16px 34px;background:rgba(255,255,255,.12);color:#fff;border:2px solid rgba(255,255,255,.4);border-radius:6px;font-size:15px;font-weight:700;text-decoration:none;backdrop-filter:blur(8px);transition:all .25s}\n.lsh-btn2:hover{background:rgba(255,255,255,.2);border-color:#fff;text-decoration:none;color:#fff}\n.lsh-trust{display:flex;align-items:center;gap:32px;flex-wrap:wrap}\n.lsh-trust-item{display:flex;align-items:center;gap:10px;color:rgba(255,255,255,.9);font-size:14px;font-weight:600}\n.lsh-trust-icon{width:36px;height:36px;border-radius:8px;background:rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;flex-shrink:0}\n.lsh-trust-icon svg{width:18px;height:18px;fill:none;stroke:#7bdf8a;stroke-width:2.5}\n.lsh-sep{width:1px;height:32px;background:rgba(255,255,255,.2)}\n.lsh-scroll{position:absolute;bottom:32px;right:40px;z-index:1;display:flex;flex-direction:column;align-items:center;gap:8px;color:rgba(255,255,255,.6);font-size:11px;font-weight:600;letter-spacing:1px;text-transform:uppercase;animation:lshbounce 2s ease-in-out infinite}\n.lsh-scroll svg{width:24px;height:24px;fill:none;stroke:rgba(255,255,255,.6);stroke-width:2}\n@keyframes lshbounce{0%,100%{transform:translateY(0)}50%{transform:translateY(8px)}}\n@media(max-width:1024px){.lsh-h1{font-size:48px}}\n@media(max-width:768px){.lsh-content{padding:80px 20px 60px}.lsh-h1{font-size:34px;letter-spacing:-1px}.lsh-desc{font-size:16px}.lsh-btns{flex-direction:column}.lsh-btn1,.lsh-btn2{width:100%;justify-content:center}.lsh-sep{display:none}.lsh-trust{gap:16px}.lsh-scroll{display:none}}\n</style>\n<section class=\"lsh\" id=\"home\" itemscope itemtype=\"https://schema.org/WebPage\">\n  <div class=\"lsh-bg\"></div>\n  <div class=\"lsh-content\">\n    <div class=\"lsh-badge\"><svg viewBox=\"0 0 24 24\"><path d=\"M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z\"/><circle cx=\"12\" cy=\"10\" r=\"3\"/></svg>Marketing internetowy · Warszawa i Mazowsze</div>\n    <h1 class=\"lsh-h1\" itemprop=\"headline\">Skuteczny <em>marketing online</em><br>dla firm z Warszawy</h1>\n    <p class=\"lsh-desc\" itemprop=\"description\">Pomagamy lokalnym firmom zdobywać klientów z Google, social media i reklam. Mierzalne wyniki, transparentne raportowanie, umowa bez blokady danych.</p>\n    <div class=\"lsh-btns\">\n      <a href=\"#kontakt\" class=\"lsh-btn1\">&#128640; Bezpłatna konsultacja</a>\n      <a href=\"#uslugi\" class=\"lsh-btn2\">Nasze usługi &#8594;</a>\n    </div>\n    <div class=\"lsh-trust\">\n      <div class=\"lsh-trust-item\"><div class=\"lsh-trust-icon\"><svg viewBox=\"0 0 24 24\"><path d=\"M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z\"/></svg></div>4.9 / 5 w Google</div>\n      <div class=\"lsh-sep\"></div>\n      <div class=\"lsh-trust-item\"><div class=\"lsh-trust-icon\"><svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"8\" r=\"4\"/><path d=\"M4 20c0-4 3.58-7 8-7s8 3 8 7\"/></svg></div>147+ klientów</div>\n      <div class=\"lsh-sep\"></div>\n      <div class=\"lsh-trust-item\"><div class=\"lsh-trust-icon\"><svg viewBox=\"0 0 24 24\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"3\"/><path d=\"M9 12l2 2 4-4\"/></svg></div>Google Partner</div>\n      <div class=\"lsh-sep\"></div>\n      <div class=\"lsh-trust-item\"><div class=\"lsh-trust-icon\"><svg viewBox=\"0 0 24 24\"><path d=\"M13 2L3 14h9l-1 8 10-12h-9l1-8z\"/></svg></div>Wyniki od 1. miesiąca</div>\n    </div>\n  </div>\n  <div class=\"lsh-scroll\"><svg viewBox=\"0 0 24 24\"><path d=\"M12 5v14M5 12l7 7 7-7\"/></svg>Scroll</div>\n</section>\n"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1q6nd9a",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "gap": "no",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "background_background": "classic",
+        "background_color": "#ffffff"
+      },
+      "elements": [
+        {
+          "id": "jc0swsn",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": true
+            }
+          },
+          "elements": [
+            {
+              "id": "kjssahe",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "\n<style>\n.lstb{background:#fff;border-bottom:1px solid #e8ede5;padding:32px 20px;font-family:'Inter',system-ui,sans-serif}\n.lstb-wrap{max-width:1280px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}\n.lstb-item{display:flex;align-items:center;gap:12px;flex:1;min-width:180px}\n.lstb-icon{width:44px;height:44px;border-radius:10px;background:#f0f5ee;display:flex;align-items:center;justify-content:center;flex-shrink:0}\n.lstb-icon svg{width:22px;height:22px;fill:none;stroke:#2d7a3a;stroke-width:2.5}\n.lstb-main{font-size:14px;font-weight:700;color:#1a2018}\n.lstb-sub{font-size:12px;color:#6b7a65;margin-top:2px}\n.lstb-sep{width:1px;height:44px;background:#e8ede5;flex-shrink:0}\n@media(max-width:900px){.lstb-sep{display:none}.lstb-item{min-width:calc(50% - 20px)}}\n@media(max-width:480px){.lstb-item{min-width:100%}}\n</style>\n<div class=\"lstb\">\n  <div class=\"lstb-wrap\">\n    <div class=\"lstb-item\">\n      <div class=\"lstb-icon\"><svg viewBox=\"0 0 24 24\"><path d=\"M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z\"/></svg></div>\n      <div><div class=\"lstb-main\">Ocena 4.9 / 5 ★</div><div class=\"lstb-sub\">147 recenzji w Google</div></div>\n    </div>\n    <div class=\"lstb-sep\"></div>\n    <div class=\"lstb-item\">\n      <div class=\"lstb-icon\"><svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"8\" r=\"4\"/><path d=\"M4 20c0-4 3.58-7 8-7s8 3 8 7\"/></svg></div>\n      <div><div class=\"lstb-main\">147+ zadowolonych firm</div><div class=\"lstb-sub\">Warszawa i cała Polska</div></div>\n    </div>\n    <div class=\"lstb-sep\"></div>\n    <div class=\"lstb-item\">\n      <div class=\"lstb-icon\"><svg viewBox=\"0 0 24 24\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"3\"/><path d=\"M9 12l2 2 4-4\"/></svg></div>\n      <div><div class=\"lstb-main\">Google Partner</div><div class=\"lstb-sub\">Certyfikowana agencja</div></div>\n    </div>\n    <div class=\"lstb-sep\"></div>\n    <div class=\"lstb-item\">\n      <div class=\"lstb-icon\"><svg viewBox=\"0 0 24 24\"><path d=\"M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z\"/></svg></div>\n      <div><div class=\"lstb-main\">Odpowiedź w 24 h</div><div class=\"lstb-sub\">Stały opiekun projektu</div></div>\n    </div>\n    <div class=\"lstb-sep\"></div>\n    <div class=\"lstb-item\">\n      <div class=\"lstb-icon\"><svg viewBox=\"0 0 24 24\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/></svg></div>\n      <div><div class=\"lstb-main\">Gwarancja efektów</div><div class=\"lstb-sub\">Raport co miesiąc</div></div>\n    </div>\n  </div>\n</div>\n"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "h6j4p2t",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "gap": "no",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "background_background": "classic",
+        "background_color": "#f7f8f5"
+      },
+      "elements": [
+        {
+          "id": "9fp4vxn",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": true
+            }
+          },
+          "elements": [
+            {
+              "id": "ed6k8pc",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "\n<style>\n.lssv{padding:100px 20px;background:#f7f8f5;font-family:'Inter',system-ui,sans-serif}\n.lssv-wrap{max-width:1280px;margin:0 auto}\n.lssv-hdr{text-align:center;margin-bottom:64px}\n.lssv-eyebrow{display:inline-block;padding:6px 18px;background:#e8f2ea;color:#2d7a3a;border-radius:50px;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:16px}\n.lssv-h2{font-size:44px;font-weight:900;line-height:1.15;color:#1a2018;letter-spacing:-1px}\n.lssv-h2 span{color:#2d7a3a}\n.lssv-sub{font-size:16px;color:#6b7a65;line-height:1.7;margin-top:14px;max-width:580px;margin-left:auto;margin-right:auto}\n.lssv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}\n.lssv-card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.06);transition:all .35s cubic-bezier(.4,0,.2,1);border:1.5px solid transparent}\n.lssv-card:hover{transform:translateY(-6px);box-shadow:0 12px 36px rgba(45,122,58,.14);border-color:#b8dfc0}\n.lssv-card-img{height:180px;background:linear-gradient(135deg,#e8f2ea,#d0e8d4);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}\n.lssv-card-img::after{content:'';position:absolute;inset:0;background:url('WSTAW_URL_ZDJECIA') center/cover no-repeat;opacity:0}\n.lssv-card-cat{position:absolute;top:14px;left:14px;padding:5px 12px;background:#2d7a3a;color:#fff;border-radius:50px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:1px}\n.lssv-card-icon-wrap{width:64px;height:64px;border-radius:16px;background:#fff;box-shadow:0 4px 16px rgba(45,122,58,.2);display:flex;align-items:center;justify-content:center}\n.lssv-card-icon-wrap svg{width:32px;height:32px;fill:none;stroke:#2d7a3a;stroke-width:2.5}\n.lssv-card-body{padding:28px 28px 32px}\n.lssv-card h3{font-size:19px;font-weight:800;color:#1a2018;margin-bottom:10px;line-height:1.3}\n.lssv-card p{font-size:14px;color:#6b7a65;line-height:1.75;margin-bottom:20px}\n.lssv-card-price{display:flex;align-items:baseline;gap:6px;padding:14px 0;border-top:1px solid #f0f0ec;border-bottom:1px solid #f0f0ec;margin-bottom:20px}\n.lssv-price-from{font-size:12px;color:#9aaa94;font-weight:600}\n.lssv-price-val{font-size:26px;font-weight:900;color:#1a2018}\n.lssv-price-per{font-size:13px;color:#9aaa94}\n.lssv-card-list{list-style:none;margin-bottom:24px;padding:0}\n.lssv-card-list li{font-size:13px;color:#5a6355;display:flex;align-items:flex-start;gap:8px;padding:5px 0;line-height:1.5}\n.lssv-card-list li::before{content:\"✓\";color:#2d7a3a;font-weight:800;font-size:14px;flex-shrink:0;margin-top:1px}\n.lssv-card-btn{display:block;width:100%;padding:12px;text-align:center;background:#2d7a3a;color:#fff;border-radius:6px;font-size:14px;font-weight:700;text-decoration:none;transition:background .2s}\n.lssv-card-btn:hover{background:#245f2e;text-decoration:none;color:#fff}\n.lssv-cta{text-align:center;margin-top:52px}\n.lssv-cta-note{font-size:14px;color:#9aaa94;margin-top:12px}\n.lssv-cta-main{display:inline-flex;align-items:center;gap:10px;padding:16px 36px;background:#1b2d1e;color:#fff;border-radius:6px;font-size:15px;font-weight:700;text-decoration:none;transition:background .2s}\n.lssv-cta-main:hover{background:#0d1a0f;text-decoration:none;color:#fff}\n@media(max-width:1024px){.lssv-grid{grid-template-columns:repeat(2,1fr)}.lssv-h2{font-size:36px}}\n@media(max-width:640px){.lssv-grid{grid-template-columns:1fr}.lssv-h2{font-size:28px}}\n</style>\n<section class=\"lssv\" id=\"uslugi\">\n  <div class=\"lssv-wrap\">\n    <div class=\"lssv-hdr\">\n      <span class=\"lssv-eyebrow\">Nasze Usługi</span>\n      <h2 class=\"lssv-h2\">Kompleksowy marketing online<br>dla <span>lokalnych firm</span></h2>\n      <p class=\"lssv-sub\">Każda usługa dopasowana do Twojej branży i lokalizacji. Mierzalne efekty w Google, social media i reklamach płatnych.</p>\n    </div>\n    <div class=\"lssv-grid\">\n\n      <div class=\"lssv-card\">\n        <div class=\"lssv-card-img\"><span class=\"lssv-card-cat\">SEO</span><div class=\"lssv-card-icon-wrap\"><svg viewBox=\"0 0 24 24\"><circle cx=\"11\" cy=\"11\" r=\"8\"/><path d=\"M21 21l-4.35-4.35\" stroke-linecap=\"round\"/></svg></div></div>\n        <div class=\"lssv-card-body\">\n          <h3>Pozycjonowanie SEO Lokalne</h3>\n          <p>Wprowadzamy Twoją firmę na szczyt Google dla fraz lokalnych. Audyt, treści, linki i Google Business Profile.</p>\n          <div class=\"lssv-card-price\"><span class=\"lssv-price-from\">od</span><span class=\"lssv-price-val\">890 zł</span><span class=\"lssv-price-per\">/miesiąc</span></div>\n          <ul class=\"lssv-card-list\">\n            <li>Audyt techniczny strony</li>\n            <li>Optymalizacja treści i fraz</li>\n            <li>Google Business Profile</li>\n            <li>Raport miesięczny</li>\n          </ul>\n          <a href=\"#kontakt\" class=\"lssv-card-btn\">Zapytaj o wycenę</a>\n        </div>\n      </div>\n\n      <div class=\"lssv-card\">\n        <div class=\"lssv-card-img\"><span class=\"lssv-card-cat\">Social Media</span><div class=\"lssv-card-icon-wrap\"><svg viewBox=\"0 0 24 24\"><path d=\"M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z\"/></svg></div></div>\n        <div class=\"lssv-card-body\">\n          <h3>Social Media Marketing</h3>\n          <p>Prowadzimy Instagram, Facebook i TikTok. Reelsy, posty, grafiki i angażowanie społeczności każdego dnia.</p>\n          <div class=\"lssv-card-price\"><span class=\"lssv-price-from\">od</span><span class=\"lssv-price-val\">650 zł</span><span class=\"lssv-price-per\">/miesiąc</span></div>\n          <ul class=\"lssv-card-list\">\n            <li>5 postów miesięcznie</li>\n            <li>4 relacje / stories</li>\n            <li>Optymalizacja profilu</li>\n            <li>Obsługa komentarzy</li>\n          </ul>\n          <a href=\"#kontakt\" class=\"lssv-card-btn\">Zapytaj o wycenę</a>\n        </div>\n      </div>\n\n      <div class=\"lssv-card\">\n        <div class=\"lssv-card-img\"><span class=\"lssv-card-cat\">Google Ads</span><div class=\"lssv-card-icon-wrap\"><svg viewBox=\"0 0 24 24\"><path d=\"M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5\"/></svg></div></div>\n        <div class=\"lssv-card-body\">\n          <h3>Reklamy Google Ads</h3>\n          <p>Kampanie w wyszukiwarce, display i remarketing. Docieramy do osób szukających Twoich usług właśnie teraz.</p>\n          <div class=\"lssv-card-price\"><span class=\"lssv-price-from\">od</span><span class=\"lssv-price-val\">500 zł</span><span class=\"lssv-price-per\">+ budżet reklam</span></div>\n          <ul class=\"lssv-card-list\">\n            <li>Konfiguracja kampanii</li>\n            <li>Remarketing i display</li>\n            <li>Optymalizacja CPC</li>\n            <li>Raport konwersji</li>\n          </ul>\n          <a href=\"#kontakt\" class=\"lssv-card-btn\">Zapytaj o wycenę</a>\n        </div>\n      </div>\n\n      <div class=\"lssv-card\">\n        <div class=\"lssv-card-img\"><span class=\"lssv-card-cat\">WWW</span><div class=\"lssv-card-icon-wrap\"><svg viewBox=\"0 0 24 24\"><rect x=\"2\" y=\"3\" width=\"20\" height=\"14\" rx=\"2\"/><path d=\"M8 21h8M12 17v4\"/></svg></div></div>\n        <div class=\"lssv-card-body\">\n          <h3>Strony WWW WordPress</h3>\n          <p>Szybkie, responsywne strony zoptymalizowane pod SEO i konwersje. Gotowe w 14 dni roboczych.</p>\n          <div class=\"lssv-card-price\"><span class=\"lssv-price-from\">od</span><span class=\"lssv-price-val\">2 500 zł</span><span class=\"lssv-price-per\">jednorazowo</span></div>\n          <ul class=\"lssv-card-list\">\n            <li>Projekt + wdrożenie</li>\n            <li>SEO on-page</li>\n            <li>Certyfikat SSL + hosting</li>\n            <li>Szkolenie z obsługi</li>\n          </ul>\n          <a href=\"#kontakt\" class=\"lssv-card-btn\">Zapytaj o wycenę</a>\n        </div>\n      </div>\n\n      <div class=\"lssv-card\">\n        <div class=\"lssv-card-img\"><span class=\"lssv-card-cat\">Google Maps</span><div class=\"lssv-card-icon-wrap\"><svg viewBox=\"0 0 24 24\"><path d=\"M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z\"/><circle cx=\"12\" cy=\"10\" r=\"3\"/></svg></div></div>\n        <div class=\"lssv-card-body\">\n          <h3>Wizytówka Google Maps</h3>\n          <p>Pełna optymalizacja Google Business Profile. Dominacja w mapach i wynikach lokalnych dla Twojego miasta.</p>\n          <div class=\"lssv-card-price\"><span class=\"lssv-price-from\">od</span><span class=\"lssv-price-val\">350 zł</span><span class=\"lssv-price-per\">/miesiąc</span></div>\n          <ul class=\"lssv-card-list\">\n            <li>Optymalizacja profilu GBP</li>\n            <li>Zarządzanie recenzjami</li>\n            <li>Wpisy i zdjęcia co tydzień</li>\n            <li>Monitoring pozycji w mapach</li>\n          </ul>\n          <a href=\"#kontakt\" class=\"lssv-card-btn\">Zapytaj o wycenę</a>\n        </div>\n      </div>\n\n      <div class=\"lssv-card\">\n        <div class=\"lssv-card-img\"><span class=\"lssv-card-cat\">Audyt</span><div class=\"lssv-card-icon-wrap\"><svg viewBox=\"0 0 24 24\"><path d=\"M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z\"/></svg></div></div>\n        <div class=\"lssv-card-body\">\n          <h3>Audyt SEO i Analityka</h3>\n          <p>Kompleksowy audyt techniczny i treściowy strony. Identyfikujemy błędy i możliwości wzrostu. Raport w PDF.</p>\n          <div class=\"lssv-card-price\"><span class=\"lssv-price-from\">od</span><span class=\"lssv-price-val\">800 zł</span><span class=\"lssv-price-per\">jednorazowo</span></div>\n          <ul class=\"lssv-card-list\">\n            <li>Audyt techniczny + treści</li>\n            <li>Analiza konkurencji</li>\n            <li>Plan działania w PDF</li>\n            <li>Konfiguracja GA4 + GSC</li>\n          </ul>\n          <a href=\"#kontakt\" class=\"lssv-card-btn\">Zapytaj o wycenę</a>\n        </div>\n      </div>\n\n    </div>\n    <div class=\"lssv-cta\">\n      <a href=\"#kontakt\" class=\"lssv-cta-main\">&#128222; Dobierz pakiet dla swojej firmy</a>\n      <p class=\"lssv-cta-note\">Bezpłatna konsultacja · Odpowiadamy w 24 godz. · Bez zobowiązań</p>\n    </div>\n  </div>\n</section>\n"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "w7y2f2p",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "gap": "no",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "background_background": "classic",
+        "background_color": "#1b2d1e"
+      },
+      "elements": [
+        {
+          "id": "3rvpuw2",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": true
+            }
+          },
+          "elements": [
+            {
+              "id": "g24fb3z",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "\n<style>\n.lscf{padding:80px 20px;background:linear-gradient(135deg,#1b2d1e 0%,#0d1a0f 100%);font-family:'Inter',system-ui,sans-serif;position:relative;overflow:hidden}\n.lscf::before{content:'';position:absolute;top:-100px;right:-100px;width:500px;height:500px;background:radial-gradient(circle,rgba(45,122,58,.25) 0%,transparent 65%);pointer-events:none}\n.lscf-wrap{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;position:relative;z-index:1}\n.lscf-eyebrow{display:inline-block;padding:6px 18px;background:rgba(45,122,58,.3);border:1px solid rgba(123,223,138,.3);color:#7bdf8a;border-radius:50px;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:20px}\n.lscf-h2{font-size:40px;font-weight:900;line-height:1.15;color:#fff;letter-spacing:-1px;margin-bottom:16px}\n.lscf-desc{font-size:16px;color:rgba(255,255,255,.75);line-height:1.75;margin-bottom:32px}\n.lscf-list{list-style:none;padding:0;margin-bottom:36px}\n.lscf-list li{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.08);color:rgba(255,255,255,.85);font-size:15px;font-weight:500}\n.lscf-list li:last-child{border:none}\n.lscf-list li::before{content:\"✓\";width:22px;height:22px;border-radius:50%;background:#2d7a3a;color:#fff;font-weight:800;font-size:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0}\n.lscf-btn{display:inline-flex;align-items:center;gap:10px;padding:16px 36px;background:#2d7a3a;color:#fff;border-radius:6px;font-size:15px;font-weight:700;text-decoration:none;transition:all .25s;box-shadow:0 4px 20px rgba(45,122,58,.4)}\n.lscf-btn:hover{background:#3a9649;transform:translateY(-2px);text-decoration:none;color:#fff}\n.lscf-visual{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:40px;display:flex;flex-direction:column;gap:20px}\n.lscf-stat-row{display:flex;align-items:center;gap:16px;padding:16px;background:rgba(255,255,255,.07);border-radius:12px}\n.lscf-stat-icon{width:48px;height:48px;border-radius:10px;background:rgba(45,122,58,.35);display:flex;align-items:center;justify-content:center;flex-shrink:0}\n.lscf-stat-icon svg{width:24px;height:24px;fill:none;stroke:#7bdf8a;stroke-width:2.5}\n.lscf-stat-n{font-size:28px;font-weight:900;color:#7bdf8a;line-height:1}\n.lscf-stat-l{font-size:13px;color:rgba(255,255,255,.6);margin-top:3px}\n@media(max-width:1024px){.lscf-wrap{grid-template-columns:1fr;gap:48px}.lscf-h2{font-size:32px}}\n@media(max-width:640px){.lscf-h2{font-size:26px}}\n</style>\n<section class=\"lscf\" id=\"dla-firm\">\n  <div class=\"lscf-wrap\">\n    <div>\n      <span class=\"lscf-eyebrow\">&#127970; Dla Firm i Agencji</span>\n      <h2 class=\"lscf-h2\">Marketing lokalny dla firm z Warszawy i całego Mazowsza</h2>\n      <p class=\"lscf-desc\">Specjalizujemy się we wspieraniu małych i średnich firm w walce o widoczność w internecie na rynku lokalnym. Jesteśmy jednym partnerem dla całego digital marketingu.</p>\n      <ul class=\"lscf-list\">\n        <li>Integracja SEO, social media i reklam w jednej strategii</li>\n        <li>Dedykowany opiekun projektu i stały kontakt</li>\n        <li>Raportowanie wyników co miesiąc – konkrety, nie słowa</li>\n        <li>Wszystkie konta i dane zawsze należą do Ciebie</li>\n        <li>Umowa bez blokady – możesz odejść w każdej chwili</li>\n      </ul>\n      <a href=\"#kontakt\" class=\"lscf-btn\">&#128222; Umów bezpłatne spotkanie</a>\n    </div>\n    <div class=\"lscf-visual\">\n      <div class=\"lscf-stat-row\">\n        <div class=\"lscf-stat-icon\"><svg viewBox=\"0 0 24 24\"><path d=\"M3 3h18v18H3z\"/><path d=\"M9 9l3-3 3 3M12 6v12\"/></svg></div>\n        <div><div class=\"lscf-stat-n\">+320%</div><div class=\"lscf-stat-l\">Średni wzrost ruchu organicznego po 6 miesiącach SEO</div></div>\n      </div>\n      <div class=\"lscf-stat-row\">\n        <div class=\"lscf-stat-icon\"><svg viewBox=\"0 0 24 24\"><path d=\"M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z\"/></svg></div>\n        <div><div class=\"lscf-stat-n\">76 000+</div><div class=\"lscf-stat-l\">Obserwujących zdobytych przez nasze profile social media</div></div>\n      </div>\n      <div class=\"lscf-stat-row\">\n        <div class=\"lscf-stat-icon\"><svg viewBox=\"0 0 24 24\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M12 8v4l3 3\"/></svg></div>\n        <div><div class=\"lscf-stat-n\">48 godz.</div><div class=\"lscf-stat-l\">Maksymalny czas odpowiedzi na każde zgłoszenie klienta</div></div>\n      </div>\n    </div>\n  </div>\n</section>\n"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "xjf5ny3",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "gap": "no",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "background_background": "classic",
+        "background_color": "#ffffff"
+      },
+      "elements": [
+        {
+          "id": "zmhdlcy",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": true
+            }
+          },
+          "elements": [
+            {
+              "id": "q68dgrj",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "\n<style>\n.lspr{padding:100px 20px;background:#fff;font-family:'Inter',system-ui,sans-serif}\n.lspr-wrap{max-width:1280px;margin:0 auto}\n.lspr-hdr{text-align:center;margin-bottom:68px}\n.lspr-eyebrow{display:inline-block;padding:6px 18px;background:#e8f2ea;color:#2d7a3a;border-radius:50px;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:16px}\n.lspr-h2{font-size:44px;font-weight:900;line-height:1.15;color:#1a2018;letter-spacing:-1px}\n.lspr-h2 span{color:#2d7a3a}\n.lspr-sub{font-size:15px;color:#6b7a65;margin-top:12px;line-height:1.7}\n.lspr-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative}\n.lspr-steps::after{content:'';position:absolute;top:44px;left:12.5%;right:12.5%;height:2px;background:linear-gradient(90deg,#b8dfc0,#2d7a3a,#2d7a3a,#b8dfc0);z-index:0;pointer-events:none}\n.lspr-step{text-align:center;padding:40px 24px;position:relative;z-index:1}\n.lspr-num{width:88px;height:88px;border-radius:50%;background:#fff;border:3px solid #2d7a3a;display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 28px;position:relative;z-index:2;box-shadow:0 4px 20px rgba(45,122,58,.2);transition:all .35s}\n.lspr-step:hover .lspr-num{background:#2d7a3a;box-shadow:0 8px 32px rgba(45,122,58,.4);transform:scale(1.08)}\n.lspr-n{font-size:28px;font-weight:900;color:#2d7a3a;line-height:1;transition:color .35s}\n.lspr-step:hover .lspr-n{color:#fff}\n.lspr-step h3{font-size:17px;font-weight:800;color:#1a2018;margin-bottom:10px;line-height:1.4}\n.lspr-step p{font-size:14px;color:#6b7a65;line-height:1.75}\n@media(max-width:1024px){.lspr-steps{grid-template-columns:repeat(2,1fr)}.lspr-steps::after{display:none}.lspr-h2{font-size:36px}}\n@media(max-width:640px){.lspr-steps{grid-template-columns:1fr}.lspr-h2{font-size:28px}}\n</style>\n<section class=\"lspr\" id=\"jak-pracujemy\">\n  <div class=\"lspr-wrap\">\n    <div class=\"lspr-hdr\">\n      <span class=\"lspr-eyebrow\">Proces Współpracy</span>\n      <h2 class=\"lspr-h2\">Jak wygląda <span>praca z nami?</span></h2>\n      <p class=\"lspr-sub\">Od pierwszego kontaktu do realnych wyników w 4 krokach</p>\n    </div>\n    <div class=\"lspr-steps\">\n      <div class=\"lspr-step\">\n        <div class=\"lspr-num\"><span class=\"lspr-n\">01</span></div>\n        <h3>Bezpłatna konsultacja</h3>\n        <p>Omawiamy Twoje cele, branżę i lokalną konkurencję. Szukamy szybkich wygranych i długofalowej strategii.</p>\n      </div>\n      <div class=\"lspr-step\">\n        <div class=\"lspr-num\"><span class=\"lspr-n\">02</span></div>\n        <h3>Audyt i strategia</h3>\n        <p>Analizujemy stronę, widoczność w Google i profile społecznościowe. Przygotowujemy plan z harmonogramem i celami.</p>\n      </div>\n      <div class=\"lspr-step\">\n        <div class=\"lspr-num\"><span class=\"lspr-n\">03</span></div>\n        <h3>Wdrożenie i optymalizacja</h3>\n        <p>Uruchamiamy kampanie SEO, social media i reklamy. Monitorujemy wyniki na żywo i optymalizujemy co tydzień.</p>\n      </div>\n      <div class=\"lspr-step\">\n        <div class=\"lspr-num\"><span class=\"lspr-n\">04</span></div>\n        <h3>Raport i skalowanie</h3>\n        <p>Co miesiąc dostajesz szczegółowy raport. Wspólnie decydujemy o dalszym wzroście budżetu i zakresu działań.</p>\n      </div>\n    </div>\n  </div>\n</section>\n"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5ov9a0c",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "gap": "no",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "background_background": "classic",
+        "background_color": "#f7f8f5"
+      },
+      "elements": [
+        {
+          "id": "mzt6o7f",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": true
+            }
+          },
+          "elements": [
+            {
+              "id": "13rn0qb",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "\n<style>\n.lswu{padding:100px 20px;background:#f7f8f5;font-family:'Inter',system-ui,sans-serif}\n.lswu-wrap{max-width:1280px;margin:0 auto}\n.lswu-hdr{text-align:center;margin-bottom:64px}\n.lswu-eyebrow{display:inline-block;padding:6px 18px;background:#e8f2ea;color:#2d7a3a;border-radius:50px;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:16px}\n.lswu-h2{font-size:44px;font-weight:900;line-height:1.15;color:#1a2018;letter-spacing:-1px}\n.lswu-h2 span{color:#2d7a3a}\n.lswu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}\n.lswu-card{background:#fff;border-radius:16px;padding:36px 32px;box-shadow:0 2px 12px rgba(0,0,0,.05);transition:all .35s;border:1.5px solid transparent;display:flex;flex-direction:column;gap:16px}\n.lswu-card:hover{transform:translateY(-6px);box-shadow:0 12px 36px rgba(45,122,58,.12);border-color:#b8dfc0}\n.lswu-icon{width:52px;height:52px;border-radius:12px;background:#e8f2ea;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .35s}\n.lswu-card:hover .lswu-icon{background:#2d7a3a}\n.lswu-icon svg{width:26px;height:26px;fill:none;stroke:#2d7a3a;stroke-width:2.5;transition:stroke .35s}\n.lswu-card:hover .lswu-icon svg{stroke:#fff}\n.lswu-card h3{font-size:18px;font-weight:800;color:#1a2018;line-height:1.4;margin:0}\n.lswu-card p{font-size:14px;color:#6b7a65;line-height:1.8;margin:0}\n@media(max-width:1024px){.lswu-grid{grid-template-columns:repeat(2,1fr)}.lswu-h2{font-size:36px}}\n@media(max-width:640px){.lswu-grid{grid-template-columns:1fr}.lswu-h2{font-size:28px}}\n</style>\n<section class=\"lswu\" id=\"dlaczego-my\">\n  <div class=\"lswu-wrap\">\n    <div class=\"lswu-hdr\">\n      <span class=\"lswu-eyebrow\">Dlaczego My?</span>\n      <h2 class=\"lswu-h2\">6 powodów by <span>wybrać SocialMagic</span></h2>\n    </div>\n    <div class=\"lswu-grid\">\n      <div class=\"lswu-card\">\n        <div class=\"lswu-icon\"><svg viewBox=\"0 0 24 24\"><path d=\"M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z\"/></svg></div>\n        <h3>Wyniki, nie obietnice</h3>\n        <p>Pracujemy na konkretne liczby — pozycje w Google, wzrost ruchu, leady. Każde działanie mierzymy i raportujemy miesięcznie.</p>\n      </div>\n      <div class=\"lswu-card\">\n        <div class=\"lswu-icon\"><svg viewBox=\"0 0 24 24\"><path d=\"M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z\"/><circle cx=\"12\" cy=\"10\" r=\"3\"/></svg></div>\n        <h3>Eksperci od rynku lokalnego</h3>\n        <p>Znamy specyfikę rynku warszawskiego i mazowieckiego. Wiemy, jak dotrzeć do klientów w konkretnych dzielnicach i miastach.</p>\n      </div>\n      <div class=\"lswu-card\">\n        <div class=\"lswu-icon\"><svg viewBox=\"0 0 24 24\"><path d=\"M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z\"/></svg></div>\n        <h3>Szybka komunikacja</h3>\n        <p>Stały opiekun projektu dostępny przez email, telefon i WhatsApp. Odpowiadamy w max 24 godziny — bez wyjątków.</p>\n      </div>\n      <div class=\"lswu-card\">\n        <div class=\"lswu-icon\"><svg viewBox=\"0 0 24 24\"><rect x=\"2\" y=\"2\" width=\"20\" height=\"20\" rx=\"5\"/><path d=\"M7 10l3 3 7-7\"/></svg></div>\n        <h3>Przejrzyste ceny i umowy</h3>\n        <p>Stała stawka miesięczna, zero ukrytych opłat. Umowa pisemna z dokładnym zakresem usług i celami do osiągnięcia.</p>\n      </div>\n      <div class=\"lswu-card\">\n        <div class=\"lswu-icon\"><svg viewBox=\"0 0 24 24\"><path d=\"M13 2L3 14h9l-1 8 10-12h-9l1-8z\"/></svg></div>\n        <h3>Szybki start – efekty już w 1. miesiącu</h3>\n        <p>Zaczynamy od najskuteczniejszych działań: wizytówka Google, optymalizacja profili i techniczne SEO — wyniki już po 4 tygodniach.</p>\n      </div>\n      <div class=\"lswu-card\">\n        <div class=\"lswu-icon\"><svg viewBox=\"0 0 24 24\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"/></svg></div>\n        <h3>Twoje dane zawsze Twoje</h3>\n        <p>Wszystkie konta (Google, Meta, Analytics) są na Twoje dane. Po zakończeniu współpracy nic nie przepada — nigdy nie blokujemy dostępu.</p>\n      </div>\n    </div>\n  </div>\n</section>\n"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ocmicvn",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "gap": "no",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "background_background": "classic",
+        "background_color": "#ffffff"
+      },
+      "elements": [
+        {
+          "id": "laip65k",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": true
+            }
+          },
+          "elements": [
+            {
+              "id": "act45t4",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "\n<script type=\"application/ld+json\">\n{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"SocialMagic\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.9\",\"bestRating\":\"5\",\"reviewCount\":\"147\"},\"review\":[{\"@type\":\"Review\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":\"5\",\"bestRating\":\"5\"},\"author\":{\"@type\":\"Person\",\"name\":\"Anna K.\"},\"reviewBody\":\"Świetna agencja! Dzięki nim moja firma jest na 1. miejscu Google w Warszawie. Polecam z całego serca.\"},{\"@type\":\"Review\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":\"5\",\"bestRating\":\"5\"},\"author\":{\"@type\":\"Person\",\"name\":\"Tomasz N.\"},\"reviewBody\":\"Profesjonalizm i szybkie wyniki. Social media dosłownie ożyły. Warto każdej złotówki.\"},{\"@type\":\"Review\",\"reviewRating\":{\"@type\":\"Rating\",\"ratingValue\":\"5\",\"bestRating\":\"5\"},\"author\":{\"@type\":\"Person\",\"name\":\"Magdalena W.\"},\"reviewBody\":\"Nareszcie agencja, która dotrzymuje słowa. Ruch z Google wzrósł o 320% w 3 miesiące.\"}]}\n</script>\n<style>\n.lsop{padding:100px 20px;background:#fff;font-family:'Inter',system-ui,sans-serif}\n.lsop-wrap{max-width:1280px;margin:0 auto}\n.lsop-hdr{text-align:center;margin-bottom:20px}\n.lsop-eyebrow{display:inline-block;padding:6px 18px;background:#e8f2ea;color:#2d7a3a;border-radius:50px;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:16px}\n.lsop-h2{font-size:44px;font-weight:900;line-height:1.15;color:#1a2018;letter-spacing:-1px;margin-bottom:16px}\n.lsop-h2 span{color:#2d7a3a}\n.lsop-agg{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:56px}\n.lsop-agg-n{font-size:48px;font-weight:900;color:#1a2018;line-height:1}\n.lsop-agg-right{text-align:left}\n.lsop-stars{color:#f59e0b;font-size:22px;letter-spacing:2px;line-height:1;margin-bottom:4px}\n.lsop-agg-sub{font-size:13px;color:#6b7a65}\n.lsop-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}\n.lsop-card{background:#f7f8f5;border-radius:16px;padding:32px 28px;border:1.5px solid #e8ede5;transition:all .35s;display:flex;flex-direction:column;gap:16px;position:relative}\n.lsop-card:hover{transform:translateY(-5px);box-shadow:0 12px 36px rgba(45,122,58,.1);border-color:#b8dfc0;background:#fff}\n.lsop-card-stars{color:#f59e0b;font-size:18px;letter-spacing:2px}\n.lsop-card-text{font-size:15px;line-height:1.8;color:#3d4a39;font-style:italic}\n.lsop-author{display:flex;align-items:center;gap:14px}\n.lsop-avatar{width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,#b8dfc0,#2d7a3a);display:flex;align-items:center;justify-content:center;color:#fff;font-size:18px;font-weight:800;flex-shrink:0}\n.lsop-author-name{font-size:15px;font-weight:700;color:#1a2018}\n.lsop-author-role{font-size:12px;color:#6b7a65;margin-top:2px}\n.lsop-stat{padding-top:14px;border-top:1px solid #e8ede5}\n.lsop-stat-v{font-size:26px;font-weight:900;color:#2d7a3a;line-height:1;margin-bottom:4px}\n.lsop-stat-l{font-size:12px;color:#6b7a65;line-height:1.4}\n.lsop-google{display:flex;align-items:center;gap:6px;font-size:12px;color:#9aaa94;position:absolute;top:20px;right:20px}\n.lsop-google svg{width:16px;height:16px}\n.lsop-cta-row{text-align:center;margin-top:48px}\n.lsop-google-btn{display:inline-flex;align-items:center;gap:10px;padding:14px 32px;border:2px solid #2d7a3a;color:#2d7a3a;border-radius:6px;font-size:14px;font-weight:700;text-decoration:none;transition:all .25s}\n.lsop-google-btn:hover{background:#2d7a3a;color:#fff;text-decoration:none}\n@media(max-width:1024px){.lsop-grid{grid-template-columns:repeat(2,1fr)}.lsop-h2{font-size:36px}}\n@media(max-width:640px){.lsop-grid{grid-template-columns:1fr}.lsop-h2{font-size:28px}}\n</style>\n<section class=\"lsop\" id=\"opinie\">\n  <div class=\"lsop-wrap\">\n    <div class=\"lsop-hdr\">\n      <span class=\"lsop-eyebrow\">Opinie Klientów</span>\n      <h2 class=\"lsop-h2\">Co mówią firmy,<br>które <span>nam zaufały?</span></h2>\n    </div>\n    <div class=\"lsop-agg\">\n      <div class=\"lsop-agg-n\">4.9</div>\n      <div class=\"lsop-agg-right\">\n        <div class=\"lsop-stars\">&#9733;&#9733;&#9733;&#9733;&#9733;</div>\n        <div class=\"lsop-agg-sub\">Ocena w Google Business<br>Na podstawie 147 recenzji</div>\n      </div>\n    </div>\n    <div class=\"lsop-grid\">\n      <div class=\"lsop-card\">\n        <span class=\"lsop-google\"><svg viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z\" fill=\"#4285F4\"/><path d=\"M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z\" fill=\"#34A853\"/><path d=\"M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z\" fill=\"#FBBC05\"/><path d=\"M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z\" fill=\"#EA4335\"/></svg>Google</span>\n        <div class=\"lsop-card-stars\">&#9733;&#9733;&#9733;&#9733;&#9733;</div>\n        <p class=\"lsop-card-text\">„Świetna agencja! Dzięki nim moja firma jest na 1. miejscu Google w Warszawie dla kluczowych fraz. Wyniki przeszły oczekiwania. Polecam z całego serca!\"</p>\n        <div class=\"lsop-author\"><div class=\"lsop-avatar\">A</div><div><div class=\"lsop-author-name\">Anna K.</div><div class=\"lsop-author-role\">Branża beauty · Warszawa</div></div></div>\n        <div class=\"lsop-stat\"><div class=\"lsop-stat-v\">+320%</div><div class=\"lsop-stat-l\">Więcej wizyt z Google w 3 miesiące</div></div>\n      </div>\n      <div class=\"lsop-card\">\n        <span class=\"lsop-google\"><svg viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z\" fill=\"#4285F4\"/><path d=\"M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z\" fill=\"#34A853\"/><path d=\"M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z\" fill=\"#FBBC05\"/><path d=\"M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z\" fill=\"#EA4335\"/></svg>Google</span>\n        <div class=\"lsop-card-stars\">&#9733;&#9733;&#9733;&#9733;&#9733;</div>\n        <p class=\"lsop-card-text\">„Profesjonalizm i szybkie wyniki. Social media dosłownie ożyły, klienci sami piszą z pytaniami. Warto każdej złotówki. Kontakt zawsze szybki i rzeczowy.\"</p>\n        <div class=\"lsop-author\"><div class=\"lsop-avatar\">T</div><div><div class=\"lsop-author-name\">Tomasz N.</div><div class=\"lsop-author-role\">Sprzedaż B2B · Piaseczno</div></div></div>\n        <div class=\"lsop-stat\"><div class=\"lsop-stat-v\">76 000+</div><div class=\"lsop-stat-l\">Obserwujących na Instagramie</div></div>\n      </div>\n      <div class=\"lsop-card\">\n        <span class=\"lsop-google\"><svg viewBox=\"0 0 24 24\" fill=\"none\"><path d=\"M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z\" fill=\"#4285F4\"/><path d=\"M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z\" fill=\"#34A853\"/><path d=\"M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z\" fill=\"#FBBC05\"/><path d=\"M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z\" fill=\"#EA4335\"/></svg>Google</span>\n        <div class=\"lsop-card-stars\">&#9733;&#9733;&#9733;&#9733;&#9733;</div>\n        <p class=\"lsop-card-text\">„Nareszcie agencja, która dotrzymuje słowa. Ruch z Google wzrósł o 320% w 3 miesiące. Nasza marka w końcu ożyła. Szczerze polecam każdej lokalnej firmie!\"</p>\n        <div class=\"lsop-author\"><div class=\"lsop-avatar\">M</div><div><div class=\"lsop-author-name\">Magdalena W.</div><div class=\"lsop-author-role\">Marka odzieżowa · Pruszków</div></div></div>\n        <div class=\"lsop-stat\"><div class=\"lsop-stat-v\">45 000+</div><div class=\"lsop-stat-l\">Polubień na Facebooku</div></div>\n      </div>\n    </div>\n    <div class=\"lsop-cta-row\">\n      <a href=\"#\" class=\"lsop-google-btn\">&#9733; Czytaj wszystkie recenzje w Google</a>\n    </div>\n  </div>\n</section>\n"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "emdnvhw",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "gap": "no",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "background_background": "classic",
+        "background_color": "#f7f8f5"
+      },
+      "elements": [
+        {
+          "id": "7utdgh8",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": true
+            }
+          },
+          "elements": [
+            {
+              "id": "d5u44ct",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "\n<style>\n.lsla{padding:90px 20px;background:#f7f8f5;font-family:'Inter',system-ui,sans-serif}\n.lsla-wrap{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}\n.lsla-eyebrow{display:inline-block;padding:6px 18px;background:#e8f2ea;color:#2d7a3a;border-radius:50px;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:16px}\n.lsla-h2{font-size:40px;font-weight:900;line-height:1.2;color:#1a2018;letter-spacing:-1px;margin-bottom:16px}\n.lsla-h2 span{color:#2d7a3a}\n.lsla-desc{font-size:15px;color:#6b7a65;line-height:1.8;margin-bottom:28px}\n.lsla-cities{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}\n.lsla-city{padding:7px 16px;background:#fff;border:1.5px solid #d0e8d4;border-radius:50px;color:#3d4a39;font-size:13px;font-weight:600;transition:all .2s;cursor:default}\n.lsla-city:hover{background:#e8f2ea;border-color:#2d7a3a;color:#2d7a3a}\n.lsla-note{font-size:13px;color:#9aaa94;line-height:1.6}\n.lsla-note a{color:#2d7a3a;font-weight:700;text-decoration:none}\n.lsla-note a:hover{text-decoration:underline}\n.lsla-map-wrap{border-radius:16px;overflow:hidden;border:2px solid #d0e8d4;background:#e8f2ea;height:420px;display:flex;align-items:center;justify-content:center;position:relative}\n.lsla-map-ph{text-align:center}\n.lsla-map-ph svg{width:56px;height:56px;fill:none;stroke:#2d7a3a;stroke-width:1.5;margin-bottom:14px}\n.lsla-map-ph p{color:#6b7a65;font-size:14px;line-height:1.6}\n.lsla-map-ph strong{color:#2d7a3a}\n@media(max-width:1024px){.lsla-wrap{grid-template-columns:1fr}.lsla-h2{font-size:32px}.lsla-map-wrap{height:280px}}\n</style>\n<section class=\"lsla\" id=\"zasieg\">\n  <div class=\"lsla-wrap\">\n    <div>\n      <span class=\"lsla-eyebrow\">&#128205; Zasięg Działania</span>\n      <h2 class=\"lsla-h2\">Obsługujemy firmy w <span>Warszawie</span> i na Mazowszu</h2>\n      <p class=\"lsla-desc\">Znamy lokalny rynek i wiemy, jak dotrzeć do klientów w konkretnych dzielnicach i miastach Mazowsza. Działamy stacjonarnie w Warszawie i zdalnie na terenie całej Polski.</p>\n      <div class=\"lsla-cities\">\n        <span class=\"lsla-city\">&#128205; Warszawa</span><span class=\"lsla-city\">Mokotów</span><span class=\"lsla-city\">Wola</span>\n        <span class=\"lsla-city\">Ursynów</span><span class=\"lsla-city\">Praga Płd.</span><span class=\"lsla-city\">Piaseczno</span>\n        <span class=\"lsla-city\">Grodzisk Maz.</span><span class=\"lsla-city\">Pruszków</span><span class=\"lsla-city\">Legionowo</span>\n        <span class=\"lsla-city\">Wołomin</span><span class=\"lsla-city\">Otwock</span><span class=\"lsla-city\">+ cała Polska</span>\n      </div>\n      <p class=\"lsla-note\">Nie ma Cię na liście? <a href=\"#kontakt\">Napisz do nas</a> — obsługujemy firmy z całej Polski zdalnie. Spotkania online lub u Ciebie w biurze.</p>\n    </div>\n    <div class=\"lsla-map-wrap\">\n      <div class=\"lsla-map-ph\">\n        <svg viewBox=\"0 0 24 24\"><path d=\"M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z\"/><circle cx=\"12\" cy=\"10\" r=\"3\"/></svg>\n        <p>Wstaw tu mapę Google Maps<br><strong>lub zdjęcie zespołu / biura</strong></p>\n      </div>\n    </div>\n  </div>\n</section>\n"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "iv73a9z",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "gap": "no",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "background_background": "classic",
+        "background_color": "#ffffff"
+      },
+      "elements": [
+        {
+          "id": "tj33kqc",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": true
+            }
+          },
+          "elements": [
+            {
+              "id": "c3kf5pd",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "\n<script type=\"application/ld+json\">\n{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Ile kosztuje pozycjonowanie lokalne SEO w Warszawie?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Pozycjonowanie lokalne w Warszawie kosztuje od 890 zł miesięcznie. Cena zależy od konkurencyjności branży i zakresu działań. Oferujemy bezpłatną wycenę po audycie.\"}},{\"@type\":\"Question\",\"name\":\"Jak szybko zobaczę efekty SEO?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Pierwsze efekty SEO pojawiają się po 1–3 miesiącach. Pełny wzrost ruchu organicznego następuje po 4–6 miesiącach. Wizytówka Google może dawać wyniki już w pierwszym tygodniu.\"}},{\"@type\":\"Question\",\"name\":\"Czy obsługujecie firmy spoza Warszawy?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Tak, obsługujemy firmy z całej Polski zdalnie przez Google Meet lub Teams. Specjalizujemy się w Warszawie i Mazowszu, ale mamy klientów z całego kraju.\"}},{\"@type\":\"Question\",\"name\":\"Co zawiera pakiet Social Media od 650 zł?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Pakiet obejmuje: 5 postów miesięcznie (grafika + tekst), 4 relacje/stories, optymalizację profilu, odpowiadanie na komentarze i wiadomości oraz miesięczny raport wyników.\"}},{\"@type\":\"Question\",\"name\":\"Czy mogę zrezygnować z usług w każdym momencie?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Umowy zawieramy na 3 miesiące z 30-dniowym wypowiedzeniem. Po zakończeniu wszystkie konta i dane pozostają Twoje. Nigdy nie blokujemy dostępu.\"}}]}\n</script>\n<style>\n.lsfq{padding:100px 20px;background:#fff;font-family:'Inter',system-ui,sans-serif}\n.lsfq-wrap{max-width:860px;margin:0 auto}\n.lsfq-hdr{text-align:center;margin-bottom:60px}\n.lsfq-eyebrow{display:inline-block;padding:6px 18px;background:#e8f2ea;color:#2d7a3a;border-radius:50px;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:16px}\n.lsfq-h2{font-size:44px;font-weight:900;line-height:1.15;color:#1a2018;letter-spacing:-1px}\n.lsfq-h2 span{color:#2d7a3a}\n.lsfq-sub{font-size:15px;color:#6b7a65;margin-top:12px;line-height:1.7}\n.lsfq-item{border:1.5px solid #e8ede5;border-radius:12px;margin-bottom:10px;overflow:hidden;transition:border-color .25s}\n.lsfq-item.open{border-color:#b8dfc0}\n.lsfq-q{padding:22px 24px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;transition:background .2s;background:#fff}\n.lsfq-q:hover{background:#f7f8f5}\n.lsfq-item.open .lsfq-q{background:#f0f5ee}\n.lsfq-q-text{font-size:15px;font-weight:700;color:#1a2018;line-height:1.4}\n.lsfq-icon{width:30px;height:30px;border-radius:50%;border:2px solid #b8dfc0;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .25s;background:#fff}\n.lsfq-item.open .lsfq-icon{background:#2d7a3a;border-color:#2d7a3a;transform:rotate(45deg)}\n.lsfq-icon svg{width:12px;height:12px;fill:none;stroke:#2d7a3a;stroke-width:3;stroke-linecap:round;transition:stroke .25s}\n.lsfq-item.open .lsfq-icon svg{stroke:#fff}\n.lsfq-a{max-height:0;overflow:hidden;transition:max-height .38s ease}\n.lsfq-item.open .lsfq-a{max-height:250px}\n.lsfq-a-inner{padding:4px 24px 22px;font-size:14px;color:#6b7a65;line-height:1.8}\n@media(max-width:640px){.lsfq-h2{font-size:32px}.lsfq-q{padding:18px 18px}.lsfq-a-inner{padding:4px 18px 18px}}\n</style>\n<section class=\"lsfq\" id=\"faq\">\n  <div class=\"lsfq-wrap\">\n    <div class=\"lsfq-hdr\">\n      <span class=\"lsfq-eyebrow\">FAQ</span>\n      <h2 class=\"lsfq-h2\">Często zadawane <span>pytania</span></h2>\n      <p class=\"lsfq-sub\">Odpowiedzi na najczęstsze pytania o marketing internetowy i współpracę z SocialMagic</p>\n    </div>\n    <div class=\"lsfq-item\">\n      <div class=\"lsfq-q\" onclick=\"lsFaqToggle(this)\"><span class=\"lsfq-q-text\">Ile kosztuje pozycjonowanie lokalne SEO w Warszawie?</span><div class=\"lsfq-icon\"><svg viewBox=\"0 0 12 12\"><path d=\"M6 1v10M1 6h10\"/></svg></div></div>\n      <div class=\"lsfq-a\"><div class=\"lsfq-a-inner\">Pozycjonowanie lokalne w Warszawie zaczyna się od <strong>890 zł miesięcznie</strong>. Cena zależy od konkurencyjności branży, liczby fraz i zakresu działań. Oferujemy bezpłatną wycenę po krótkim audycie — zadzwoń lub napisz, odezwiemy się w 24 godziny.</div></div>\n    </div>\n    <div class=\"lsfq-item\">\n      <div class=\"lsfq-q\" onclick=\"lsFaqToggle(this)\"><span class=\"lsfq-q-text\">Jak szybko zobaczę efekty SEO?</span><div class=\"lsfq-icon\"><svg viewBox=\"0 0 12 12\"><path d=\"M6 1v10M1 6h10\"/></svg></div></div>\n      <div class=\"lsfq-a\"><div class=\"lsfq-a-inner\">Pierwsze efekty SEO widoczne są po <strong>1–3 miesiącach</strong>. Pełny wzrost ruchu organicznego następuje po 4–6 miesiącach. Wyjątkiem jest wizytówka Google (GBP) — efekty pojawiają się już w pierwszym tygodniu po optymalizacji.</div></div>\n    </div>\n    <div class=\"lsfq-item\">\n      <div class=\"lsfq-q\" onclick=\"lsFaqToggle(this)\"><span class=\"lsfq-q-text\">Czy obsługujecie firmy spoza Warszawy?</span><div class=\"lsfq-icon\"><svg viewBox=\"0 0 12 12\"><path d=\"M6 1v10M1 6h10\"/></svg></div></div>\n      <div class=\"lsfq-a\"><div class=\"lsfq-a-inner\">Tak! Obsługujemy firmy z <strong>całej Polski</strong> zdalnie. Spotkania przez Google Meet lub Teams. Specjalizujemy się w Warszawie i Mazowszu, ale mamy klientów z Krakowa, Wrocławia, Gdańska i wielu innych miast.</div></div>\n    </div>\n    <div class=\"lsfq-item\">\n      <div class=\"lsfq-q\" onclick=\"lsFaqToggle(this)\"><span class=\"lsfq-q-text\">Co zawiera pakiet Social Media od 650 zł?</span><div class=\"lsfq-icon\"><svg viewBox=\"0 0 12 12\"><path d=\"M6 1v10M1 6h10\"/></svg></div></div>\n      <div class=\"lsfq-a\"><div class=\"lsfq-a-inner\">Pakiet obejmuje: <strong>5 postów miesięcznie</strong> (grafika + tekst), 4 relacje/stories, optymalizację profilu, odpowiadanie na komentarze i wiadomości (24–48h), profesjonalne grafiki i miesięczny raport wyników z analizą zasięgów i zaangażowania.</div></div>\n    </div>\n    <div class=\"lsfq-item\">\n      <div class=\"lsfq-q\" onclick=\"lsFaqToggle(this)\"><span class=\"lsfq-q-text\">Czy mogę zrezygnować z usług w każdym momencie?</span><div class=\"lsfq-icon\"><svg viewBox=\"0 0 12 12\"><path d=\"M6 1v10M1 6h10\"/></svg></div></div>\n      <div class=\"lsfq-a\"><div class=\"lsfq-a-inner\">Umowy zawieramy na <strong>3 miesiące</strong> z 30-dniowym wypowiedzeniem. Po zakończeniu współpracy wszystkie konta (Google Ads, Analytics, Meta Business, Search Console) <strong>pozostają Twoje</strong>. Nigdy nie blokujemy dostępu do danych.</div></div>\n    </div>\n  </div>\n</section>\n<script>\nfunction lsFaqToggle(el){const i=el.closest('.lsfq-item');const o=i.classList.contains('open');document.querySelectorAll('.lsfq-item.open').forEach(x=>x.classList.remove('open'));if(!o)i.classList.add('open');}\n</script>\n"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rih6ouu",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "gap": "no",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "background_background": "classic",
+        "background_color": "#f7f8f5"
+      },
+      "elements": [
+        {
+          "id": "qotniqv",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": true
+            }
+          },
+          "elements": [
+            {
+              "id": "0q5eror",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "\n<style>\n.lsbl{padding:100px 20px;background:#f7f8f5;font-family:'Inter',system-ui,sans-serif}\n.lsbl-wrap{max-width:1280px;margin:0 auto}\n.lsbl-top{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:52px;flex-wrap:wrap}\n.lsbl-eyebrow{display:inline-block;padding:6px 18px;background:#e8f2ea;color:#2d7a3a;border-radius:50px;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:12px}\n.lsbl-h2{font-size:40px;font-weight:900;line-height:1.2;color:#1a2018;letter-spacing:-1px}\n.lsbl-h2 span{color:#2d7a3a}\n.lsbl-all{display:inline-flex;align-items:center;gap:8px;padding:12px 24px;border:2px solid #2d7a3a;color:#2d7a3a;border-radius:6px;font-size:14px;font-weight:700;text-decoration:none;white-space:nowrap;transition:all .25s;flex-shrink:0}\n.lsbl-all:hover{background:#2d7a3a;color:#fff;text-decoration:none}\n.lsbl-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}\n.lsbl-card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.06);transition:all .35s;border:1.5px solid transparent}\n.lsbl-card:hover{transform:translateY(-5px);box-shadow:0 12px 36px rgba(45,122,58,.12);border-color:#b8dfc0}\n.lsbl-img{height:190px;background:linear-gradient(135deg,#d0e8d4,#b8dfc0);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}\n.lsbl-cat{position:absolute;top:14px;left:14px;padding:5px 12px;background:#2d7a3a;color:#fff;border-radius:50px;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:1px}\n.lsbl-img-ph{color:#2d7a3a;font-size:11px;font-weight:600;letter-spacing:2px;opacity:.6}\n.lsbl-body{padding:24px 24px 28px}\n.lsbl-meta{display:flex;align-items:center;gap:8px;margin-bottom:12px;font-size:12px;color:#9aaa94}\n.lsbl-dot{width:3px;height:3px;border-radius:50%;background:#d0e8d4}\n.lsbl-card h3{font-size:17px;font-weight:800;color:#1a2018;line-height:1.4;margin-bottom:10px}\n.lsbl-card h3 a{color:#1a2018;text-decoration:none;transition:color .2s}\n.lsbl-card:hover h3 a{color:#2d7a3a}\n.lsbl-card p{font-size:13px;color:#6b7a65;line-height:1.75;margin-bottom:18px}\n.lsbl-link{display:inline-flex;align-items:center;gap:6px;color:#2d7a3a;font-size:13px;font-weight:700;text-decoration:none;transition:gap .2s}\n.lsbl-link:hover{gap:10px;text-decoration:none;color:#2d7a3a}\n@media(max-width:1024px){.lsbl-grid{grid-template-columns:repeat(2,1fr)}.lsbl-h2{font-size:32px}}\n@media(max-width:640px){.lsbl-grid{grid-template-columns:1fr}.lsbl-h2{font-size:26px}.lsbl-top{flex-direction:column;align-items:flex-start}}\n</style>\n<section class=\"lsbl\" id=\"blog\">\n  <div class=\"lsbl-wrap\">\n    <div class=\"lsbl-top\">\n      <div>\n        <span class=\"lsbl-eyebrow\">Wiedza i Aktualności</span>\n        <h2 class=\"lsbl-h2\">Blog <span>marketingowy</span></h2>\n      </div>\n      <a href=\"#\" class=\"lsbl-all\">Wszystkie artykuły &#8594;</a>\n    </div>\n    <div class=\"lsbl-grid\">\n      <div class=\"lsbl-card\">\n        <div class=\"lsbl-img\"><span class=\"lsbl-cat\">SEO Lokalne</span><span class=\"lsbl-img-ph\">MINIATURA</span></div>\n        <div class=\"lsbl-body\">\n          <div class=\"lsbl-meta\"><span>15 maja 2026</span><span class=\"lsbl-dot\"></span><span>5 min czytania</span></div>\n          <h3><a href=\"#\">Jak wypozycjonować firmę lokalną w Google w 2026 roku?</a></h3>\n          <p>Sprawdzone metody, które pomogą Twojej firmie zdobyć klientów z okolicy. Od wizytówki Google po frazy lokalne w TOP3.</p>\n          <a href=\"#\" class=\"lsbl-link\">Czytaj więcej &#8594;</a>\n        </div>\n      </div>\n      <div class=\"lsbl-card\">\n        <div class=\"lsbl-img\"><span class=\"lsbl-cat\">Social Media</span><span class=\"lsbl-img-ph\">MINIATURA</span></div>\n        <div class=\"lsbl-body\">\n          <div class=\"lsbl-meta\"><span>8 maja 2026</span><span class=\"lsbl-dot\"></span><span>7 min czytania</span></div>\n          <h3><a href=\"#\">Instagram Reels dla firm lokalnych – jak zyskać zasięg organiczny?</a></h3>\n          <p>Reelsy to najlepszy sposób na darmowe dotarcie do klientów w Twoim mieście bez budżetu reklamowego. Oto jak je robić.</p>\n          <a href=\"#\" class=\"lsbl-link\">Czytaj więcej &#8594;</a>\n        </div>\n      </div>\n      <div class=\"lsbl-card\">\n        <div class=\"lsbl-img\"><span class=\"lsbl-cat\">Google Ads</span><span class=\"lsbl-img-ph\">MINIATURA</span></div>\n        <div class=\"lsbl-body\">\n          <div class=\"lsbl-meta\"><span>1 maja 2026</span><span class=\"lsbl-dot\"></span><span>6 min czytania</span></div>\n          <h3><a href=\"#\">Google Ads dla małej firmy – jak nie przepalić budżetu?</a></h3>\n          <p>5 błędów właścicieli firm w kampaniach Google Ads i jak ich uniknąć, żeby każda złotówka budżetu pracowała na wyniki.</p>\n          <a href=\"#\" class=\"lsbl-link\">Czytaj więcej &#8594;</a>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>\n"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "abjyr6k",
+      "elType": "section",
+      "settings": {
+        "layout": "full_width",
+        "gap": "no",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": true
+        },
+        "background_background": "classic",
+        "background_color": "#1b2d1e"
+      },
+      "elements": [
+        {
+          "id": "mto0drm",
+          "elType": "column",
+          "settings": {
+            "_column_size": 100,
+            "padding": {
+              "unit": "px",
+              "top": "0",
+              "right": "0",
+              "bottom": "0",
+              "left": "0",
+              "isLinked": true
+            }
+          },
+          "elements": [
+            {
+              "id": "q2phdei",
+              "elType": "widget",
+              "widgetType": "html",
+              "settings": {
+                "html": "\n<style>\n.lsct{padding:110px 20px;background:linear-gradient(135deg,#1b2d1e 0%,#0d1a0f 100%);font-family:'Inter',system-ui,sans-serif;position:relative;overflow:hidden}\n.lsct::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:800px;height:800px;background:radial-gradient(circle,rgba(45,122,58,.2) 0%,transparent 65%);pointer-events:none}\n.lsct-wrap{max-width:860px;margin:0 auto;text-align:center;position:relative;z-index:1}\n.lsct-eyebrow{display:inline-block;padding:7px 20px;background:rgba(45,122,58,.3);border:1px solid rgba(123,223,138,.35);color:#7bdf8a;border-radius:50px;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:24px}\n.lsct-h2{font-size:52px;font-weight:900;line-height:1.1;color:#fff;letter-spacing:-1.5px;margin-bottom:20px}\n.lsct-h2 em{font-style:normal;color:#7bdf8a}\n.lsct-desc{font-size:17px;color:rgba(255,255,255,.75);line-height:1.8;max-width:600px;margin:0 auto 44px}\n.lsct-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:60px}\n.lsct-btn1{display:inline-flex;align-items:center;gap:10px;padding:18px 40px;background:#2d7a3a;color:#fff;border-radius:6px;font-size:15px;font-weight:700;text-decoration:none;transition:all .25s;box-shadow:0 4px 24px rgba(45,122,58,.45)}\n.lsct-btn1:hover{background:#3a9649;transform:translateY(-2px);text-decoration:none;color:#fff}\n.lsct-btn2{display:inline-flex;align-items:center;gap:10px;padding:18px 40px;background:rgba(255,255,255,.1);color:#fff;border:2px solid rgba(255,255,255,.3);border-radius:6px;font-size:15px;font-weight:700;text-decoration:none;backdrop-filter:blur(8px);transition:all .25s}\n.lsct-btn2:hover{background:rgba(255,255,255,.18);border-color:#fff;text-decoration:none;color:#fff}\n.lsct-nap{display:flex;justify-content:center;gap:48px;flex-wrap:wrap;padding-top:48px;border-top:1px solid rgba(255,255,255,.1)}\n.lsct-nap-item{display:flex;align-items:center;gap:14px}\n.lsct-nap-icon{width:46px;height:46px;border-radius:10px;background:rgba(45,122,58,.3);display:flex;align-items:center;justify-content:center;flex-shrink:0}\n.lsct-nap-icon svg{width:20px;height:20px;fill:none;stroke:#7bdf8a;stroke-width:2.5}\n.lsct-nap-lbl{font-size:11px;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:1px;margin-bottom:3px;font-weight:600}\n.lsct-nap-val{font-size:15px;font-weight:700;color:#fff}\n.lsct-nap-val a{color:#fff;text-decoration:none;transition:color .2s}\n.lsct-nap-val a:hover{color:#7bdf8a}\n@media(max-width:768px){.lsct-h2{font-size:34px}.lsct-nap{gap:24px}.lsct-btns{flex-direction:column;align-items:center}}\n</style>\n<section class=\"lsct\" id=\"kontakt\" itemscope itemtype=\"https://schema.org/ContactPage\">\n  <div class=\"lsct-wrap\">\n    <span class=\"lsct-eyebrow\">&#128640; Gotowy na wzrost?</span>\n    <h2 class=\"lsct-h2\">Zacznij <em>bezpłatną</em><br>konsultację dziś</h2>\n    <p class=\"lsct-desc\">Skontaktuj się z nami — opiszemy, co blokuje Twój wzrost i zaproponujemy konkretny plan działania. Bez zobowiązań, bez ukrytych kosztów.</p>\n    <div class=\"lsct-btns\">\n      <a href=\"mailto:biuro@socialmagic.pl\" class=\"lsct-btn1\">&#9993; Napisz do nas</a>\n      <a href=\"tel:+48516076249\" class=\"lsct-btn2\">&#128222; 516 076 249</a>\n    </div>\n    <div class=\"lsct-nap\">\n      <div class=\"lsct-nap-item\"><div class=\"lsct-nap-icon\"><svg viewBox=\"0 0 24 24\"><path d=\"M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z\"/></svg></div><div><div class=\"lsct-nap-lbl\">Telefon</div><div class=\"lsct-nap-val\"><a href=\"tel:+48516076249\">516 076 249</a></div></div></div>\n      <div class=\"lsct-nap-item\"><div class=\"lsct-nap-icon\"><svg viewBox=\"0 0 24 24\"><path d=\"M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z\"/><path d=\"M22 6l-10 7L2 6\"/></svg></div><div><div class=\"lsct-nap-lbl\">Email</div><div class=\"lsct-nap-val\"><a href=\"mailto:biuro@socialmagic.pl\">biuro@socialmagic.pl</a></div></div></div>\n      <div class=\"lsct-nap-item\"><div class=\"lsct-nap-icon\"><svg viewBox=\"0 0 24 24\"><path d=\"M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z\"/><circle cx=\"12\" cy=\"10\" r=\"3\"/></svg></div><div><div class=\"lsct-nap-lbl\">Lokalizacja</div><div class=\"lsct-nap-val\">Warszawa, Mazowsze</div></div></div>\n    </div>\n  </div>\n</section>\n"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
