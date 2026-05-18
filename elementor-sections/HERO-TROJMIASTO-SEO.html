@@ -1,0 +1,783 @@
+<!--
+  HERO SECTION — Trójmiasto SEO Refresh
+  Wklej w Elementor: Custom HTML Widget (pełna szerokość, bez paddingów sekcji)
+  Optymalizacja: H1 z geo-keyword, JSON-LD LocalBusiness, alt image, semantyczny HTML5
+-->
+
+<!-- ═══════════════════════════════════════════════
+     JSON-LD: Local Business Schema (SEO)
+════════════════════════════════════════════════ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "SocialMagic – Agencja Marketingowa Trójmiasto",
+  "description": "Agencja marketingu internetowego z Trójmiasta. Specjalizujemy się w SEO, reklamach Google Ads, social media i tworzeniu stron WWW dla firm z Gdańska, Gdyni i Sopotu.",
+  "url": "https://socialmagic.pl",
+  "areaServed": [
+    { "@type": "City", "name": "Gdańsk" },
+    { "@type": "City", "name": "Gdynia" },
+    { "@type": "City", "name": "Sopot" }
+  ],
+  "serviceArea": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": 54.372158,
+      "longitude": 18.638306
+    },
+    "geoRadius": "30000"
+  },
+  "knowsAbout": ["SEO", "Google Ads", "Social Media Marketing", "Tworzenie stron WWW", "Marketing internetowy"],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Usługi marketingowe Trójmiasto",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "SEO Gdańsk" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Google Ads Gdynia" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Social Media Sopot" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Strony WWW Trójmiasto" } }
+    ]
+  }
+}
+</script>
+
+<!-- ═══════════════════════════════════════════════
+     STYLES
+════════════════════════════════════════════════ -->
+<style>
+/* ── Reset & base ── */
+.smtri-hero *,
+.smtri-hero *::before,
+.smtri-hero *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── Wrapper ── */
+.smtri-hero {
+  position: relative;
+  min-height: 100vh;
+  background: #080808;
+  display: flex;
+  align-items: center;
+  padding: 100px 24px 80px;
+  overflow: hidden;
+  font-family: inherit;
+}
+
+/* ── Animated gradient orbs ── */
+.smtri-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.smtri-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.22;
+  animation: smtri-drift 22s ease-in-out infinite;
+}
+
+.smtri-orb-1 {
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(191,255,0,0.5) 0%, transparent 65%);
+  top: -180px; left: -180px;
+  animation-delay: 0s;
+}
+
+.smtri-orb-2 {
+  width: 450px; height: 450px;
+  background: radial-gradient(circle, rgba(0,255,135,0.35) 0%, transparent 65%);
+  bottom: -150px; right: -100px;
+  animation-delay: 8s;
+}
+
+.smtri-orb-3 {
+  width: 320px; height: 320px;
+  background: radial-gradient(circle, rgba(191,255,0,0.2) 0%, transparent 65%);
+  top: 60%; left: 38%;
+  animation-delay: 15s;
+}
+
+@keyframes smtri-drift {
+  0%,100% { transform: translate(0,0) scale(1); }
+  33%      { transform: translate(80px,-80px) scale(1.08); }
+  66%      { transform: translate(-60px,60px) scale(0.94); }
+}
+
+/* Scanning neon line */
+.smtri-scanline {
+  position: absolute;
+  left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(191,255,0,0.4) 50%, transparent 100%);
+  animation: smtri-scan 9s linear infinite;
+  z-index: 1;
+  pointer-events: none;
+  top: 30%;
+}
+
+@keyframes smtri-scan {
+  0%   { opacity: 0; transform: translateY(0); }
+  10%  { opacity: 1; }
+  90%  { opacity: 0.6; }
+  100% { opacity: 0; transform: translateY(calc(100vh - 30vh)); }
+}
+
+/* ── Grid layout ── */
+.smtri-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.smtri-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 72px;
+  align-items: center;
+}
+
+/* ── LEFT — Text ── */
+.smtri-text { animation: smtri-fadein 0.9s ease-out both; }
+
+@keyframes smtri-fadein {
+  from { opacity: 0; transform: translateY(36px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Geo badge */
+.smtri-geo-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 20px;
+  background: rgba(191,255,0,0.08);
+  border: 1px solid rgba(191,255,0,0.35);
+  border-radius: 50px;
+  margin-bottom: 28px;
+  backdrop-filter: blur(8px);
+}
+
+.smtri-geo-badge-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: #BFFF00;
+  animation: smtri-pulse 2s ease-in-out infinite;
+}
+
+@keyframes smtri-pulse {
+  0%,100% { box-shadow: 0 0 0 0 rgba(191,255,0,0.6); }
+  50%      { box-shadow: 0 0 0 6px rgba(191,255,0,0); }
+}
+
+.smtri-geo-badge-text {
+  font-size: 12px;
+  font-weight: 800;
+  color: #BFFF00;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* H1 — kluczowy element SEO */
+.smtri-h1 {
+  font-size: clamp(38px, 4.5vw, 62px);
+  font-weight: 900;
+  line-height: 1.08;
+  letter-spacing: -1.5px;
+  color: #ffffff;
+  margin-bottom: 28px;
+}
+
+.smtri-h1-accent {
+  display: inline;
+  background: linear-gradient(135deg, #BFFF00 0%, #00FF87 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Subheading / description */
+.smtri-lead {
+  font-size: 17px;
+  line-height: 1.85;
+  color: #c0c0c0;
+  margin-bottom: 18px;
+  max-width: 520px;
+}
+
+.smtri-lead strong {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.smtri-sub {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #777;
+  margin-bottom: 44px;
+  max-width: 480px;
+}
+
+/* Services pills */
+.smtri-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.smtri-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 16px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 50px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #dddddd;
+  white-space: nowrap;
+}
+
+.smtri-pill-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: #BFFF00;
+  flex-shrink: 0;
+}
+
+/* CTA buttons */
+.smtri-cta {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.smtri-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 17px 34px;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 800;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  letter-spacing: 0.3px;
+}
+
+.smtri-btn-primary {
+  background: #BFFF00;
+  color: #000000;
+  box-shadow: 0 12px 40px rgba(191,255,0,0.35);
+}
+
+.smtri-btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 56px rgba(191,255,0,0.55);
+}
+
+.smtri-btn-secondary {
+  background: transparent;
+  color: #BFFF00;
+  border: 1.5px solid rgba(191,255,0,0.5);
+}
+
+.smtri-btn-secondary:hover {
+  background: rgba(191,255,0,0.07);
+  border-color: #BFFF00;
+}
+
+.smtri-btn-arrow {
+  width: 18px; height: 18px;
+  transition: transform 0.3s;
+  flex-shrink: 0;
+}
+
+.smtri-btn:hover .smtri-btn-arrow {
+  transform: translateX(4px);
+}
+
+/* Trust bar under buttons */
+.smtri-trust {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+
+.smtri-trust-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+  color: #666;
+}
+
+.smtri-trust-icon {
+  width: 16px; height: 16px;
+  stroke: #BFFF00;
+  fill: none;
+  flex-shrink: 0;
+}
+
+/* ── RIGHT — Image ── */
+.smtri-visual {
+  position: relative;
+  animation: smtri-fadein 0.9s ease-out 0.25s both;
+}
+
+/* Image frame */
+.smtri-img-frame {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(191,255,0,0.18);
+  box-shadow: 0 30px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.04);
+}
+
+.smtri-img-frame::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    transparent 55%,
+    rgba(8,8,8,0.75) 100%
+  );
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Corner accent lines */
+.smtri-img-frame::after {
+  content: '';
+  position: absolute;
+  top: 16px; left: 16px; right: 16px; bottom: 16px;
+  border-top: 2px solid rgba(191,255,0,0.25);
+  border-left: 2px solid rgba(191,255,0,0.25);
+  border-radius: 10px 0 0 0;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.smtri-img-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Floating stat cards */
+.smtri-card {
+  position: absolute;
+  padding: 16px 20px;
+  background: rgba(10,10,10,0.92);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(191,255,0,0.25);
+  border-radius: 14px;
+  box-shadow: 0 16px 48px rgba(0,0,0,0.55);
+  z-index: 20;
+  animation: smtri-float 4s ease-in-out infinite;
+}
+
+@keyframes smtri-float {
+  0%,100% { transform: translateY(0); }
+  50%      { transform: translateY(-12px); }
+}
+
+.smtri-card-1 {
+  top: -28px; left: -40px;
+  display: flex; gap: 14px; align-items: center;
+  animation-delay: 0s;
+}
+
+.smtri-card-2 {
+  bottom: 40px; right: -36px;
+  display: flex; gap: 14px; align-items: center;
+  animation-delay: 1.5s;
+}
+
+.smtri-card-3 {
+  bottom: -28px; left: 24px;
+  animation-delay: 0.75s;
+}
+
+.smtri-card-icon {
+  width: 42px; height: 42px;
+  border-radius: 10px;
+  background: rgba(191,255,0,0.12);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+.smtri-card-icon svg {
+  width: 22px; height: 22px;
+  stroke: #BFFF00; fill: none; stroke-width: 2;
+}
+
+.smtri-card-num {
+  font-size: 26px;
+  font-weight: 900;
+  color: #BFFF00;
+  line-height: 1;
+  margin-bottom: 3px;
+}
+
+.smtri-card-lbl {
+  font-size: 12px;
+  color: #777;
+  line-height: 1.4;
+}
+
+/* Stars card */
+.smtri-stars {
+  display: flex; gap: 3px; margin-bottom: 4px;
+}
+
+.smtri-star {
+  color: #BFFF00;
+  font-size: 14px;
+}
+
+.smtri-card-review-txt {
+  font-size: 12px;
+  color: #777;
+  line-height: 1.3;
+}
+
+/* Bottom image caption (SEO keyword) */
+.smtri-img-caption {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  z-index: 5;
+  padding: 20px 22px 18px;
+}
+
+.smtri-img-caption-inner {
+  font-size: 13px;
+  font-weight: 700;
+  color: rgba(255,255,255,0.65);
+  letter-spacing: 0.5px;
+}
+
+.smtri-img-caption-inner span {
+  color: #BFFF00;
+}
+
+/* ── Stats row (bottom) ── */
+.smtri-stats {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+  border-top: 1px solid rgba(191,255,0,0.1);
+  padding-top: 48px;
+  margin-top: 16px;
+}
+
+.smtri-stat {
+  text-align: center;
+  padding: 0 20px;
+  border-right: 1px solid rgba(255,255,255,0.06);
+}
+
+.smtri-stat:last-child { border-right: none; }
+
+.smtri-stat-num {
+  font-size: 46px;
+  font-weight: 900;
+  background: linear-gradient(135deg, #BFFF00, #00FF87);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.smtri-stat-lbl {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.4;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1100px) {
+  .smtri-grid { gap: 48px; }
+  .smtri-stats { grid-template-columns: repeat(2, 1fr); }
+  .smtri-card-2 { right: -16px; }
+}
+
+@media (max-width: 900px) {
+  .smtri-grid { grid-template-columns: 1fr; gap: 52px; }
+  .smtri-hero { padding: 90px 20px 60px; min-height: auto; }
+  .smtri-lead { max-width: 100%; }
+  .smtri-sub  { max-width: 100%; }
+  .smtri-card-1 { top: -20px; left: -10px; }
+  .smtri-card-2 { right: -10px; }
+}
+
+@media (max-width: 600px) {
+  .smtri-h1 { font-size: 36px; letter-spacing: -1px; }
+  .smtri-stats { grid-template-columns: repeat(2, 1fr); }
+  .smtri-btn { width: 100%; justify-content: center; }
+  .smtri-cta { flex-direction: column; }
+  .smtri-card-2 { display: none; }
+}
+</style>
+
+<!-- ═══════════════════════════════════════════════
+     HTML — Semantyczny markup (SEO-first)
+════════════════════════════════════════════════ -->
+<section
+  class="smtri-hero"
+  aria-label="Agencja marketingowa Trójmiasto – hero"
+  itemscope
+  itemtype="https://schema.org/LocalBusiness"
+>
+  <!-- Background effects -->
+  <div class="smtri-bg" aria-hidden="true">
+    <div class="smtri-orb smtri-orb-1"></div>
+    <div class="smtri-orb smtri-orb-2"></div>
+    <div class="smtri-orb smtri-orb-3"></div>
+    <div class="smtri-scanline"></div>
+  </div>
+
+  <div class="smtri-container">
+    <div class="smtri-grid">
+
+      <!-- LEFT: Text content -->
+      <div class="smtri-text">
+
+        <!-- Geo badge -->
+        <div class="smtri-geo-badge" aria-label="Obsługujemy Trójmiasto">
+          <span class="smtri-geo-badge-dot" aria-hidden="true"></span>
+          <span class="smtri-geo-badge-text">Gdańsk · Gdynia · Sopot</span>
+        </div>
+
+        <!--
+          H1: główny nagłówek SEO
+          Fraza kluczowa: "agencja marketingowa Trójmiasto"
+          + LSI: "marketing internetowy", "SEO Trójmiasto"
+        -->
+        <h1 class="smtri-h1" itemprop="description">
+          Agencja marketingowa<br>
+          dla firm z&nbsp;<span class="smtri-h1-accent">Trójmiasta</span><br>
+          która dowozi wyniki
+        </h1>
+
+        <p class="smtri-lead">
+          Jeśli Twoja firma działa w <strong>Gdańsku, Gdyni lub Sopocie</strong>,
+          wiemy jak sprawić, by klienci z Trójmiasta znajdowali Cię pierwszy –
+          zanim znajdą konkurencję.
+          Specjalizujemy się w <strong>SEO lokalnym</strong>,
+          <strong>Google Ads</strong>, <strong>social media</strong>
+          i <strong>stronach WWW</strong> dla trójmiejskich biznesów.
+        </p>
+
+        <p class="smtri-sub">
+          Nie piszemy raportów dla raportu. Mierzysz nas jedną rzeczą:
+          więcej zapytań od klientów z Trójmiasta. Proste.
+        </p>
+
+        <!-- Services pills (semantic keyword cloud) -->
+        <nav class="smtri-pills" aria-label="Nasze usługi">
+          <span class="smtri-pill"><span class="smtri-pill-dot" aria-hidden="true"></span>SEO Gdańsk</span>
+          <span class="smtri-pill"><span class="smtri-pill-dot" aria-hidden="true"></span>Google Ads Gdynia</span>
+          <span class="smtri-pill"><span class="smtri-pill-dot" aria-hidden="true"></span>Social Media Sopot</span>
+          <span class="smtri-pill"><span class="smtri-pill-dot" aria-hidden="true"></span>Strony WWW</span>
+          <span class="smtri-pill"><span class="smtri-pill-dot" aria-hidden="true"></span>Wizytówka Google</span>
+        </nav>
+
+        <!-- CTA -->
+        <div class="smtri-cta">
+          <a
+            href="#kontakt"
+            class="smtri-btn smtri-btn-primary"
+            aria-label="Bezpłatna konsultacja – marketing Trójmiasto"
+          >
+            <span>Bezpłatna konsultacja</span>
+            <svg class="smtri-btn-arrow" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <path d="M4 10h12m0 0l-6-6m6 6l-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </a>
+          <a href="#realizacje" class="smtri-btn smtri-btn-secondary">
+            <span>Zobacz realizacje</span>
+          </a>
+        </div>
+
+        <!-- Trust signals -->
+        <div class="smtri-trust" role="list" aria-label="Gwarancje jakości">
+          <div class="smtri-trust-item" role="listitem">
+            <svg class="smtri-trust-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Bez długich umów</span>
+          </div>
+          <div class="smtri-trust-item" role="listitem">
+            <svg class="smtri-trust-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Lokalny zespół Trójmiasto</span>
+          </div>
+          <div class="smtri-trust-item" role="listitem">
+            <svg class="smtri-trust-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>Raporty co miesiąc</span>
+          </div>
+        </div>
+      </div><!-- /smtri-text -->
+
+      <!-- RIGHT: Visual -->
+      <div class="smtri-visual">
+
+        <!-- Floating card – top left -->
+        <div class="smtri-card smtri-card-1" role="presentation">
+          <div class="smtri-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div>
+            <div class="smtri-card-num" aria-label="10 tysięcy fraz">10K+</div>
+            <div class="smtri-card-lbl">Fraz w TOP 10<br>Google</div>
+          </div>
+        </div>
+
+        <!-- Main image frame -->
+        <figure class="smtri-img-frame" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+          <img
+            src="https://profesjonalnaczystosc.pl/wp-content/uploads/2025/11/cyber-security-01-2048x1191.png"
+            alt="Agencja marketingowa Trójmiasto – strategia cyfrowa i SEO dla firm z Gdańska, Gdyni i Sopotu"
+            loading="eager"
+            fetchpriority="high"
+            width="1024"
+            height="596"
+            itemprop="url"
+          />
+          <!-- Overlay caption -->
+          <figcaption class="smtri-img-caption">
+            <div class="smtri-img-caption-inner">
+              Marketing internetowy <span>Trójmiasto</span> — wyniki, które widać
+            </div>
+          </figcaption>
+        </figure>
+
+        <!-- Floating card – bottom right -->
+        <div class="smtri-card smtri-card-2" role="presentation">
+          <div class="smtri-card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div>
+            <div class="smtri-card-num" aria-label="wzrost ruchu 320 procent">+320%</div>
+            <div class="smtri-card-lbl">Wzrost ruchu<br>śr. klient rok 1</div>
+          </div>
+        </div>
+
+        <!-- Floating card – bottom left (reviews) -->
+        <div class="smtri-card smtri-card-3" role="presentation">
+          <div class="smtri-stars" aria-label="5 gwiazdek">
+            <span class="smtri-star" aria-hidden="true">★</span>
+            <span class="smtri-star" aria-hidden="true">★</span>
+            <span class="smtri-star" aria-hidden="true">★</span>
+            <span class="smtri-star" aria-hidden="true">★</span>
+            <span class="smtri-star" aria-hidden="true">★</span>
+          </div>
+          <div class="smtri-card-review-txt">147 firm z Trójmiasta<br>poleca nas</div>
+        </div>
+
+      </div><!-- /smtri-visual -->
+
+      <!-- STATS ROW -->
+      <div class="smtri-stats" role="list" aria-label="Nasze osiągnięcia">
+
+        <div class="smtri-stat" role="listitem">
+          <div class="smtri-stat-num" data-target="147" aria-label="147 klientów">147</div>
+          <div class="smtri-stat-lbl">Firm z Trójmiasta<br>nam zaufało</div>
+        </div>
+
+        <div class="smtri-stat" role="listitem">
+          <div class="smtri-stat-num" data-target="10000" aria-label="ponad 10 tysięcy fraz">10K+</div>
+          <div class="smtri-stat-lbl">Fraz<br>w TOP 10 Google</div>
+        </div>
+
+        <div class="smtri-stat" role="listitem">
+          <div class="smtri-stat-num" data-target="320" data-prefix="+" data-suffix="%" aria-label="320 procent wzrost ruchu">+320%</div>
+          <div class="smtri-stat-lbl">Wzrost ruchu<br>średnio rok 1</div>
+        </div>
+
+        <div class="smtri-stat" role="listitem">
+          <div class="smtri-stat-num" data-target="5" data-suffix=" lat" aria-label="5 lat doświadczenia">5 lat</div>
+          <div class="smtri-stat-lbl">Doświadczenia<br>na rynku Trójmiasta</div>
+        </div>
+
+      </div><!-- /smtri-stats -->
+
+    </div><!-- /smtri-grid -->
+  </div><!-- /smtri-container -->
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     JS — Intersection-triggered counter animation
+════════════════════════════════════════════════ -->
+<script>
+(function () {
+  'use strict';
+
+  function animateCounter(el) {
+    var raw     = el.textContent.replace(/[^\d]/g, '');
+    var target  = parseInt(raw, 10);
+    if (isNaN(target) || target === 0) return;
+
+    var prefix  = el.dataset.prefix  || '';
+    var suffix  = el.dataset.suffix  || '';
+    var frames  = 60;
+    var step    = 0;
+
+    var timer = setInterval(function () {
+      step++;
+      var val = Math.round(target * (step / frames));
+      el.textContent = prefix + val.toLocaleString('pl-PL') + suffix;
+      if (step >= frames) {
+        el.textContent = prefix + target.toLocaleString('pl-PL') + suffix;
+        clearInterval(timer);
+      }
+    }, 28);
+  }
+
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (entry.isIntersecting && !entry.target.dataset.done) {
+        entry.target.dataset.done = '1';
+        animateCounter(entry.target);
+      }
+    });
+  }, { threshold: 0.4 });
+
+  document.querySelectorAll('.smtri-stat-num').forEach(function (el) {
+    observer.observe(el);
+  });
+}());
+</script>
